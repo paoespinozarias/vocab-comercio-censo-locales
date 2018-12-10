@@ -1,0 +1,185 @@
+{
+  "@context" : {
+    "asociadaA" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#asociadaA",
+      "@type" : "@id"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "tieneTerraza" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tieneTerraza",
+      "@type" : "@id"
+    },
+    "perteneceALocal" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#perteneceALocal",
+      "@type" : "@id"
+    },
+    "fechaCese" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#fechaCese",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "priorVersion" : {
+      "@id" : "http://www.w3.org/2002/07/owl#priorVersion"
+    },
+    "seOtorgaA" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#seOtorgaA",
+      "@type" : "@id"
+    },
+    "fechaSolicitud" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#fechaSolicitud",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "tieneLicenciaApertura" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tieneLicenciaApertura",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "tipoSituacion" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoSituacion",
+      "@type" : "@id"
+    },
+    "historyNote" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#historyNote"
+    },
+    "Concept" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    "fechaAlta" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#fechaAlta",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "numeroSillasAutorizadas" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#numeroSillasAutorizadas",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "autorizaActividadEconomica" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#autorizaActividadEconomica",
+      "@type" : "@id"
+    },
+    "superficie" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#superficie",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "LocalBusiness" : {
+      "@id" : "http://schema.org/LocalBusiness"
+    },
+    "Agent" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Agent"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "numeroMesasAutorizadas" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#numeroMesasAutorizadas",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "periodoFuncionamiento" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#periodoFuncionamiento",
+      "@type" : "@id"
+    },
+    "aforo" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#aforo",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "rights" : {
+      "@id" : "http://purl.org/dc/elements/1.1/rights"
+    },
+    "nombreComercial" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#nombreComercial",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "identifier" : {
+      "@id" : "http://purl.org/dc/elements/1.1/identifier"
+    },
+    "rotulo" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#rotulo",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "Place" : {
+      "@id" : "http://schema.org/Place"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "tipoAgrupacionComercial" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoAgrupacionComercial",
+      "@type" : "@id"
+    },
+    "LocalComercial" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial"
+    },
+    "referenciaCatastral" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#referenciaCatastral",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Terraza" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "tipoActividadEconomica" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoActividadEconomica",
+      "@type" : "@id"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "date" : {
+      "@id" : "http://purl.org/dc/elements/1.1/date"
+    },
+    "estadoTramitacion" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#estadoTramitacion",
+      "@type" : "@id"
+    },
+    "tipoAcceso" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoAcceso",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/elements/1.1/contributor"
+    },
+    "LicenciaApertura" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LicenciaApertura"
+    },
+    "hasFormat" : {
+      "@id" : "http://purl.org/dc/terms/hasFormat"
+    },
+    "agrupacionComercial" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#agrupacionComercial",
+      "@type" : "@id"
+    },
+    "inScheme" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "AgrupacionComercial" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#AgrupacionComercial"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "contieneLocalComercial" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#contieneLocalComercial",
+      "@type" : "@id"
+    }
+  }
+}

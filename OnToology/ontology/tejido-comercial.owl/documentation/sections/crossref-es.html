@@ -1,0 +1,1415 @@
+<h2  id="crossreference" class="list">T&eacute;rminos del Vocabulario para la representación de datos sobre el censo de locales, terrazas y licencias de apertura para clases, propiedades y propiedades de datos <span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h2>
+Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad definida por el Vocabulario para la representación de datos sobre el censo de locales, terrazas y licencias de apertura.
+<div id="classes">
+   <h3 id="classes-headline" class="list">Clases</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#AgrupacionComercial"
+            title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#AgrupacionComercial">Agrupación Comercial</a>
+      </li>
+      <li>
+         <a href="#LicenciaApertura"
+            title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LicenciaApertura">Licencia de apertura</a>
+      </li>
+      <li>
+         <a href="#http://schema.org/LocalBusiness" title="http://schema.org/LocalBusiness">
+            <span>local business</span>
+         </a>
+      </li>
+      <li>
+         <a href="#LocalComercial"
+            title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial">Local Comercial</a>
+      </li>
+      <li>
+         <a href="#Terraza"
+            title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza">Terraza</a>
+      </li>
+   </ul>
+   <div class="entity" id="AgrupacionComercial">
+      <h3>Agrupación Comercial<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#AgrupacionComercial</p>
+      <div class="comment">
+         <span class="markdown">Conjunto de locales situados en uno o en diversos edificios de un mismo espacio comercial, en el cual se pueden llevar a cabo diferentes actividades económicas. Este concepto incluye centros comerciales, mercados, estaciones de tren y metro, etc.
+Es más genérico que el concepto schema:ShoppingCenter, puesto que puede abordar otros tipos de agrupaciones comerciales (por ejemplo, una calle comercial)</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Definida por</dt>
+         <dd>
+            <a href="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial">http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>tiene superclases</dt>
+         <dd>
+            <span class="dotted" title="http://schema.org/Place">place</span>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dd>(<a href="#tipoAgrupacionComercial"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoAgrupacionComercial">tipo de agrupación comercial</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            <span class="logic">some</span>
+            <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
+            <sup class="type-c" title="clase">c</sup>) <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</span>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            <span class="logic">value</span>
+            <a href="#http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-agrupacion"
+               title="http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-agrupacion">tipo agrupacion</a>)</dd>
+         <dd>
+            <a href="#contieneLocalComercial"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#contieneLocalComercial">contiene local comercial</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            <span class="logic">some</span>
+            <a href="#LocalComercial"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial">Local Comercial</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dt>en dominio de</dt>
+         <dd>
+            <a href="#tipoAgrupacionComercial"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoAgrupacionComercial">tipo de agrupación comercial</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+         <dt>en rango de</dt>
+         <dd>
+            <a href="#agrupacionComercial"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#agrupacionComercial">pertenece a agrupación comercial</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+         <dt>disjunto a</dt>
+         <dd>
+            <a href="#Terraza"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza">Terraza</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="LicenciaApertura">
+      <h3>Licencia de apertura<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LicenciaApertura</p>
+      <div class="comment">
+         <span class="markdown">Acto reglado mediante el cual el Ayuntamiento, previa comprobación del cumplimiento de las condiciones establecidas por la normativa aplicable, autoriza la implantación de la actividad.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Definida por</dt>
+         <dd>
+            <a href="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial">http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>tiene superclases</dt>
+         <dd>(<a href="#estadoTramitacion"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#estadoTramitacion">estado de tramitación</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            <span class="logic">some</span>
+            <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
+            <sup class="type-c" title="clase">c</sup>) <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</span>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            <span class="logic">value</span>
+            <a href="#http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-estado-tramite-licencia"
+               title="http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-estado-tramite-licencia">tipo estado tramite licencia</a>)</dd>
+         <dd>
+            <a href="#asociadaA"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#asociadaA">asociada a</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            <span class="logic">some</span>
+            <a href="#LocalComercial"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial">Local Comercial</a>
+            <sup class="type-c" title="clase">c</sup>
+            <span class="logic">or</span>
+            <a href="#Terraza"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza">Terraza</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dd>
+            <a href="#autorizaActividadEconomica"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#autorizaActividadEconomica">autoriza actividad económica</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            <span class="logic">some</span>
+            <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dd>
+            <a href="#seOtorgaA"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#seOtorgaA">se otorga a</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            <span class="logic">some</span>
+            <span class="dotted" title="http://xmlns.com/foaf/0.1/Agent">agent</span>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dd>
+            <a href="#asociadaA"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#asociadaA">asociada a</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            <span class="logic">only</span>
+            <a href="#LocalComercial"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial">Local Comercial</a>
+            <sup class="type-c" title="clase">c</sup>
+            <span class="logic">or</span>
+            <a href="#Terraza"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza">Terraza</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dd>
+            <a href="#asociadaA"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#asociadaA">asociada a</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            <span class="logic">exactly</span> 1 </dd>
+         <dt>en dominio de</dt>
+         <dd>
+            <a href="#asociadaA"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#asociadaA">asociada a</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#autorizaActividadEconomica"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#autorizaActividadEconomica">autoriza actividad económica</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#estadoTramitacion"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#estadoTramitacion">estado de tramitación</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#fechaAlta"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#fechaAlta">fecha de alta</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#fechaCese"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#fechaCese">fecha de cese</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#fechaSolicitud"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#fechaSolicitud">fecha de solicitud</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#seOtorgaA"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#seOtorgaA">se otorga a</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+         <dt>en rango de</dt>
+         <dd>
+            <a href="#tieneLicenciaApertura"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tieneLicenciaApertura">tiene licencia de apertura</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://schema.org/LocalBusiness">
+      <h3>local business<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.org/LocalBusiness</p>
+      <dl class="description">
+         <dt>tiene superclases</dt>
+         <dd>
+            <span class="dotted" title="http://schema.org/Place">place</span>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dt>tiene subclases</dt>
+         <dd>
+            <a href="#LocalComercial"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial">Local Comercial</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="LocalComercial">
+      <h3>Local Comercial<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial</p>
+      <div class="comment">
+         <span class="markdown">Local donde se puede realizar algún tipo de actividad comercial</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Definida por</dt>
+         <dd>
+            <a href="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial">http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>tiene superclases</dt>
+         <dd>
+            <a href="#http://schema.org/LocalBusiness" title="http://schema.org/LocalBusiness">local business</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dd>(<a href="#tipoAcceso"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoAcceso">tipo de acceso</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            <span class="logic">some</span>
+            <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
+            <sup class="type-c" title="clase">c</sup>) <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</span>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            <span class="logic">value</span>
+            <a href="#http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-acceso"
+               title="http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-acceso">tipo acceso</a>)</dd>
+         <dd>(<a href="#tipoSituacion"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoSituacion">tipo situación</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            <span class="logic">some</span>
+            <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
+            <sup class="type-c" title="clase">c</sup>) <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</span>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            <span class="logic">value</span>
+            <a href="#http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-situacion"
+               title="http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-situacion">tipo situacion</a>)</dd>
+         <dd>
+            <a href="#agrupacionComercial"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#agrupacionComercial">pertenece a agrupación comercial</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            <span class="logic">only</span>
+            <a href="#AgrupacionComercial"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#AgrupacionComercial">Agrupación Comercial</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dd>
+            <a href="#tieneLicenciaApertura"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tieneLicenciaApertura">tiene licencia de apertura</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            <span class="logic">only</span>
+            <a href="#LicenciaApertura"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LicenciaApertura">Licencia de apertura</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dd>
+            <a href="#tieneTerraza"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tieneTerraza">tiene terraza</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            <span class="logic">only</span>
+            <a href="#Terraza"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza">Terraza</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dt>en dominio de</dt>
+         <dd>
+            <a href="#aforo"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#aforo">aforo</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#nombreComercial"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#nombreComercial">nombre comercial</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#referenciaCatastral"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#referenciaCatastral">referencia catastral</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#rotulo"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#rotulo">rótulo</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#tieneTerraza"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tieneTerraza">tiene terraza</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#tipoAcceso"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoAcceso">tipo de acceso</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#tipoActividadEconomica"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoActividadEconomica">tipo de actividad económica</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#tipoSituacion"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoSituacion">tipo situación</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+         <dt>en rango de</dt>
+         <dd>
+            <a href="#contieneLocalComercial"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#contieneLocalComercial">contiene local comercial</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#perteneceALocal"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#perteneceALocal">pertenece a local</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Terraza">
+      <h3>Terraza<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza</p>
+      <div class="comment">
+         <span class="markdown">El uso de una zona de suelo de dominio público o privado afecto al uso público, susceptible de aprovechamientos relacionados con actividades propias de la hostelería, mediante la colocación de mesas, sillas y sombrillas, como zona de extensión o ampliación de la actividad que se ejerce dentro de dichos establecimientos. Dichas instalaciones tienen en todo caso carácter temporal.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Definida por</dt>
+         <dd>
+            <a href="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial">http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>tiene superclases</dt>
+         <dd>
+            <span class="dotted" title="http://schema.org/Place">place</span>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dd>(<a href="#periodoFuncionamiento"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#periodoFuncionamiento">periodo de funcionamiento</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            <span class="logic">some</span>
+            <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
+            <sup class="type-c" title="clase">c</sup>) <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</span>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            <span class="logic">value</span>
+            <a href="#http://vocab.linkeddata.es/datosabiertos/kos/comercio/periodo-funcionamiento"
+               title="http://vocab.linkeddata.es/datosabiertos/kos/comercio/periodo-funcionamiento">periodo funcionamiento</a>)</dd>
+         <dd>
+            <a href="#tieneLicenciaApertura"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tieneLicenciaApertura">tiene licencia de apertura</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            <span class="logic">some</span>
+            <a href="#LicenciaApertura"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LicenciaApertura">Licencia de apertura</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dd>
+            <a href="#perteneceALocal"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#perteneceALocal">pertenece a local</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            <span class="logic">exactly</span> 1 <a href="#LocalComercial"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial">Local Comercial</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dt>en dominio de</dt>
+         <dd>
+            <a href="#numeroMesasAutorizadas"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#numeroMesasAutorizadas">número de mesas autorizadas</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#numeroSillasAutorizadas"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#numeroSillasAutorizadas">número de sillas autorizadas</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#periodoFuncionamiento"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#periodoFuncionamiento">periodo de funcionamiento</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#perteneceALocal"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#perteneceALocal">pertenece a local</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#superficie"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#superficie">superficie</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>
+         </dd>
+         <dt>en rango de</dt>
+         <dd>
+            <a href="#tieneTerraza"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tieneTerraza">tiene terraza</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+         <dt>disjunto a</dt>
+         <dd>
+            <a href="#AgrupacionComercial"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#AgrupacionComercial">Agrupación Comercial</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="objectproperties">
+   <h2>Propiedades entre objetos</h2>
+   <ul class="hlist">
+      <li>
+         <a href="#asociadaA"
+            title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#asociadaA">asociada a</a>
+      </li>
+      <li>
+         <a href="#autorizaActividadEconomica"
+            title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#autorizaActividadEconomica">autoriza actividad económica</a>
+      </li>
+      <li>
+         <a href="#contieneLocalComercial"
+            title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#contieneLocalComercial">contiene local comercial</a>
+      </li>
+      <li>
+         <a href="#estadoTramitacion"
+            title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#estadoTramitacion">estado de tramitación</a>
+      </li>
+      <li>
+         <a href="#periodoFuncionamiento"
+            title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#periodoFuncionamiento">periodo de funcionamiento</a>
+      </li>
+      <li>
+         <a href="#agrupacionComercial"
+            title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#agrupacionComercial">pertenece a agrupación comercial</a>
+      </li>
+      <li>
+         <a href="#perteneceALocal"
+            title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#perteneceALocal">pertenece a local</a>
+      </li>
+      <li>
+         <a href="#seOtorgaA"
+            title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#seOtorgaA">se otorga a</a>
+      </li>
+      <li>
+         <a href="#tieneLicenciaApertura"
+            title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tieneLicenciaApertura">tiene licencia de apertura</a>
+      </li>
+      <li>
+         <a href="#tieneTerraza"
+            title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tieneTerraza">tiene terraza</a>
+      </li>
+      <li>
+         <a href="#tipoAcceso"
+            title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoAcceso">tipo de acceso</a>
+      </li>
+      <li>
+         <a href="#tipoActividadEconomica"
+            title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoActividadEconomica">tipo de actividad económica</a>
+      </li>
+      <li>
+         <a href="#tipoAgrupacionComercial"
+            title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoAgrupacionComercial">tipo de agrupación comercial</a>
+      </li>
+      <li>
+         <a href="#tipoSituacion"
+            title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoSituacion">tipo situación</a>
+      </li>
+   </ul>
+   <div class="entity" id="asociadaA">
+      <h3>asociada a<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#asociadaA</p>
+      <div class="comment">
+         <span class="markdown">Una licencia de apertura está asociada a un local comercial o a una terraza.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Definida por</dt>
+         <dd>
+            <a href="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial">http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#LicenciaApertura"
+                  title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LicenciaApertura">Licencia de apertura</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="#LocalComercial"
+                  title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial">Local Comercial</a>
+               <sup class="type-c" title="clase">c</sup>
+               <span class="logic">or</span>
+               <a href="#Terraza"
+                  title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza">Terraza</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>inversa de</dt>
+            <dd>
+               <a href="#tieneLicenciaApertura"
+                  title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tieneLicenciaApertura">tiene licencia de apertura</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="autorizaActividadEconomica">
+      <h3>autoriza actividad económica<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#autorizaActividadEconomica</p>
+      <div class="comment">
+         <span class="markdown">Una licencia autoriza la realización de una o varias actividades económicas. El tipo de actividad económica que se autoriza se representa de acuerdo con alguna clasificación SKOS, preferentemente alguna de las siguientes:
+http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae
+http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Definida por</dt>
+         <dd>
+            <a href="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial">http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#LicenciaApertura"
+                  title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LicenciaApertura">Licencia de apertura</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="contieneLocalComercial">
+      <h3>contiene local comercial<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#contieneLocalComercial</p>
+      <div class="comment">
+         <span class="markdown">Una agrupación (por ejemplo, una agrupación comercial) contiene locales comerciales.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Definida por</dt>
+         <dd>
+            <a href="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial">http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>rango</dt>
+            <dd>
+               <a href="#LocalComercial"
+                  title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial">Local Comercial</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="estadoTramitacion">
+      <h3>estado de tramitación<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#estadoTramitacion</p>
+      <div class="comment">
+         <span class="markdown">Estado de tramitación de la licencia, se representa con la lista de conceptos SKOS http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-estado-tramite-licencia.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Definida por</dt>
+         <dd>
+            <a href="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial">http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#LicenciaApertura"
+                  title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LicenciaApertura">Licencia de apertura</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
+               <sup class="type-c" title="clase">c</sup>
+               <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</span>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+               <span class="logic">value</span>
+               <a href="#http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-estado-tramite-licencia"
+                  title="http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-estado-tramite-licencia">tipo estado tramite licencia</a>)</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="periodoFuncionamiento">
+      <h3>periodo de funcionamiento<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#periodoFuncionamiento</p>
+      <div class="comment">
+         <span class="markdown">Periodo de funcionamiento de la terraza, que puede ser anual o estacional. Los periodos se representan mediante la lista de conceptos http://vocab.linkeddata.es/datosabiertos/kos/comercio/periodo-funcionamiento.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Definida por</dt>
+         <dd>
+            <a href="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial">http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Terraza"
+                  title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza">Terraza</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
+               <sup class="type-c" title="clase">c</sup>
+               <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</span>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+               <span class="logic">value</span>
+               <a href="#http://vocab.linkeddata.es/datosabiertos/kos/comercio/periodo-funcionamiento"
+                  title="http://vocab.linkeddata.es/datosabiertos/kos/comercio/periodo-funcionamiento">periodo funcionamiento</a>)</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="agrupacionComercial">
+      <h3>pertenece a agrupación comercial<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#agrupacionComercial</p>
+      <div class="comment">
+         <span class="markdown">Cualquier entidad (por ejemplo, un local comercial) puede pertenecer a una agrupación comercial.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Definida por</dt>
+         <dd>
+            <a href="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial">http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>rango</dt>
+            <dd>
+               <a href="#AgrupacionComercial"
+                  title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#AgrupacionComercial">Agrupación Comercial</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="perteneceALocal">
+      <h3>pertenece a local<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#perteneceALocal</p>
+      <div class="comment">
+         <span class="markdown">Una terraza pertenece a un local comercial.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Definida por</dt>
+         <dd>
+            <a href="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial">http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Terraza"
+                  title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza">Terraza</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="#LocalComercial"
+                  title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial">Local Comercial</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>inversa de</dt>
+            <dd>
+               <a href="#tieneTerraza"
+                  title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tieneTerraza">tiene terraza</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="seOtorgaA">
+      <h3>se otorga a<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#seOtorgaA</p>
+      <div class="comment">
+         <span class="markdown">Una licencia se otorga a un titular.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Definida por</dt>
+         <dd>
+            <a href="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial">http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#LicenciaApertura"
+                  title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LicenciaApertura">Licencia de apertura</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <span class="dotted" title="http://xmlns.com/foaf/0.1/Agent">agent</span>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="tieneLicenciaApertura">
+      <h3>tiene licencia de apertura<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tieneLicenciaApertura</p>
+      <div class="comment">
+         <span class="markdown">El local comercial puede tener una o varias licencias de funcionamiento a lo largo de su historia.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Definida por</dt>
+         <dd>
+            <a href="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial">http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#LocalComercial"
+                  title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial">Local Comercial</a>
+               <sup class="type-c" title="clase">c</sup>
+               <span class="logic">or</span>
+               <a href="#Terraza"
+                  title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza">Terraza</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="#LicenciaApertura"
+                  title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LicenciaApertura">Licencia de apertura</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>inversa de</dt>
+            <dd>
+               <a href="#asociadaA"
+                  title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#asociadaA">asociada a</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="tieneTerraza">
+      <h3>tiene terraza<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tieneTerraza</p>
+      <div class="comment">
+         <span class="markdown">Un local comercial puede tener una terraza asociada.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Definida por</dt>
+         <dd>
+            <a href="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial">http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#LocalComercial"
+                  title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial">Local Comercial</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="#Terraza"
+                  title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza">Terraza</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>inversa de</dt>
+            <dd>
+               <a href="#perteneceALocal"
+                  title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#perteneceALocal">pertenece a local</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="tipoAcceso">
+      <h3>tipo de acceso<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoAcceso</p>
+      <div class="comment">
+         <span class="markdown">Un local comercial puede tener los siguientes tipos de acceso: puerta de calle, interior, o piso. Estos tipos de acceso se representan mediante una lista de conceptos de URI http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-acceso.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Definida por</dt>
+         <dd>
+            <a href="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial">http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#LocalComercial"
+                  title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial">Local Comercial</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
+               <sup class="type-c" title="clase">c</sup>
+               <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</span>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+               <span class="logic">value</span>
+               <a href="#http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-acceso"
+                  title="http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-acceso">tipo acceso</a>)</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="tipoActividadEconomica">
+      <h3>tipo de actividad económica<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoActividadEconomica</p>
+      <div class="comment">
+         <span class="markdown">Tipo de actividad económica que se realiza en un local comercial, de acuerdo con alguna clasificación SKOS.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Definida por</dt>
+         <dd>
+            <a href="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial">http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#LocalComercial"
+                  title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial">Local Comercial</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="tipoAgrupacionComercial">
+      <h3>tipo de agrupación comercial<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoAgrupacionComercial</p>
+      <div class="comment">
+         <span class="markdown">Type of shopping area, from the concept list http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-agrupacion.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Definida por</dt>
+         <dd>
+            <a href="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial">http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#AgrupacionComercial"
+                  title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#AgrupacionComercial">Agrupación Comercial</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
+               <sup class="type-c" title="clase">c</sup>
+               <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</span>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+               <span class="logic">value</span>
+               <a href="#http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-agrupacion"
+                  title="http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-agrupacion">tipo agrupacion</a>)</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="tipoSituacion">
+      <h3>tipo situación<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoSituacion</p>
+      <div class="comment">
+         <span class="markdown">Un local comercial puede estar en una de las siguientes situaciones: activo, cerrado, clausurado, o en obras. Estos tipos de situaciones se representan mediante una lista de conceptos de URI http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-situacion.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Definida por</dt>
+         <dd>
+            <a href="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial">http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#LocalComercial"
+                  title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial">Local Comercial</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
+               <sup class="type-c" title="clase">c</sup>
+               <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</span>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+               <span class="logic">value</span>
+               <a href="#http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-situacion"
+                  title="http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-situacion">tipo situacion</a>)</dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Propiedades de datos</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#aforo"
+            title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#aforo">aforo</a>
+      </li>
+      <li>
+         <a href="#fechaAlta"
+            title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#fechaAlta">fecha de alta</a>
+      </li>
+      <li>
+         <a href="#fechaCese"
+            title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#fechaCese">fecha de cese</a>
+      </li>
+      <li>
+         <a href="#fechaSolicitud"
+            title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#fechaSolicitud">fecha de solicitud</a>
+      </li>
+      <li>
+         <a href="#nombreComercial"
+            title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#nombreComercial">nombre comercial</a>
+      </li>
+      <li>
+         <a href="#numeroMesasAutorizadas"
+            title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#numeroMesasAutorizadas">número de mesas autorizadas</a>
+      </li>
+      <li>
+         <a href="#numeroSillasAutorizadas"
+            title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#numeroSillasAutorizadas">número de sillas autorizadas</a>
+      </li>
+      <li>
+         <a href="#referenciaCatastral"
+            title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#referenciaCatastral">referencia catastral</a>
+      </li>
+      <li>
+         <a href="#rotulo"
+            title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#rotulo">rótulo</a>
+      </li>
+      <li>
+         <a href="#superficie"
+            title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#superficie">superficie</a>
+      </li>
+   </ul>
+   <div class="entity" id="aforo">
+      <h3>aforo<sup class="type-dp" title="Propiedad de datos">dp</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#aforo</p>
+      <div class="comment">
+         <span class="markdown">Capacidad del local, expresada como el número de personas que caben en él.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Definida por</dt>
+         <dd>
+            <a href="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial">http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#LocalComercial"
+                  title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial">Local Comercial</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#int">int</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="fechaAlta">
+      <h3>fecha de alta<sup class="type-dp" title="Propiedad de datos">dp</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#fechaAlta</p>
+      <div class="comment">
+         <span class="markdown">Fecha en la que se ha resuelto la solicitud de la licencia.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Definida por</dt>
+         <dd>
+            <a href="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial">http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#LicenciaApertura"
+                  title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LicenciaApertura">Licencia de apertura</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">date time</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="fechaCese">
+      <h3>fecha de cese<sup class="type-dp" title="Propiedad de datos">dp</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#fechaCese</p>
+      <div class="comment">
+         <span class="markdown">Fecha en la que se ha notificado el cese de la actividad económica.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Definida por</dt>
+         <dd>
+            <a href="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial">http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#LicenciaApertura"
+                  title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LicenciaApertura">Licencia de apertura</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">date time</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="fechaSolicitud">
+      <h3>fecha de solicitud<sup class="type-dp" title="Propiedad de datos">dp</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#fechaSolicitud</p>
+      <div class="comment">
+         <span class="markdown">Fecha en la que se ha solicitado la licencia.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Definida por</dt>
+         <dd>
+            <a href="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial">http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#LicenciaApertura"
+                  title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LicenciaApertura">Licencia de apertura</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">date time</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="nombreComercial">
+      <h3>nombre comercial<sup class="type-dp" title="Propiedad de datos">dp</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#nombreComercial</p>
+      <div class="comment">
+         <span class="markdown">El nombre comercial es todo aquel signo que puede ser representado gráficamente y, que identifica a una empresa en el tráfico mercantil distinguiéndola de las demás empresas que van a desarrollar actividades idénticas o similares.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Definida por</dt>
+         <dd>
+            <a href="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial">http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#LocalComercial"
+                  title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial">Local Comercial</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="numeroMesasAutorizadas">
+      <h3>número de mesas autorizadas<sup class="type-dp" title="Propiedad de datos">dp</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#numeroMesasAutorizadas</p>
+      <div class="comment">
+         <span class="markdown">Número de mesas autorizadas para la terraza.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Definida por</dt>
+         <dd>
+            <a href="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial">http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Terraza"
+                  title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza">Terraza</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#int">int</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="numeroSillasAutorizadas">
+      <h3>número de sillas autorizadas<sup class="type-dp" title="Propiedad de datos">dp</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#numeroSillasAutorizadas</p>
+      <div class="comment">
+         <span class="markdown">Número de sillas autorizadas para la terraza.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Definida por</dt>
+         <dd>
+            <a href="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial">http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Terraza"
+                  title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza">Terraza</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#int">int</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="referenciaCatastral">
+      <h3>referencia catastral<sup class="type-dp" title="Propiedad de datos">dp</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#referenciaCatastral</p>
+      <div class="comment">
+         <span class="markdown">La referencia catastral es el identificador oficial y obligatorio de los bienes inmuebles. Consiste en un código alfanumérico que es asignado por el Catastro de manera que todo inmueble debe tener una única referencia catastral que permita situarlo inequívocamente en la cartografía catastral.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Definida por</dt>
+         <dd>
+            <a href="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial">http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#LocalComercial"
+                  title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial">Local Comercial</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="rotulo">
+      <h3>rótulo<sup class="type-dp" title="Propiedad de datos">dp</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#rotulo</p>
+      <div class="comment">
+         <span class="markdown">Signo o denominación que sirve para dar a conocer al público un establecimiento comercial y para distinguirlo de otros destinados a actividades idénticas o similares.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Definida por</dt>
+         <dd>
+            <a href="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial">http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#LocalComercial"
+                  title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial">Local Comercial</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="superficie">
+      <h3>superficie<sup class="type-dp" title="Propiedad de datos">dp</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#superficie</p>
+      <div class="comment">
+         <span class="markdown">Superficie en metros cuadrados ocupada por la terraza.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Definida por</dt>
+         <dd>
+            <a href="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial">http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Terraza"
+                  title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza">Terraza</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#float">float</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="namedindividuals">
+   <h3 id="namedindividuals" class="list">Individuos</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/kos/comercio/periodo-funcionamiento"
+            title="http://vocab.linkeddata.es/datosabiertos/kos/comercio/periodo-funcionamiento">
+            <span>periodo funcionamiento</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-acceso"
+            title="http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-acceso">
+            <span>tipo acceso</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-agrupacion"
+            title="http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-agrupacion">
+            <span>tipo agrupacion</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-estado-tramite-licencia"
+            title="http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-estado-tramite-licencia">
+            <span>tipo estado tramite licencia</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-situacion"
+            title="http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-situacion">
+            <span>tipo situacion</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/kos/comercio/periodo-funcionamiento">
+      <h3>periodo funcionamiento<sup class="type-ni" title="Individuo">ni</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#namedindividuals">Índice de individuos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/kos/comercio/periodo-funcionamiento</p>
+      <dl class="description">
+         <dt>pertenece a</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-acceso">
+      <h3>tipo acceso<sup class="type-ni" title="Individuo">ni</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#namedindividuals">Índice de individuos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-acceso</p>
+      <dl class="description">
+         <dt>pertenece a</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-agrupacion">
+      <h3>tipo agrupacion<sup class="type-ni" title="Individuo">ni</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#namedindividuals">Índice de individuos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-agrupacion</p>
+      <dl class="description">
+         <dt>pertenece a</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-estado-tramite-licencia">
+      <h3>tipo estado tramite licencia<sup class="type-ni" title="Individuo">ni</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#namedindividuals">Índice de individuos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-estado-tramite-licencia</p>
+      <dl class="description">
+         <dt>pertenece a</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-situacion">
+      <h3>tipo situacion<sup class="type-ni" title="Individuo">ni</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#namedindividuals">Índice de individuos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-situacion</p>
+      <dl class="description">
+         <dt>pertenece a</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="legend">
+<h2>Leyenda <span class="backlink"> volver a <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Clases">c</sup>: Clases <br/>
+<sup class="type-op" title="Propiedades de objeto">op</sup>: Propiedades de objeto <br/>
+<sup class="type-dp" title="Propiedades de datos">dp</sup>: Propiedades de datos <br/>
+<sup class="type-ni" title="Individuos">ni</sup>: Individuos
+</div>
+</div>

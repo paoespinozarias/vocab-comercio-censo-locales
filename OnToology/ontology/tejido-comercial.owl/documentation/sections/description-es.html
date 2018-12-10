@@ -1,0 +1,110 @@
+<h2 id="desc" class="list">Vocabulario para la representación de datos sobre el censo de locales, terrazas y licencias de apertura: Descripci&oacute;n <span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h2>
+<span class="markdown">
+La Figura 1 muestra las clases y propiedades del Vocabulario de censo de locales, terrazas y licencias de apertura. <br>
+</span>
+<center><img src="resources/images/CensoLocalesLicenciasActividad.png"><figcaption>Figura 1. - Vocabulario de censo de locales y terrazas, con sus actividades económicas y licencias de actividad.</figcaption>
+</center>
+<span class="markdown">
+  Como se mencionó previamente, el objetivo de este vocabulario es representar los datos que provienen del censo de locales, actividades, terrazas de hostelería y restauración y licencias de apertura. Para ello, como se puede observar en la figura, se han definido varias clases y propiedades que permitan describir estos datos reutilizando principalmente las clases [schema:Place](http://schema.org/Place) y [schema:LocalBusiness](http://schema.org/LocalBusiness) y sus propiedades asociadas.
+
+  Adicionalmente, en este vocabulario se han utilizado varios esquemas de conceptos SKOS para representar algunos de los datos. En la Figura 1 se pueden observar varias relaciones con conceptos SKOS, sin embargo los valores concretos no se han especificado pues son diferentes según la taxonomía que representan. Por ejemplo, la propiedad [escom:tipoActividadEconomica](#tipoActividadEconomica) permite representar el tipo de Actividad Económica que se realiza en el local de acuerdo con un esquema de conceptos SKOS que identifica la sección, división y epígrafe de la actividad. Este esquema de conceptos puede ser representado ya sea mediante el modelo [IAE](https://www2.agenciatributaria.gob.es/ADUA/internet/es/aeat/dit/adu/adws/certificados/Tabla_de_epigrafes_IAE.pdf), [CNAE](https://www.cnae.com.es/lista-actividades.php) o alguna representación ad hoc que pueda manejar un ayuntamiento en particular.
+</span>
+
+<h3>3.1 Ejemplos de uso<span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h3>
+<span class="markdown">
+  Con la finalidad de facilitar la comprensión del uso de algunas clases y propiedades de este vocabulario se proporcionarán a continuación algunos ejemplos.
+
+  En primer lugar para la representación de una licencia se crea una instancia de la clase [escom:LicenciaApertura](#LicenciaApertura) y se asocia a un local mediante la propiedad [escom:asociadaA](#asociadaA). A continuación, la fecha de la solicitud se representa con [escom:fechaSolicitud](#fechaSolicitud) y el estado en el que se encuentra se representa mediante la propiedad [escom:estadoTramitacion](#estadoTramitacion) que enlaza la licencia y el estado en el que se encuentra, conforme un esquema de conceptos de tipos de estado, que para el caso de este ejemplo es en trámite. El titular al que se le otorga la licencia puede ser una persona, grupo u organización, en este caso se representa mediante una instancia de la clase [foaf:Person](http://xmlns.com/foaf/0.1/Person). Finalmente, la propiedad [escom:autorizaActividadEconomica](#autorizaActividadEconomica) se emplea para especificar la actividad que autoriza la licencia.
+</span>
+<pre>
+  &lt;http://vocab.ciudadesabiertas.es/recurso/licencia-apertura/500-2017-11358&gt; a escom:LicenciaApertura ;
+  escom:asociadaA &lt;http://vocab.ciudadesabiertas.es/recurso/local-comercial/10003602&gt; ;
+  escom:fechaSolicitud "2017/09/18"^^xsd:dateTime ;
+  escom:estadoTramitacion &lt;http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-estado-tramite-licencia/en-tramite&gt; ;
+  escom:seOtorgaA &lt;http://vocab.ciudadesabiertas.es/recurso/persona/Y4214587&gt; ;
+  escom:autorizaActividadEconomica &lt;http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5610&gt; .
+</pre>
+<span class="markdown">
+  A continuación, se representa el local comercial asociado con la licencia que definida previamente. Como se puede observar en el código de ejemplo, se crea una instancia de la clase [escom:LocalComercial](#LocalComercial) y se enlaza a la licencia con la propiedad [escom:tieneLicenciaApertura](#tieneLicenciaApertura). Su código de identificación, el rótulo del local, el aforo, la referencia catastral y el teléfono se representan a través de las propiedades de datos [dc:identifier](http://purl.org/dc/elements/1.1/identifier), [escom:rotulo](#rotulo), [escom:aforo](#aforo), [escom:referenciaCatastral](#referenciaCatastral) y [schema:telephone](http://schema.org/telephone) respectivamente. Varias propiedades se representan mediante conceptos que se han definido en varios esquemas de conceptos, como el caso de la propiedad [escom:tipoSituacion](#tipoSituacion) que se enlaza con el concepto activo de la lista de conceptos de tipos de situacion de los locales. Finalmente, la localización del local se representa mediante la propiedad [geosparql:hasGeometry](http://www.opengis.net/ont/geosparql#hasGeometry) que se reutiliza de la representación del patrón de localización.
+</span>
+<pre>
+  &lt;http://vocab.ciudadesabiertas.es/recurso/local-comercial/10003602&gt; a escom:LocalComercial ;
+  escom:tieneLicenciaApertura &lt;http://vocab.ciudadesabiertas.es/recurso/licencia-apertura/500-2017-11358&gt; ;
+  dc:identifier "10003602" ;
+  escom:rotulo  "Restaurante Cocina del Norte" ;
+  escom:aforo	"30"^^xsd:int ;
+  escom:referenciaCatastral "9951803" ;
+  schema:telephone "640439521" ;
+  escom:tipoSituacion &lt;http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-situacion/activo&gt; ;
+  escom:tipoActividadEconomica &lt;http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5610&gt; ;
+  escom:tieneTerraza &lt;http://vocab.ciudadesabiertas.es/recurso/terraza/10003602&gt; ;
+  escom:tipoAcceso &lt;http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-acceso/puerta-calle&gt; ;
+  geosparql:hasGeometry	&lt;http://vocab.ciudadesabiertas.es/recurso/local-comercial/10003602/geometry&gt; .
+</pre>
+<span class="markdown">
+  Para la representación de la geometría del local se crea una instancia de [sf:Point](http://www.opengis.net/ont/sf#Point) que es una de las clases definidas dentro de la ontología GeoSPARQL. Adicionalmente se emplea la propiedad [geosparql:asWKT](http://www.opengis.net/ont/geosparql#asWKT) para representar el tipo de codificación del punto de ubicación; finalmente el tipo de dato del valor de la geometría se representa mediante la propiedad [geosparql:wktLiteral](http://www.opengis.net/ont/geosparql#wktLiteral). Gráficamente su representación se muestra en la Figura 2.
+</span>
+<center><img src="resources/images/PatronLocalizacion-EjemploInstancias-Censo.png"><figcaption>Figura 2. - Ejemplo de representación del patrón de localización.</figcaption>
+</center>
+El código la representación del ejemplo de la Figura 2 sería:
+<pre class="example highlight preprint">
+  &lt;http://vocab.ciudadesabiertas.es/recurso/local-comercial/10003602/geometry&gt; a sf:Point ;
+  geosparql:asWKT  "POINT (-3.699489 40.419751)"^^geosparql:wktLiteral ;
+  geo:long "-3.699489" ;
+  geo:lat "40.419751" ;
+  geo_core:xETRS89 "440661,59" ;
+  geo_core:yETRS89 "4474610,53" .
+</pre>
+</p>
+<span class="markdown">
+  En el caso de que en el censo se cuente con los datos de a qué distrito, barrio o sección censal pertenece cierto local se pueden representar mediante las clases y propiedades que se encuentran definidas en el vocabulario de [territorio](http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio), específicamente con las propiedades [esadm:distrito](http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito), [esadm:barrio](http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#barrio) y [esadm:seccionCensal](http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#seccionCensal). Por ejemplo para especificar que el local comercial se encuentra ubicado en determinado distrito, tendríamos el código que se muestra a continuación:
+</span>
+<pre class="example highlight preprint">
+  &lt;http://vocab.ciudadesabiertas.es/recurso/local-comercial/10003602&gt; a escom:LocalComercial ;
+  esadm:distrito &lt;http://vocab.ciudadesabiertas.es/recurso/distrito/20&gt; .
+</pre>
+  La representación de la instancia del distrito que se ha mostrado en este ejemplo se podría representar de forma abreviada así:
+<pre>
+  &lt;http://vocab.ciudadesabiertas.es/recurso/distrito/20&gt; a esadm:Distrito ;
+  dcterms:identifier     "20" ;
+  geonames:officialName  "San Blas - Canillejas" ;
+  rdfs:label             "San Blas - Canillejas" .
+</pre>
+<span class="markdown">
+  Posteriormente, para el caso de la representación de la terraza, que se mencionó previamente en el código de ejemplo del local, se crea una instancia de la clase [Terraza](#Terraza). Para representar que su periodo de funcionamiento es estacional se emplea la propiedad [escom:periodoFuncionamiento](#periodoFuncionamiento), que enlaza la terraza con el correspondiente concepto SKOS del esquema de tipos de períodos de funcionamiento.	Su horario de funcionamiento se representa con la propiedad [schema:openingHours](http://schema.org/openingHours) de acuerdo con la especificación definida en el vocabulario schema.org. Adicionalmente, la superficie, y el número de sillas y mesas se describen con las propiedades [escom:superficie](#superficie), [escom:numeroSillasAutorizadas](#numeroSillasAutorizadas), y [escom:numeroMesasAutorizadas](#numeroMesasAutorizadas) respectivamente. Finalmente, se especifica el local al que pertenece mediante la propiedad [escom:perteneceALocal](#perteneceALocal).
+</span>
+<pre>
+  &lt;http://vocab.ciudadesabiertas.es/recurso/terraza/10003602&gt; a escom:Terraza ;
+  escom:periodoFuncionamiento &lt;http://vocab.linkeddata.es/datosabiertos/kos/comercio/periodo-funcionamiento/estacional&gt; ;
+  schema:openingHours "Lun-Vie 08:00-13:30" ;
+  escom:superficie "10"^^xsd:float ;
+  escom:numeroMesasAutorizadas "5"^^xsd:int ;
+  escom:numeroSillasAutorizadas "10"^^xsd:int ;
+  escom:perteneceALocal  &lt;http://vocab.ciudadesabiertas.es/recurso/local-comercial/10003602&gt; .
+</pre>
+<span class="markdown">
+ Así también, para la representación de una agrupación comercial se crea una instancia de [escom:AgrupacionComercial](#AgrupacionComercial). Luego, se especifica el nombre de la agrupación con la propiedad [schema:name](http://schema.org/name), el tipo de agrupación mediante [escom:tipoAgrupacionComercial](#tipoAgrupacionComercial), y finalmente con [escom:contieneLocalComercial](#contieneLocalComercial) se la relaciona con el local comercial que contiene.
+</span>
+<pre>
+  &lt;http://vocab.ciudadesabiertas.es/recurso/agrupacion-comercial/99000004&gt; a escom:AgrupacionComercial ;
+  schema:name "GALERIA DE ALIMENTACION JUAN DUQUE 37" ;
+  escom:tipoAgrupacionComercial &lt;http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-agrupacion/galeria-alimentacion&gt; ;
+  escom:contieneLocalComercial &lt;http://vocab.ciudadesabiertas.es/recurso/local-comercial/10003602&gt; .
+  </pre>
+<span class="markdown">
+  Para finalizar con los ejemplos, se representa el caso en el que se tenga que especificar un horario de funcionamiento especial de cierto local comercial. En este caso se mostrará cómo se decribe el horario de Navidad:
+</span>
+<pre>
+  &lt;http://vocab.ciudadesabiertas.es/recurso/local-comercial/10003602&gt; a escom:LocalComercial ;
+  schema:specialOpeningHoursSpecification &lt;http://vocab.ciudadesabiertas.es/recurso/local-comercial/10003602/horario-especial-2018-12-24&gt .
+</pre>
+<span class="markdown">
+  Como se puede observar en el código, se ha empleado la propiedad [schema:specialOpeningHoursSpecification](http://schema.org/specialOpeningHoursSpecification) para enlazar el local con una instancia de la clase [schema:OpeningHoursSpecification](http://schema.org/OpeningHoursSpecification) en la que se representa el horario. Esta instancia del horario especial en navidad se representaría de la siguiente manera:
+</span>
+<pre>
+  &lt;http://vocab.ciudadesabiertas.es/recurso/local-comercial/10003602/horario-especial-2018-12-24&gt a schema:OpeningHoursSpecification ;
+  schema:validFrom: "2018-12-24" ;
+  schema:validThrough: "2018-12-25" ;
+  schema:opens: "09:00" ;
+  schema:closes: "11:00" .
+</pre>

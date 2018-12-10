@@ -1,0 +1,110 @@
+<h2 id="desc" class="list">Vocabulary for the representation of of data from the census of local business premises and terraces: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+Figure 1 shows the classes and properties of this vocabulary. <br>
+</span>
+<center><img src="resources/images/CensoLocalesLicenciasActividad.png"><figcaption>Figure 1. - Vocabulary for the representation of data from the census of local business premises and terraces, as well as their associated economic activites and activity licenses.</figcaption>
+</center>
+<span class="markdown">
+  As aforementioned, the scope of this vocabulary is the represntation of data from the census of local business premises and terraces, as wella s their associated economic activities and activity licenses. The vocabulary defines several classes and properties that allow describing such data, especially reusing the classess [schema:Place](http://schema.org/Place) and [schema:LocalBusiness](http://schema.org/LocalBusiness), as well as their associated properties.
+
+  Several SKOS concept schemes have been also used to represent some of the classifications used to represent the administrative situation in which a local business may be, the type of accessibility features that it provides, type of shopping area where it is located, etc. Figure 1 shows some of these relationships with SKOS concept schemes. In the case of the type of economic activity, represented by the  [escom:tipoActividadEconomica](#tipoActividadEconomica) property, several possibilities exist to represent such type of economic activity. For instance, it may be represented using the "Impuesto de Actividades Económicas" model [IAE](https://www2.agenciatributaria.gob.es/ADUA/internet/es/aeat/dit/adu/adws/certificados/Tabla_de_epigrafes_IAE.pdf), the [CNAE](https://www.cnae.com.es/lista-actividades.php) or any other ad-hoc representation that a specific municipality may prefer to make use of.
+</span>
+
+<h3>3.1 Usage examples<span class="backlink"> back to <a href="#toc">table of contents</a></span></h3>
+<span class="markdown">
+  Some examples are provided next with the objective of facilitating the understanding of how the core classes and properties of the vocabulary may be used.
+
+  We will first start with the representation of an opening license for a local business premise. This will be represented as an instance of the class [escom:LicenciaApertura](#LicenciaApertura), which is associated to a local business premise with the property [escom:asociadaA](#asociadaA). The license request date is represented with [escom:fechaSolicitud](#fechaSolicitud) and the processing status is represented by property [escom:estadoTramitacion](#estadoTramitacion), which links the license and the status in which the license is, according to a SKOS codelist that encodes status types. The owner of the license may be a person, group or organisation, which is represented by an instance of the class [foaf:Person](http://xmlns.com/foaf/0.1/Person). Finally, the property [escom:autorizaActividadEconomica](#autorizaActividadEconomica) is used to specify the type of economic activity that the license authorises.
+</span>
+<pre>
+  &lt;http://vocab.ciudadesabiertas.es/recurso/licencia-apertura/500-2017-11358&gt; a escom:LicenciaApertura ;
+  escom:asociadaA &lt;http://vocab.ciudadesabiertas.es/recurso/local-comercial/10003602&gt; ;
+  escom:fechaSolicitud "2017/09/18"^^xsd:dateTime ;
+  escom:estadoTramitacion &lt;http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-estado-tramite-licencia/en-tramite&gt; ;
+  escom:seOtorgaA &lt;http://vocab.ciudadesabiertas.es/recurso/persona/Y4214587&gt; ;
+  escom:autorizaActividadEconomica &lt;http://vocab.ciudadesabiertas.es/datosabiertos/kos/comercio/cnae/Cod4/5610&gt; .
+</pre>
+<span class="markdown">
+  Next, we represent the local business premise associted with the previously defined license. The example shows an instance of the class [escom:LocalComercial](#LocalComercial) that is associated to its corresponding opening license with property [escom:tieneLicenciaApertura](#tieneLicenciaApertura). The identifier, commercial sign, capacity, cadastral reference and telephoe are represented by the following data properties, respectively [dc:identifier](http://purl.org/dc/elements/1.1/identifier), [escom:rotulo](#rotulo), [escom:aforo](#aforo), [escom:referenciaCatastral](#referenciaCatastral) and [schema:telephone](http://schema.org/telephone). Several properties are represented using SKOS concepts, such as the operating status [escom:tipoSituacion](#tipoSituacion). Finally, the geospatial location of the premise is described with property [geosparql:hasGeometry](http://www.opengis.net/ont/geosparql#hasGeometry), from the aforementioned geospatial location pattern.
+</span>
+<pre>
+  &lt;http://vocab.ciudadesabiertas.es/recurso/local-comercial/10003602&gt; a escom:LocalComercial ;
+  escom:tieneLicenciaApertura &lt;http://vocab.ciudadesabiertas.es/recurso/licencia-apertura/500-2017-11358&gt; ;
+  dc:identifier "10003602" ;
+  escom:rotulo  "Restaurante Cocina del Norte" ;
+  escom:aforo	"30"^^xsd:int ;
+  escom:referenciaCatastral "9951803" ;
+  schema:telephone "640439521" ;
+  escom:tipoSituacion &lt;http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-situacion/activo&gt; ;
+  escom:tipoActividadEconomica &lt;http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5610&gt; ;
+  escom:tieneTerraza &lt;http://vocab.ciudadesabiertas.es/recurso/terraza/10003602&gt; ;
+  escom:tipoAcceso &lt;http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-acceso/puerta-calle&gt; ;
+  geosparql:hasGeometry	&lt;http://vocab.ciudadesabiertas.es/recurso/local-comercial/10003602/geometry&gt; .
+</pre>
+<span class="markdown">
+  The geospatial location of a premise is defined as an instance of [sf:Point](http://www.opengis.net/ont/sf#Point), which is one of the classes defined in the GeoSPARQL ontology. We also use the [geosparql:asWKT](http://www.opengis.net/ont/geosparql#asWKT) property to represent the WKT geometric representation of the point, which is of type [geosparql:wktLiteral](http://www.opengis.net/ont/geosparql#wktLiteral). Graphically, this representation is shown in Figure 2.
+</span>
+<center><img src="resources/images/PatronLocalizacion-EjemploInstancias-Censo.png"><figcaption>Figure 2. - Sample usage of the geospatial location pattern for a busines premise.</figcaption>
+</center>
+The corresponding RDF code for Figure 2 is:
+<pre class="example highlight preprint">
+  &lt;http://vocab.ciudadesabiertas.es/recurso/local-comercial/10003602/geometry&gt; a sf:Point ;
+  geosparql:asWKT  "POINT (-3.699489 40.419751)"^^geosparql:wktLiteral ;
+  geo:long "-3.699489" ;
+  geo:lat "40.419751" ;
+  geo_core:xETRS89 "440661,59" ;
+  geo_core:yETRS89 "4474610,53" .
+</pre>
+</p>
+<span class="markdown">
+  If the census of local business premises contains references to the district, neighbourhood or census tract that a premise belongs to, or in case that the data provider or any reuser wants to calculate it and represent it explicitly, the following classes and properties from the [territorio](http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio) vocabulary can be used: [esadm:distrito](http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito), [esadm:barrio](http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#barrio) and [esadm:seccionCensal](http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#seccionCensal). Let's see an example:
+</span>
+<pre class="example highlight preprint">
+  &lt;http://vocab.ciudadesabiertas.es/recurso/local-comercial/10003602&gt; a escom:LocalComercial ;
+  esadm:distrito &lt;http://vocab.ciudadesabiertas.es/recurso/distrito/20&gt; .
+</pre>
+  The representation of a specific district may be represented as follows (see the [territorio](http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio) vocabulary documentation for more details):
+<pre>
+  &lt;http://vocab.ciudadesabiertas.es/recurso/distrito/20&gt; a esadm:Distrito ;
+  dcterms:identifier     "20" ;
+  geonames:officialName  "San Blas - Canillejas" ;
+  rdfs:label             "San Blas - Canillejas" .
+</pre>
+<span class="markdown">
+  A terrace is represented as an instance of the class [Terraza](#Terraza). Its operational period is represented with the property [escom:periodoFuncionamiento](#periodoFuncionamiento), that relates it with the corresponding SKOS concept. The opening hours of the terrace is represented with the [schema:openingHours](http://schema.org/openingHours) property, acccording to the specification provided by schema.org. Other properties like area, or number of chairs and tables, are described with properties [escom:superficie](#superficie), [escom:numeroSillasAutorizadas](#numeroSillasAutorizadas), and [escom:numeroMesasAutorizadas](#numeroMesasAutorizadas) respectively. Finally, the local business premise to which the terrace belongs to is specified with property [escom:perteneceALocal](#perteneceALocal).
+</span>
+<pre>
+  &lt;http://vocab.ciudadesabiertas.es/recurso/terraza/10003602&gt; a escom:Terraza ;
+  escom:periodoFuncionamiento &lt;http://vocab.linkeddata.es/datosabiertos/kos/comercio/periodo-funcionamiento/estacional&gt; ;
+  schema:openingHours "Lun-Vie 08:00-13:30" ;
+  escom:superficie "10"^^xsd:float ;
+  escom:numeroMesasAutorizadas "5"^^xsd:int ;
+  escom:numeroSillasAutorizadas "10"^^xsd:int ;
+  escom:perteneceALocal  &lt;http://vocab.ciudadesabiertas.es/recurso/local-comercial/10003602&gt; .
+</pre>
+<span class="markdown">
+ A specific shopping area is represented as an instance of the class [escom:AgrupacionComercial](#AgrupacionComercial). The name of the shopping area is generated with property [schema:name](http://schema.org/name), the type of shopping area with  [escom:tipoAgrupacionComercial](#tipoAgrupacionComercial), and finally the property [escom:contieneLocalComercial](#contieneLocalComercial) relates the shopping area with the local business premise.
+</span>
+<pre>
+  &lt;http://vocab.ciudadesabiertas.es/recurso/agrupacion-comercial/99000004&gt; a escom:AgrupacionComercial ;
+  schema:name "GALERIA DE ALIMENTACION JUAN DUQUE 37" ;
+  escom:tipoAgrupacionComercial &lt;http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-agrupacion/galeria-alimentacion&gt; ;
+  escom:contieneLocalComercial &lt;http://vocab.ciudadesabiertas.es/recurso/local-comercial/10003602&gt; .
+  </pre>
+<span class="markdown">
+  Finally, we provide an example with a special opening hour specification for a local business premise, for the Christmas period:
+</span>
+<pre>
+  &lt;http://vocab.ciudadesabiertas.es/recurso/local-comercial/10003602&gt; a escom:LocalComercial ;
+  schema:specialOpeningHoursSpecification &lt;http://vocab.ciudadesabiertas.es/recurso/local-comercial/10003602/horario-especial-2018-12-24&gt .
+</pre>
+<span class="markdown">
+  As shown in the code, we have used the property [schema:specialOpeningHoursSpecification](http://schema.org/specialOpeningHoursSpecification) to relate the local business premise with an instance of the class [schema:OpeningHoursSpecification](http://schema.org/OpeningHoursSpecification), which is used to represent the opening hours.
+</span>
+<pre>
+  &lt;http://vocab.ciudadesabiertas.es/recurso/local-comercial/10003602/horario-especial-2018-12-24&gt a schema:OpeningHoursSpecification ;
+  schema:validFrom: "2018-12-24" ;
+  schema:validThrough: "2018-12-25" ;
+  schema:opens: "09:00" ;
+  schema:closes: "11:00" .
+</pre>

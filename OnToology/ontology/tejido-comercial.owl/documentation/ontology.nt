@@ -1,0 +1,625 @@
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> <http://www.w3.org/2002/07/owl#versionIRI> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> <http://purl.org/dc/elements/1.1/contributor> "Oficina Técnica de Participación, Transparencia y Gobierno Abierto - Ayuntamiento de Zaragoza"@es .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> <http://purl.org/dc/elements/1.1/contributor> "Red.es"@es .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> <http://purl.org/dc/elements/1.1/contributor> "Servicio de Acceso a la Información - Ayuntamiento de Madrid"@es .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> <http://purl.org/dc/elements/1.1/contributor> "Servicio de Informática - Ayuntamiento de Santiago de Compostela"@es .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> <http://purl.org/dc/elements/1.1/contributor> "Servicio de Innovación y Desarrollo Tecnológico - Ayuntamiento de A Coruña"@es .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> <http://purl.org/dc/elements/1.1/creator> "Paola Espinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)"@es .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> <http://purl.org/dc/elements/1.1/creator> "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, LocaliData)" .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> <http://purl.org/dc/elements/1.1/date> "2018-11-02"@es .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> <http://purl.org/dc/elements/1.1/identifier> "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial" .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> <http://purl.org/dc/elements/1.1/rights> "Creative Commons Attribution 4.0 International (CC BY 4.0)" .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> <http://purl.org/dc/terms/description> "This vocabulary aims to represent data from the census of local businesses, together with their economic activities and opening licenses. It also includes terraces associated to restaurants, cafés, etc."@en .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> <http://purl.org/dc/terms/description> "Vocabulario para la representación de los datos que provienen del censo de locales, actividades, terrazas de hostelería y restauración y licencias de apertura."@es .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> <http://purl.org/dc/terms/hasFormat> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> <http://purl.org/dc/terms/hasFormat> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial.owl> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> <http://purl.org/dc/terms/issued> "2018-11-02"@es .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> <http://purl.org/dc/terms/title> "Vocabulario para la representación de datos sobre el censo de locales y terrazas, así como sus actividades económicas y licencias de apertura asociadas."@es .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> <http://purl.org/dc/terms/title> "Vocabulary for the representation of the census of local business premises and terraces, as well as their associated economic activities and opening licenses."@en .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> <http://purl.org/vocab/vann/preferredNamespacePrefix> "escom" .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> <http://purl.org/vocab/vann/preferredNamespaceUri> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> <http://www.w3.org/2000/01/rdf-schema#comment> "Esta versión ha sido generada dentro del contexto del proyecto \"Plataforma de gobierno abierto, colaborativa e interoperable\" en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.   \n\nEn esta versión se han agregado metadatos en inglés y se han eliminado los conceptos que fueron descartados en la versión previa:\n- ZonaComercial\n- areaInfluencia\n- medioTransporte\n- sfContains\n- tipoAccesibilidad\n- tipoComercio\n- accesible\n- afluenciaPublico"@es .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> <http://www.w3.org/2002/07/owl#priorVersion> "0.2.0"@es .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0"@es .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#comment
+<http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#isDefinedBy
+<http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#label
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#historyNote
+<http://www.w3.org/2004/02/skos/core#historyNote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#agrupacionComercial
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#agrupacionComercial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#agrupacionComercial> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#AgrupacionComercial> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#agrupacionComercial> <http://www.w3.org/2000/01/rdf-schema#comment> "Any entity (for instance, a local business premise) may belong to a shopping area"@en .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#agrupacionComercial> <http://www.w3.org/2000/01/rdf-schema#comment> "Cualquier entidad (por ejemplo, un local comercial) puede pertenecer a una agrupación comercial."@es .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#agrupacionComercial> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#agrupacionComercial> <http://www.w3.org/2000/01/rdf-schema#label> "belongs to shopping area"@en .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#agrupacionComercial> <http://www.w3.org/2000/01/rdf-schema#label> "pertenece a agrupación comercial"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#asociadaA
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#asociadaA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#asociadaA> <http://www.w3.org/2002/07/owl#inverseOf> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tieneLicenciaApertura> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#asociadaA> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LicenciaApertura> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#asociadaA> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#asociadaA> <http://www.w3.org/2000/01/rdf-schema#comment> "An opening license is associated to a local business or terrace."@en .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#asociadaA> <http://www.w3.org/2000/01/rdf-schema#comment> "Una licencia de apertura está asociada a un local comercial o a una terraza."@es .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#asociadaA> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#asociadaA> <http://www.w3.org/2000/01/rdf-schema#label> "asociada a"@es .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#asociadaA> <http://www.w3.org/2000/01/rdf-schema#label> "associated to"@en .
+# 
+# http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#autorizaActividadEconomica
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#autorizaActividadEconomica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#autorizaActividadEconomica> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LicenciaApertura> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#autorizaActividadEconomica> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#autorizaActividadEconomica> <http://www.w3.org/2000/01/rdf-schema#comment> "A license authorizes one or several economic activities. The economic activity type is represented by some SKOS classification, preferably one of the following:\nhttp://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae\nhttp://vocab.linkeddata.es/datosabiertos/kos/comercio/iae"@en .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#autorizaActividadEconomica> <http://www.w3.org/2000/01/rdf-schema#comment> "Una licencia autoriza la realización de una o varias actividades económicas. El tipo de actividad económica que se autoriza se representa de acuerdo con alguna clasificación SKOS, preferentemente alguna de las siguientes:\nhttp://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae\nhttp://vocab.linkeddata.es/datosabiertos/kos/comercio/iae"@es .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#autorizaActividadEconomica> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#autorizaActividadEconomica> <http://www.w3.org/2000/01/rdf-schema#label> "authorizes economic activity"@en .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#autorizaActividadEconomica> <http://www.w3.org/2000/01/rdf-schema#label> "autoriza actividad económica"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#contieneLocalComercial
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#contieneLocalComercial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#contieneLocalComercial> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#contieneLocalComercial> <http://www.w3.org/2000/01/rdf-schema#comment> "An area (for instance, a shopping area) contains local business premises."@en .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#contieneLocalComercial> <http://www.w3.org/2000/01/rdf-schema#comment> "Una agrupación (por ejemplo, una agrupación comercial) contiene locales comerciales."@es .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#contieneLocalComercial> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#contieneLocalComercial> <http://www.w3.org/2000/01/rdf-schema#label> "contains local business premise"@en .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#contieneLocalComercial> <http://www.w3.org/2000/01/rdf-schema#label> "contiene local comercial"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#estadoTramitacion
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#estadoTramitacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#estadoTramitacion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LicenciaApertura> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#estadoTramitacion> <http://www.w3.org/2000/01/rdf-schema#range> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid6 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-estado-tramite-licencia> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#estadoTramitacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Estado de tramitación de la licencia, se representa con la lista de conceptos SKOS http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-estado-tramite-licencia."@es .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#estadoTramitacion> <http://www.w3.org/2000/01/rdf-schema#comment> "License processing status, it is represented by the SKOS concept list http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-estado-tramite-licencia."@en .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#estadoTramitacion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#estadoTramitacion> <http://www.w3.org/2000/01/rdf-schema#label> "estado de tramitación"@es .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#estadoTramitacion> <http://www.w3.org/2000/01/rdf-schema#label> "processing status"@en .
+# 
+# http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#periodoFuncionamiento
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#periodoFuncionamiento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#periodoFuncionamiento> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#periodoFuncionamiento> <http://www.w3.org/2000/01/rdf-schema#range> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid10 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/kos/comercio/periodo-funcionamiento> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#periodoFuncionamiento> <http://www.w3.org/2000/01/rdf-schema#comment> "Periodo de funcionamiento de la terraza, que puede ser anual o estacional. Los periodos se representan mediante la lista de conceptos http://vocab.linkeddata.es/datosabiertos/kos/comercio/periodo-funcionamiento."@es .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#periodoFuncionamiento> <http://www.w3.org/2000/01/rdf-schema#comment> "Terrace operational period, which can be: annual or seasonal. Periods are represented by the concept list http://vocab.linkeddata.es/datosabiertos/kos/comercio/periodo-funcionamiento."@en .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#periodoFuncionamiento> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#periodoFuncionamiento> <http://www.w3.org/2000/01/rdf-schema#label> "operational time period"@en .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#periodoFuncionamiento> <http://www.w3.org/2000/01/rdf-schema#label> "periodo de funcionamiento"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#perteneceALocal
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#perteneceALocal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#perteneceALocal> <http://www.w3.org/2002/07/owl#inverseOf> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tieneTerraza> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#perteneceALocal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#perteneceALocal> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#perteneceALocal> <http://www.w3.org/2000/01/rdf-schema#comment> "A terrace belongs to a local business premise."@en .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#perteneceALocal> <http://www.w3.org/2000/01/rdf-schema#comment> "Una terraza pertenece a un local comercial."@es .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#perteneceALocal> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#perteneceALocal> <http://www.w3.org/2000/01/rdf-schema#label> "belongs to local"@en .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#perteneceALocal> <http://www.w3.org/2000/01/rdf-schema#label> "pertenece a local"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#seOtorgaA
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#seOtorgaA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#seOtorgaA> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LicenciaApertura> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#seOtorgaA> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Agent> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#seOtorgaA> <http://www.w3.org/2000/01/rdf-schema#comment> "A license is granted to a holder."@en .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#seOtorgaA> <http://www.w3.org/2000/01/rdf-schema#comment> "Una licencia se otorga a un titular."@es .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#seOtorgaA> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#seOtorgaA> <http://www.w3.org/2000/01/rdf-schema#label> "is granted to"@en .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#seOtorgaA> <http://www.w3.org/2000/01/rdf-schema#label> "se otorga a"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tieneLicenciaApertura
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tieneLicenciaApertura> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tieneLicenciaApertura> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid12 <http://www.w3.org/2002/07/owl#unionOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tieneLicenciaApertura> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LicenciaApertura> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tieneLicenciaApertura> <http://www.w3.org/2000/01/rdf-schema#comment> "A local business premise may have one or several opening licenses in its history."@en .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tieneLicenciaApertura> <http://www.w3.org/2000/01/rdf-schema#comment> "El local comercial puede tener una o varias licencias de funcionamiento a lo largo de su historia."@es .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tieneLicenciaApertura> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tieneLicenciaApertura> <http://www.w3.org/2000/01/rdf-schema#label> "has opening license"@en .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tieneLicenciaApertura> <http://www.w3.org/2000/01/rdf-schema#label> "tiene licencia de apertura"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tieneTerraza
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tieneTerraza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tieneTerraza> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tieneTerraza> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tieneTerraza> <http://www.w3.org/2000/01/rdf-schema#comment> "A local business premise may have a terrace."@en .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tieneTerraza> <http://www.w3.org/2000/01/rdf-schema#comment> "Un local comercial puede tener una terraza asociada."@es .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tieneTerraza> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tieneTerraza> <http://www.w3.org/2000/01/rdf-schema#label> "has terrace"@en .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tieneTerraza> <http://www.w3.org/2000/01/rdf-schema#label> "tiene terraza"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoAcceso
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoAcceso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoAcceso> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoAcceso> <http://www.w3.org/2000/01/rdf-schema#range> _:genid15 .
+_:genid15 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid17 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-acceso> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoAcceso> <http://www.w3.org/2000/01/rdf-schema#comment> "A local business may have the following access types: street door, interior, or floor. These access types are represented by a list of URI concepts http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-acceso."@en .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoAcceso> <http://www.w3.org/2000/01/rdf-schema#comment> "Un local comercial puede tener los siguientes tipos de acceso: puerta de calle, interior, o piso. Estos tipos de acceso se representan mediante una lista de conceptos de URI http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-acceso."@es .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoAcceso> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoAcceso> <http://www.w3.org/2000/01/rdf-schema#label> "access type"@en .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoAcceso> <http://www.w3.org/2000/01/rdf-schema#label> "tipo de acceso"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoActividadEconomica
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoActividadEconomica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoActividadEconomica> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoActividadEconomica> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoActividadEconomica> <http://www.w3.org/2000/01/rdf-schema#comment> "Economic activity type that takes place in a local business premise, according to some SKOS classification."@en .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoActividadEconomica> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo de actividad económica que se realiza en un local comercial, de acuerdo con alguna clasificación SKOS."@es .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoActividadEconomica> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoActividadEconomica> <http://www.w3.org/2000/01/rdf-schema#label> "economic activity type"@en .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoActividadEconomica> <http://www.w3.org/2000/01/rdf-schema#label> "tipo de actividad económica"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoAgrupacionComercial
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoAgrupacionComercial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoAgrupacionComercial> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#AgrupacionComercial> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoAgrupacionComercial> <http://www.w3.org/2000/01/rdf-schema#range> _:genid19 .
+_:genid19 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid21 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-agrupacion> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoAgrupacionComercial> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of shopping area, from the concept list http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-agrupacion."@en .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoAgrupacionComercial> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo de agrupación comercial, de acuerdo con la lista de conceptos http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-agrupacion." .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoAgrupacionComercial> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoAgrupacionComercial> <http://www.w3.org/2000/01/rdf-schema#label> "tipo de agrupación comercial"@es .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoAgrupacionComercial> <http://www.w3.org/2000/01/rdf-schema#label> "type of shopping area"@en .
+# 
+# http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoSituacion
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoSituacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoSituacion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoSituacion> <http://www.w3.org/2000/01/rdf-schema#range> _:genid23 .
+_:genid23 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid25 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-situacion> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoSituacion> <http://www.w3.org/2000/01/rdf-schema#comment> "A local business may be in any of the following situations: active, closed, closed down, or under construction. These types of situations are represented by a concept list with URI http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-situacion ."@en .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoSituacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Un local comercial puede estar en una de las siguientes situaciones: activo, cerrado, clausurado, o en obras. Estos tipos de situaciones se representan mediante una lista de conceptos de URI http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-situacion."@es .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoSituacion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoSituacion> <http://www.w3.org/2000/01/rdf-schema#label> "situation type"@en .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoSituacion> <http://www.w3.org/2000/01/rdf-schema#label> "tipo situación"@es .
+# 
+# http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#aforo
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#aforo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#aforo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#aforo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#aforo> <http://www.w3.org/2000/01/rdf-schema#comment> "Capacidad del local, expresada como el número de personas que caben en él."@es .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#aforo> <http://www.w3.org/2000/01/rdf-schema#comment> "Local business premise capacity, defined as the number of people that fit in it."@en .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#aforo> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#aforo> <http://www.w3.org/2000/01/rdf-schema#label> "aforo"@es .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#aforo> <http://www.w3.org/2000/01/rdf-schema#label> "capacity"@en .
+# 
+# http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#fechaAlta
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#fechaAlta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#fechaAlta> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LicenciaApertura> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#fechaAlta> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#fechaAlta> <http://www.w3.org/2000/01/rdf-schema#comment> "Date when the license request has been solved."@en .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#fechaAlta> <http://www.w3.org/2000/01/rdf-schema#comment> "Fecha en la que se ha resuelto la solicitud de la licencia."@es .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#fechaAlta> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#fechaAlta> <http://www.w3.org/2000/01/rdf-schema#label> "fecha de alta"@es .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#fechaAlta> <http://www.w3.org/2000/01/rdf-schema#label> "release date"@en .
+# 
+# http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#fechaCese
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#fechaCese> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#fechaCese> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LicenciaApertura> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#fechaCese> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#fechaCese> <http://www.w3.org/2000/01/rdf-schema#comment> "Fecha en la que se ha notificado el cese de la actividad económica."@es .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#fechaCese> <http://www.w3.org/2000/01/rdf-schema#comment> "Notification date for the closing of the economic activity."@en .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#fechaCese> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#fechaCese> <http://www.w3.org/2000/01/rdf-schema#label> "closing date"@en .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#fechaCese> <http://www.w3.org/2000/01/rdf-schema#label> "fecha de cese"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#fechaSolicitud
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#fechaSolicitud> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#fechaSolicitud> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LicenciaApertura> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#fechaSolicitud> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#fechaSolicitud> <http://www.w3.org/2000/01/rdf-schema#comment> "Date of the license request."@en .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#fechaSolicitud> <http://www.w3.org/2000/01/rdf-schema#comment> "Fecha en la que se ha solicitado la licencia."@es .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#fechaSolicitud> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#fechaSolicitud> <http://www.w3.org/2000/01/rdf-schema#label> "fecha de solicitud"@es .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#fechaSolicitud> <http://www.w3.org/2000/01/rdf-schema#label> "request date"@en .
+# 
+# http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#nombreComercial
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#nombreComercial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#nombreComercial> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#nombreComercial> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#nombreComercial> <http://www.w3.org/2000/01/rdf-schema#comment> "El nombre comercial es todo aquel signo que puede ser representado gráficamente y, que identifica a una empresa en el tráfico mercantil distinguiéndola de las demás empresas que van a desarrollar actividades idénticas o similares."@es .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#nombreComercial> <http://www.w3.org/2000/01/rdf-schema#comment> "The business name is any type of sign that may be represented graphically and which identifies the business in a business registry."@en .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#nombreComercial> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#nombreComercial> <http://www.w3.org/2000/01/rdf-schema#label> "business name"@en .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#nombreComercial> <http://www.w3.org/2000/01/rdf-schema#label> "nombre comercial"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#numeroMesasAutorizadas
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#numeroMesasAutorizadas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#numeroMesasAutorizadas> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#numeroMesasAutorizadas> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#numeroMesasAutorizadas> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of tables authorized for the terrace."@en .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#numeroMesasAutorizadas> <http://www.w3.org/2000/01/rdf-schema#comment> "Número de mesas autorizadas para la terraza."@es .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#numeroMesasAutorizadas> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#numeroMesasAutorizadas> <http://www.w3.org/2000/01/rdf-schema#label> "número de mesas autorizadas"@es .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#numeroMesasAutorizadas> <http://www.w3.org/2000/01/rdf-schema#label> "table number"@en .
+# 
+# http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#numeroSillasAutorizadas
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#numeroSillasAutorizadas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#numeroSillasAutorizadas> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#numeroSillasAutorizadas> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#numeroSillasAutorizadas> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of chairs authorized for the terrace."@en .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#numeroSillasAutorizadas> <http://www.w3.org/2000/01/rdf-schema#comment> "Número de sillas autorizadas para la terraza."@es .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#numeroSillasAutorizadas> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#numeroSillasAutorizadas> <http://www.w3.org/2000/01/rdf-schema#label> "number of chairs authorised"@en .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#numeroSillasAutorizadas> <http://www.w3.org/2000/01/rdf-schema#label> "número de sillas autorizadas"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#referenciaCatastral
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#referenciaCatastral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#referenciaCatastral> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#referenciaCatastral> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#referenciaCatastral> <http://www.w3.org/2000/01/rdf-schema#comment> "La referencia catastral es el identificador oficial y obligatorio de los bienes inmuebles. Consiste en un código alfanumérico que es asignado por el Catastro de manera que todo inmueble debe tener una única referencia catastral que permita situarlo inequívocamente en la cartografía catastral."@es .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#referenciaCatastral> <http://www.w3.org/2000/01/rdf-schema#comment> "The cadastral reference is the official and mandatory identifier of properties. It consists of an alphanumeric code assigned by the Cadastre to provide a unique cadastral reference to each property in order to place it unequivocally in the cadastral cartography."@en .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#referenciaCatastral> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#referenciaCatastral> <http://www.w3.org/2000/01/rdf-schema#label> "cadastral reference"@en .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#referenciaCatastral> <http://www.w3.org/2000/01/rdf-schema#label> "referencia catastral"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#rotulo
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#rotulo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#rotulo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#rotulo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#rotulo> <http://www.w3.org/2000/01/rdf-schema#comment> "Sign or denomination used to make a commercial establishment known to an audience, and to distinguish it from others used for identical or similar activities."@en .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#rotulo> <http://www.w3.org/2000/01/rdf-schema#comment> "Signo o denominación que sirve para dar a conocer al público un establecimiento comercial y para distinguirlo de otros destinados a actividades idénticas o similares."@es .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#rotulo> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#rotulo> <http://www.w3.org/2000/01/rdf-schema#label> "rótulo"@es .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#rotulo> <http://www.w3.org/2000/01/rdf-schema#label> "sign"@en .
+# 
+# http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#superficie
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#superficie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#superficie> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#superficie> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#superficie> <http://www.w3.org/2000/01/rdf-schema#comment> "Superficie en metros cuadrados ocupada por la terraza."@es .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#superficie> <http://www.w3.org/2000/01/rdf-schema#comment> "The surface in square meters filled by the terrace."@en .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#superficie> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#superficie> <http://www.w3.org/2000/01/rdf-schema#label> "area"@en .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#superficie> <http://www.w3.org/2000/01/rdf-schema#label> "superficie"@es .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://schema.org/LocalBusiness
+<http://schema.org/LocalBusiness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/LocalBusiness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Place> .
+# 
+# http://schema.org/Place
+<http://schema.org/Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#AgrupacionComercial
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#AgrupacionComercial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#AgrupacionComercial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Place> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#AgrupacionComercial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
+_:genid27 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoAgrupacionComercial> .
+_:genid31 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid29 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-agrupacion> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#AgrupacionComercial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#contieneLocalComercial> .
+_:genid32 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#AgrupacionComercial> <http://www.w3.org/2002/07/owl#disjointWith> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#AgrupacionComercial> <http://www.w3.org/2000/01/rdf-schema#comment> "Conjunto de locales situados en uno o en diversos edificios de un mismo espacio comercial, en el cual se pueden llevar a cabo diferentes actividades económicas. Este concepto incluye centros comerciales, mercados, estaciones de tren y metro, etc.\nEs más genérico que el concepto schema:ShoppingCenter, puesto que puede abordar otros tipos de agrupaciones comerciales (por ejemplo, una calle comercial)"@es .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#AgrupacionComercial> <http://www.w3.org/2000/01/rdf-schema#comment> "Set of premises placed in one or several buildings of the same business space, where different economic activities may be carried out. This includes shopping centres, markets, train and metro stations, etc.\nThis concept is more general than schema:ShoppingCenter, since it may cover other types of commercial areas, such as a commercial street"@en .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#AgrupacionComercial> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#AgrupacionComercial> <http://www.w3.org/2000/01/rdf-schema#label> "Agrupación Comercial"@es .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#AgrupacionComercial> <http://www.w3.org/2000/01/rdf-schema#label> "Shopping area"@en .
+# 
+# http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LicenciaApertura
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LicenciaApertura> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LicenciaApertura> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
+_:genid33 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#estadoTramitacion> .
+_:genid37 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid35 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-estado-tramite-licencia> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LicenciaApertura> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#asociadaA> .
+_:genid38 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid39 <http://www.w3.org/2002/07/owl#unionOf> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LicenciaApertura> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#autorizaActividadEconomica> .
+_:genid42 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LicenciaApertura> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#seOtorgaA> .
+_:genid43 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://xmlns.com/foaf/0.1/Agent> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LicenciaApertura> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#asociadaA> .
+_:genid44 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid45 <http://www.w3.org/2002/07/owl#unionOf> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LicenciaApertura> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#asociadaA> .
+_:genid48 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid48 <http://www.w3.org/2002/07/owl#onClass> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid49 <http://www.w3.org/2002/07/owl#unionOf> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LicenciaApertura> <http://www.w3.org/2000/01/rdf-schema#comment> "Acto reglado mediante el cual el Ayuntamiento, previa comprobación del cumplimiento de las condiciones establecidas por la normativa aplicable, autoriza la implantación de la actividad."@es .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LicenciaApertura> <http://www.w3.org/2000/01/rdf-schema#comment> "Regulated act where the City Council, after checking compliance with the established conditions by the applicable regulations, authorizes carrying out the activity."@en .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LicenciaApertura> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LicenciaApertura> <http://www.w3.org/2000/01/rdf-schema#label> "Licencia de apertura"@es .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LicenciaApertura> <http://www.w3.org/2000/01/rdf-schema#label> "Opening License"@en .
+# 
+# http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/LocalBusiness> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid52 .
+_:genid52 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid56 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoAcceso> .
+_:genid56 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid54 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid54 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-acceso> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid57 .
+_:genid57 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid61 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoSituacion> .
+_:genid61 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid59 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid59 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-situacion> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid62 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#agrupacionComercial> .
+_:genid62 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#AgrupacionComercial> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid63 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tieneLicenciaApertura> .
+_:genid63 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LicenciaApertura> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid64 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tieneTerraza> .
+_:genid64 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial> <http://www.w3.org/2000/01/rdf-schema#comment> "Local donde se puede realizar algún tipo de actividad comercial"@es .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial> <http://www.w3.org/2000/01/rdf-schema#comment> "Premises where an economic activity can take place. Also referred to as local business in vocabularies like schema.org"@en .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial> <http://www.w3.org/2000/01/rdf-schema#label> "Local Business"@en .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial> <http://www.w3.org/2000/01/rdf-schema#label> "Local Comercial"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Place> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid65 .
+_:genid65 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid68 .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid69 .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid69 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#periodoFuncionamiento> .
+_:genid69 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid66 .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid67 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid67 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/kos/comercio/periodo-funcionamiento> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid70 .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid70 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tieneLicenciaApertura> .
+_:genid70 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LicenciaApertura> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid71 .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid71 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#perteneceALocal> .
+_:genid71 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid71 <http://www.w3.org/2002/07/owl#onClass> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza> <http://www.w3.org/2000/01/rdf-schema#comment> "El uso de una zona de suelo de dominio público o privado afecto al uso público, susceptible de aprovechamientos relacionados con actividades propias de la hostelería, mediante la colocación de mesas, sillas y sombrillas, como zona de extensión o ampliación de la actividad que se ejerce dentro de dichos establecimientos. Dichas instalaciones tienen en todo caso carácter temporal."@es .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza> <http://www.w3.org/2000/01/rdf-schema#comment> "The use of a public or private land area affected by public use, to be used in catering activities, through the placement of tables, chairs, and umbrellas, as an extension zone of the activity that takes place within those premises. These facilities are usually temporary."@en .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza> <http://www.w3.org/2000/01/rdf-schema#label> "Terrace"@en .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza> <http://www.w3.org/2000/01/rdf-schema#label> "Terraza"@es .
+# 
+# http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://xmlns.com/foaf/0.1/Agent
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://vocab.linkeddata.es/datosabiertos/kos/comercio/periodo-funcionamiento
+<http://vocab.linkeddata.es/datosabiertos/kos/comercio/periodo-funcionamiento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/kos/comercio/periodo-funcionamiento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-acceso
+<http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-acceso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-acceso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-agrupacion
+<http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-agrupacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-agrupacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-estado-tramite-licencia
+<http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-estado-tramite-licencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-estado-tramite-licencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-situacion
+<http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-situacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-situacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+# 
+_:genid72 <http://www.w3.org/2000/01/rdf-schema#label> "RDF" .
+_:genid73 <http://www.w3.org/2000/01/rdf-schema#label> "HTML" .
+# Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/

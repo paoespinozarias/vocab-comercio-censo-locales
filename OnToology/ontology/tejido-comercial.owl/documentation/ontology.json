@@ -1,0 +1,1290 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial"
+    }, {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/comercio/periodo-funcionamiento"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial"
+    }, {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    }, {
+      "@id" : "_:genid17"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-acceso"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    }, {
+      "@id" : "_:genid21"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-agrupacion"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    }, {
+      "@id" : "_:genid25"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-situacion"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid31"
+    }, {
+      "@id" : "_:genid29"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-agrupacion"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoAgrupacionComercial"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#contieneLocalComercial"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial"
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid37"
+    }, {
+      "@id" : "_:genid35"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-estado-tramite-licencia"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
+  } ]
+}, {
+  "@id" : "_:genid37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#estadoTramitacion"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ]
+}, {
+  "@id" : "_:genid38",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#asociadaA"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid39"
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial"
+    }, {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    }, {
+      "@id" : "_:genid6"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid42",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#autorizaActividadEconomica"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ]
+}, {
+  "@id" : "_:genid43",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#seOtorgaA"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Agent"
+  } ]
+}, {
+  "@id" : "_:genid44",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid45"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#asociadaA"
+  } ]
+}, {
+  "@id" : "_:genid45",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial"
+    }, {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid48",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "_:genid49"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#asociadaA"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid49",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial"
+    }, {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid52",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid56"
+    }, {
+      "@id" : "_:genid54"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid54",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-acceso"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
+  } ]
+}, {
+  "@id" : "_:genid56",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoAcceso"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ]
+}, {
+  "@id" : "_:genid57",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid61"
+    }, {
+      "@id" : "_:genid59"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid59",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-situacion"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-estado-tramite-licencia"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
+  } ]
+}, {
+  "@id" : "_:genid61",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoSituacion"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ]
+}, {
+  "@id" : "_:genid62",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#AgrupacionComercial"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#agrupacionComercial"
+  } ]
+}, {
+  "@id" : "_:genid63",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LicenciaApertura"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tieneLicenciaApertura"
+  } ]
+}, {
+  "@id" : "_:genid64",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tieneTerraza"
+  } ]
+}, {
+  "@id" : "_:genid65",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid69"
+    }, {
+      "@id" : "_:genid67"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid67",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/comercio/periodo-funcionamiento"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
+  } ]
+}, {
+  "@id" : "_:genid69",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#periodoFuncionamiento"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ]
+}, {
+  "@id" : "_:genid70",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tieneLicenciaApertura"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LicenciaApertura"
+  } ]
+}, {
+  "@id" : "_:genid71",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#perteneceALocal"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid72",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "RDF"
+  } ]
+}, {
+  "@id" : "_:genid73",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "HTML"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    }, {
+      "@id" : "_:genid10"
+    } ]
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/issued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/modified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/LocalBusiness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://schema.org/Place"
+  } ]
+}, {
+  "@id" : "http://schema.org/Place",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/contributor" : [ {
+    "@language" : "es",
+    "@value" : "Oficina Técnica de Participación, Transparencia y Gobierno Abierto - Ayuntamiento de Zaragoza"
+  }, {
+    "@language" : "es",
+    "@value" : "Red.es"
+  }, {
+    "@language" : "es",
+    "@value" : "Servicio de Acceso a la Información - Ayuntamiento de Madrid"
+  }, {
+    "@language" : "es",
+    "@value" : "Servicio de Informática - Ayuntamiento de Santiago de Compostela"
+  }, {
+    "@language" : "es",
+    "@value" : "Servicio de Innovación y Desarrollo Tecnológico - Ayuntamiento de A Coruña"
+  } ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@language" : "es",
+    "@value" : "Paola Espinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)"
+  }, {
+    "@value" : "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, LocaliData)"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@language" : "es",
+    "@value" : "2018-11-02"
+  } ],
+  "http://purl.org/dc/elements/1.1/identifier" : [ {
+    "@value" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial"
+  } ],
+  "http://purl.org/dc/elements/1.1/rights" : [ {
+    "@value" : "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "This vocabulary aims to represent data from the census of local businesses, together with their economic activities and opening licenses. It also includes terraces associated to restaurants, cafés, etc."
+  }, {
+    "@language" : "es",
+    "@value" : "Vocabulario para la representación de los datos que provienen del censo de locales, actividades, terrazas de hostelería y restauración y licencias de apertura."
+  } ],
+  "http://purl.org/dc/terms/hasFormat" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial"
+  }, {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial.owl"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@language" : "es",
+    "@value" : "2018-11-02"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "es",
+    "@value" : "Vocabulario para la representación de datos sobre el censo de locales y terrazas, así como sus actividades económicas y licencias de apertura asociadas."
+  }, {
+    "@language" : "en",
+    "@value" : "Vocabulary for the representation of the census of local business premises and terraces, as well as their associated economic activities and opening licenses."
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "escom"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Esta versión ha sido generada dentro del contexto del proyecto \"Plataforma de gobierno abierto, colaborativa e interoperable\" en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.   \n\nEn esta versión se han agregado metadatos en inglés y se han eliminado los conceptos que fueron descartados en la versión previa:\n- ZonaComercial\n- areaInfluencia\n- medioTransporte\n- sfContains\n- tipoAccesibilidad\n- tipoComercio\n- accesible\n- afluenciaPublico"
+  } ],
+  "http://www.w3.org/2002/07/owl#priorVersion" : [ {
+    "@language" : "es",
+    "@value" : "0.2.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "es",
+    "@value" : "1.0.0"
+  } ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#AgrupacionComercial",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Conjunto de locales situados en uno o en diversos edificios de un mismo espacio comercial, en el cual se pueden llevar a cabo diferentes actividades económicas. Este concepto incluye centros comerciales, mercados, estaciones de tren y metro, etc.\nEs más genérico que el concepto schema:ShoppingCenter, puesto que puede abordar otros tipos de agrupaciones comerciales (por ejemplo, una calle comercial)"
+  }, {
+    "@language" : "en",
+    "@value" : "Set of premises placed in one or several buildings of the same business space, where different economic activities may be carried out. This includes shopping centres, markets, train and metro stations, etc.\nThis concept is more general than schema:ShoppingCenter, since it may cover other types of commercial areas, such as a commercial street"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Agrupación Comercial"
+  }, {
+    "@language" : "en",
+    "@value" : "Shopping area"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://schema.org/Place"
+  }, {
+    "@id" : "_:genid27"
+  }, {
+    "@id" : "_:genid32"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza"
+  } ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LicenciaApertura",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Acto reglado mediante el cual el Ayuntamiento, previa comprobación del cumplimiento de las condiciones establecidas por la normativa aplicable, autoriza la implantación de la actividad."
+  }, {
+    "@language" : "en",
+    "@value" : "Regulated act where the City Council, after checking compliance with the established conditions by the applicable regulations, authorizes carrying out the activity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Licencia de apertura"
+  }, {
+    "@language" : "en",
+    "@value" : "Opening License"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid33"
+  }, {
+    "@id" : "_:genid38"
+  }, {
+    "@id" : "_:genid42"
+  }, {
+    "@id" : "_:genid43"
+  }, {
+    "@id" : "_:genid44"
+  }, {
+    "@id" : "_:genid48"
+  } ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Local donde se puede realizar algún tipo de actividad comercial"
+  }, {
+    "@language" : "en",
+    "@value" : "Premises where an economic activity can take place. Also referred to as local business in vocabularies like schema.org"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Local Business"
+  }, {
+    "@language" : "es",
+    "@value" : "Local Comercial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://schema.org/LocalBusiness"
+  }, {
+    "@id" : "_:genid52"
+  }, {
+    "@id" : "_:genid57"
+  }, {
+    "@id" : "_:genid62"
+  }, {
+    "@id" : "_:genid63"
+  }, {
+    "@id" : "_:genid64"
+  } ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "El uso de una zona de suelo de dominio público o privado afecto al uso público, susceptible de aprovechamientos relacionados con actividades propias de la hostelería, mediante la colocación de mesas, sillas y sombrillas, como zona de extensión o ampliación de la actividad que se ejerce dentro de dichos establecimientos. Dichas instalaciones tienen en todo caso carácter temporal."
+  }, {
+    "@language" : "en",
+    "@value" : "The use of a public or private land area affected by public use, to be used in catering activities, through the placement of tables, chairs, and umbrellas, as an extension zone of the activity that takes place within those premises. These facilities are usually temporary."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Terrace"
+  }, {
+    "@language" : "es",
+    "@value" : "Terraza"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://schema.org/Place"
+  }, {
+    "@id" : "_:genid65"
+  }, {
+    "@id" : "_:genid70"
+  }, {
+    "@id" : "_:genid71"
+  } ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#aforo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Capacidad del local, expresada como el número de personas que caben en él."
+  }, {
+    "@language" : "en",
+    "@value" : "Local business premise capacity, defined as the number of people that fit in it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "aforo"
+  }, {
+    "@language" : "en",
+    "@value" : "capacity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#agrupacionComercial",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Any entity (for instance, a local business premise) may belong to a shopping area"
+  }, {
+    "@language" : "es",
+    "@value" : "Cualquier entidad (por ejemplo, un local comercial) puede pertenecer a una agrupación comercial."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "belongs to shopping area"
+  }, {
+    "@language" : "es",
+    "@value" : "pertenece a agrupación comercial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#AgrupacionComercial"
+  } ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#asociadaA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An opening license is associated to a local business or terrace."
+  }, {
+    "@language" : "es",
+    "@value" : "Una licencia de apertura está asociada a un local comercial o a una terraza."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LicenciaApertura"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "asociada a"
+  }, {
+    "@language" : "en",
+    "@value" : "associated to"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tieneLicenciaApertura"
+  } ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#autorizaActividadEconomica",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A license authorizes one or several economic activities. The economic activity type is represented by some SKOS classification, preferably one of the following:\nhttp://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae\nhttp://vocab.linkeddata.es/datosabiertos/kos/comercio/iae"
+  }, {
+    "@language" : "es",
+    "@value" : "Una licencia autoriza la realización de una o varias actividades económicas. El tipo de actividad económica que se autoriza se representa de acuerdo con alguna clasificación SKOS, preferentemente alguna de las siguientes:\nhttp://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae\nhttp://vocab.linkeddata.es/datosabiertos/kos/comercio/iae"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LicenciaApertura"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "authorizes economic activity"
+  }, {
+    "@language" : "es",
+    "@value" : "autoriza actividad económica"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#contieneLocalComercial",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An area (for instance, a shopping area) contains local business premises."
+  }, {
+    "@language" : "es",
+    "@value" : "Una agrupación (por ejemplo, una agrupación comercial) contiene locales comerciales."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "contains local business premise"
+  }, {
+    "@language" : "es",
+    "@value" : "contiene local comercial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial"
+  } ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#estadoTramitacion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Estado de tramitación de la licencia, se representa con la lista de conceptos SKOS http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-estado-tramite-licencia."
+  }, {
+    "@language" : "en",
+    "@value" : "License processing status, it is represented by the SKOS concept list http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-estado-tramite-licencia."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LicenciaApertura"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "estado de tramitación"
+  }, {
+    "@language" : "en",
+    "@value" : "processing status"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid4"
+  } ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#fechaAlta",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Date when the license request has been solved."
+  }, {
+    "@language" : "es",
+    "@value" : "Fecha en la que se ha resuelto la solicitud de la licencia."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LicenciaApertura"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "fecha de alta"
+  }, {
+    "@language" : "en",
+    "@value" : "release date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#fechaCese",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Fecha en la que se ha notificado el cese de la actividad económica."
+  }, {
+    "@language" : "en",
+    "@value" : "Notification date for the closing of the economic activity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LicenciaApertura"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "closing date"
+  }, {
+    "@language" : "es",
+    "@value" : "fecha de cese"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#fechaSolicitud",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Date of the license request."
+  }, {
+    "@language" : "es",
+    "@value" : "Fecha en la que se ha solicitado la licencia."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LicenciaApertura"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "fecha de solicitud"
+  }, {
+    "@language" : "en",
+    "@value" : "request date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#nombreComercial",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "El nombre comercial es todo aquel signo que puede ser representado gráficamente y, que identifica a una empresa en el tráfico mercantil distinguiéndola de las demás empresas que van a desarrollar actividades idénticas o similares."
+  }, {
+    "@language" : "en",
+    "@value" : "The business name is any type of sign that may be represented graphically and which identifies the business in a business registry."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "business name"
+  }, {
+    "@language" : "es",
+    "@value" : "nombre comercial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#numeroMesasAutorizadas",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Number of tables authorized for the terrace."
+  }, {
+    "@language" : "es",
+    "@value" : "Número de mesas autorizadas para la terraza."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "número de mesas autorizadas"
+  }, {
+    "@language" : "en",
+    "@value" : "table number"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#numeroSillasAutorizadas",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Number of chairs authorized for the terrace."
+  }, {
+    "@language" : "es",
+    "@value" : "Número de sillas autorizadas para la terraza."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "number of chairs authorised"
+  }, {
+    "@language" : "es",
+    "@value" : "número de sillas autorizadas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#periodoFuncionamiento",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Periodo de funcionamiento de la terraza, que puede ser anual o estacional. Los periodos se representan mediante la lista de conceptos http://vocab.linkeddata.es/datosabiertos/kos/comercio/periodo-funcionamiento."
+  }, {
+    "@language" : "en",
+    "@value" : "Terrace operational period, which can be: annual or seasonal. Periods are represented by the concept list http://vocab.linkeddata.es/datosabiertos/kos/comercio/periodo-funcionamiento."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "operational time period"
+  }, {
+    "@language" : "es",
+    "@value" : "periodo de funcionamiento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid8"
+  } ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#perteneceALocal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A terrace belongs to a local business premise."
+  }, {
+    "@language" : "es",
+    "@value" : "Una terraza pertenece a un local comercial."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "belongs to local"
+  }, {
+    "@language" : "es",
+    "@value" : "pertenece a local"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tieneTerraza"
+  } ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#referenciaCatastral",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La referencia catastral es el identificador oficial y obligatorio de los bienes inmuebles. Consiste en un código alfanumérico que es asignado por el Catastro de manera que todo inmueble debe tener una única referencia catastral que permita situarlo inequívocamente en la cartografía catastral."
+  }, {
+    "@language" : "en",
+    "@value" : "The cadastral reference is the official and mandatory identifier of properties. It consists of an alphanumeric code assigned by the Cadastre to provide a unique cadastral reference to each property in order to place it unequivocally in the cadastral cartography."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "cadastral reference"
+  }, {
+    "@language" : "es",
+    "@value" : "referencia catastral"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#rotulo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Sign or denomination used to make a commercial establishment known to an audience, and to distinguish it from others used for identical or similar activities."
+  }, {
+    "@language" : "es",
+    "@value" : "Signo o denominación que sirve para dar a conocer al público un establecimiento comercial y para distinguirlo de otros destinados a actividades idénticas o similares."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "rótulo"
+  }, {
+    "@language" : "en",
+    "@value" : "sign"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#seOtorgaA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A license is granted to a holder."
+  }, {
+    "@language" : "es",
+    "@value" : "Una licencia se otorga a un titular."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LicenciaApertura"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is granted to"
+  }, {
+    "@language" : "es",
+    "@value" : "se otorga a"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Agent"
+  } ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#superficie",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Superficie en metros cuadrados ocupada por la terraza."
+  }, {
+    "@language" : "en",
+    "@value" : "The surface in square meters filled by the terrace."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "area"
+  }, {
+    "@language" : "es",
+    "@value" : "superficie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tieneLicenciaApertura",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A local business premise may have one or several opening licenses in its history."
+  }, {
+    "@language" : "es",
+    "@value" : "El local comercial puede tener una o varias licencias de funcionamiento a lo largo de su historia."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid12"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has opening license"
+  }, {
+    "@language" : "es",
+    "@value" : "tiene licencia de apertura"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LicenciaApertura"
+  } ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tieneTerraza",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A local business premise may have a terrace."
+  }, {
+    "@language" : "es",
+    "@value" : "Un local comercial puede tener una terraza asociada."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has terrace"
+  }, {
+    "@language" : "es",
+    "@value" : "tiene terraza"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza"
+  } ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoAcceso",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A local business may have the following access types: street door, interior, or floor. These access types are represented by a list of URI concepts http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-acceso."
+  }, {
+    "@language" : "es",
+    "@value" : "Un local comercial puede tener los siguientes tipos de acceso: puerta de calle, interior, o piso. Estos tipos de acceso se representan mediante una lista de conceptos de URI http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-acceso."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "access type"
+  }, {
+    "@language" : "es",
+    "@value" : "tipo de acceso"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid15"
+  } ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoActividadEconomica",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Economic activity type that takes place in a local business premise, according to some SKOS classification."
+  }, {
+    "@language" : "es",
+    "@value" : "Tipo de actividad económica que se realiza en un local comercial, de acuerdo con alguna clasificación SKOS."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "economic activity type"
+  }, {
+    "@language" : "es",
+    "@value" : "tipo de actividad económica"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoAgrupacionComercial",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Type of shopping area, from the concept list http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-agrupacion."
+  }, {
+    "@value" : "Tipo de agrupación comercial, de acuerdo con la lista de conceptos http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-agrupacion."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#AgrupacionComercial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "tipo de agrupación comercial"
+  }, {
+    "@language" : "en",
+    "@value" : "type of shopping area"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid19"
+  } ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoSituacion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A local business may be in any of the following situations: active, closed, closed down, or under construction. These types of situations are represented by a concept list with URI http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-situacion ."
+  }, {
+    "@language" : "es",
+    "@value" : "Un local comercial puede estar en una de las siguientes situaciones: activo, cerrado, clausurado, o en obras. Estos tipos de situaciones se representan mediante una lista de conceptos de URI http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-situacion."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "situation type"
+  }, {
+    "@language" : "es",
+    "@value" : "tipo situación"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid23"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/comercio/periodo-funcionamiento",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-acceso",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-agrupacion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-estado-tramite-licencia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-situacion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#comment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#label",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#Concept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#historyNote",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+} ]
