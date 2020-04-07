@@ -8,11 +8,15 @@
 
 <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> rdf:type owl:Ontology ;
                                                                   owl:versionIRI <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> ;
-                                                                  <http://purl.org/dc/elements/1.1/contributor> "Oficina Técnica de Participación, Transparencia y Gobierno Abierto - Ayuntamiento de Zaragoza"@es ,
+                                                                  <http://purl.org/dc/elements/1.1/contributor> "Honorio Enrique Crespo Díaz-Alejo - Ayuntamiento de Madrid"@es ,
+                                                                                                                "María Carmen Ruiz Moreno - Ayuntamiento de Madrid"@es ,
+                                                                                                                "María Jesús Fernández Ruiz  - Ayuntamiento de Zaragoza"@es ,
+                                                                                                                "María Jesús Gallego San Miguel - Ayuntamiento de Madrid"@es ,
+                                                                                                                "María del Mar Arribas de Andrés - Ayuntamiento de Madrid"@es ,
                                                                                                                 "Red.es"@es ,
-                                                                                                                "Servicio de Acceso a la Información - Ayuntamiento de Madrid"@es ,
                                                                                                                 "Servicio de Informática - Ayuntamiento de Santiago de Compostela"@es ,
-                                                                                                                "Servicio de Innovación y Desarrollo Tecnológico - Ayuntamiento de A Coruña"@es ;
+                                                                                                                "Servicio de Innovación y Desarrollo Tecnológico - Ayuntamiento de A Coruña"@es ,
+                                                                                                                "Víctor Morlán Plo - Ayuntamiento de Zaragoza"@es ;
                                                                   <http://purl.org/dc/elements/1.1/creator> "Paola Espinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)"@es ,
                                                                                                             "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, LocaliData)" ;
                                                                   <http://purl.org/dc/elements/1.1/rights> "Creative Commons Attribution 4.0 International (CC BY 4.0)" ;
@@ -26,7 +30,7 @@
                                                                                                    "Vocabulary for the representation of the census of local business premises and terraces, as well as their associated economic activities and opening licenses."@en ;
                                                                   <http://purl.org/vocab/vann/preferredNamespacePrefix> "escom" ;
                                                                   <http://purl.org/vocab/vann/preferredNamespaceUri> : ;
-                                                                  rdfs:comment """Esta versión ha sido generada dentro del contexto del proyecto \"Plataforma de gobierno abierto, colaborativa e interoperable\" en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.   
+                                                                  rdfs:comment """Esta versión ha sido generada dentro del contexto del proyecto \"Plataforma de gobierno abierto, colaborativa e interoperable\" en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.
 
 En esta versión se han agregado metadatos en inglés y se han eliminado los conceptos que fueron descartados en la versión previa:
 - ZonaComercial
