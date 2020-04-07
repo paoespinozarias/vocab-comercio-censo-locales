@@ -137,9 +137,6 @@
     "modified" : {
       "@id" : "http://purl.org/dc/terms/modified"
     },
-    "date" : {
-      "@id" : "http://purl.org/dc/elements/1.1/date"
-    },
     "estadoTramitacion" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#estadoTramitacion",
       "@type" : "@id"
