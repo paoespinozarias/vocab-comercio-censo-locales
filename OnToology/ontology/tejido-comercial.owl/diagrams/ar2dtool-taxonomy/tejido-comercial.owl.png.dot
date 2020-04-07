@@ -1,15 +1,10 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "escom:AgrupacionComercial" "-371de083:167831add1f:-7fdc" "-371de083:167831add1f:-7fbc" "escom:Terraza" "escom:LocalComercial" "-371de083:167831add1f:-7fe2" "-371de083:167831add1f:-7fc4" "schema:LocalBusiness" "-371de083:167831add1f:-7fc9" "schema:Place" "escom:LicenciaApertura" ; /*classes style*/
-	"escom:LicenciaApertura" -> "-371de083:167831add1f:-7fdc" [ label = "rdfs:subClassOf" ];
+node [shape = rectangle, color="black"]; "escom:AgrupacionComercial" "escom:Terraza" "escom:LocalComercial" "schema:LocalBusiness" "schema:Place" ; /*classes style*/
 	"escom:AgrupacionComercial" -> "schema:Place" [ label = "rdfs:subClassOf" ];
-	"escom:AgrupacionComercial" -> "-371de083:167831add1f:-7fe2" [ label = "rdfs:subClassOf" ];
-	"escom:Terraza" -> "-371de083:167831add1f:-7fbc" [ label = "rdfs:subClassOf" ];
 	"escom:Terraza" -> "schema:Place" [ label = "rdfs:subClassOf" ];
 	"escom:LocalComercial" -> "schema:LocalBusiness" [ label = "rdfs:subClassOf" ];
-	"escom:LocalComercial" -> "-371de083:167831add1f:-7fc9" [ label = "rdfs:subClassOf" ];
-	"escom:LocalComercial" -> "-371de083:167831add1f:-7fc4" [ label = "rdfs:subClassOf" ];
 	"schema:LocalBusiness" -> "schema:Place" [ label = "rdfs:subClassOf" ];
 
 }

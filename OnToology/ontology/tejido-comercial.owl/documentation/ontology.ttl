@@ -15,8 +15,6 @@
                                                                                                                 "Servicio de Innovación y Desarrollo Tecnológico - Ayuntamiento de A Coruña"@es ;
                                                                   <http://purl.org/dc/elements/1.1/creator> "Paola Espinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)"@es ,
                                                                                                             "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, LocaliData)" ;
-                                                                  <http://purl.org/dc/elements/1.1/date> "2018-11-02"@es ;
-                                                                  <http://purl.org/dc/elements/1.1/identifier> "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial" ;
                                                                   <http://purl.org/dc/elements/1.1/rights> "Creative Commons Attribution 4.0 International (CC BY 4.0)" ;
                                                                   <http://purl.org/dc/terms/description> "This vocabulary aims to represent data from the census of local businesses, together with their economic activities and opening licenses. It also includes terraces associated to restaurants, cafés, etc."@en ,
                                                                                                          "Vocabulario para la representación de los datos que provienen del censo de locales, actividades, terrazas de hostelería y restauración y licencias de apertura."@es ;
@@ -50,6 +48,22 @@ En esta versión se han agregado metadatos en inglés y se han eliminado los con
 <http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/hasFormat
+<http://purl.org/dc/terms/hasFormat> rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/terms/issued
 <http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
 
@@ -60,6 +74,18 @@ En esta versión se han agregado metadatos en inglés y se han eliminado los con
 
 ###  http://purl.org/dc/terms/modified
 <http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2000/01/rdf-schema#comment
@@ -291,6 +317,10 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae"""@es ;
 #    Data properties
 #################################################################
 
+###  http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> rdf:type owl:DatatypeProperty .
+
+
 ###  http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#aforo
 :aforo rdf:type owl:DatatypeProperty ;
        rdfs:domain :LocalComercial ;
@@ -417,20 +447,14 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae"""@es ;
 ###  http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#AgrupacionComercial
 :AgrupacionComercial rdf:type owl:Class ;
                      rdfs:subClassOf <http://schema.org/Place> ,
-                                     [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                              owl:onProperty :tipoAgrupacionComercial ;
-                                                              owl:someValuesFrom <http://www.w3.org/2004/02/skos/core#Concept>
-                                                            ]
-                                                            [ rdf:type owl:Restriction ;
-                                                              owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                                              owl:hasValue <http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-agrupacion>
-                                                            ]
-                                                          ) ;
-                                       rdf:type owl:Class
-                                     ] ,
                                      [ rdf:type owl:Restriction ;
                                        owl:onProperty :contieneLocalComercial ;
                                        owl:someValuesFrom :LocalComercial
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :tipoAgrupacionComercial ;
+                                       owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onClass <http://www.w3.org/2004/02/skos/core#Concept>
                                      ] ;
                      owl:disjointWith :Terraza ;
                      rdfs:comment """Conjunto de locales situados en uno o en diversos edificios de un mismo espacio comercial, en el cual se pueden llevar a cabo diferentes actividades económicas. Este concepto incluye centros comerciales, mercados, estaciones de tren y metro, etc.
@@ -444,30 +468,7 @@ This concept is more general than schema:ShoppingCenter, since it may cover othe
 
 ###  http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LicenciaApertura
 :LicenciaApertura rdf:type owl:Class ;
-                  rdfs:subClassOf [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                           owl:onProperty :estadoTramitacion ;
-                                                           owl:someValuesFrom <http://www.w3.org/2004/02/skos/core#Concept>
-                                                         ]
-                                                         [ rdf:type owl:Restriction ;
-                                                           owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                                           owl:hasValue <http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-estado-tramite-licencia>
-                                                         ]
-                                                       ) ;
-                                    rdf:type owl:Class
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty :asociadaA ;
-                                    owl:someValuesFrom [ rdf:type owl:Class ;
-                                                         owl:unionOf ( :LocalComercial
-                                                                       :Terraza
-                                                                     )
-                                                       ]
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty :autorizaActividadEconomica ;
-                                    owl:someValuesFrom <http://www.w3.org/2004/02/skos/core#Concept>
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
+                  rdfs:subClassOf [ rdf:type owl:Restriction ;
                                     owl:onProperty :seOtorgaA ;
                                     owl:someValuesFrom <http://xmlns.com/foaf/0.1/Agent>
                                   ] ,
@@ -478,6 +479,16 @@ This concept is more general than schema:ShoppingCenter, since it may cover othe
                                                                       :Terraza
                                                                     )
                                                       ]
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :autorizaActividadEconomica ;
+                                    owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass <http://www.w3.org/2004/02/skos/core#Concept>
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :estadoTramitacion ;
+                                    owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass <http://www.w3.org/2004/02/skos/core#Concept>
                                   ] ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty :asociadaA ;
@@ -498,28 +509,6 @@ This concept is more general than schema:ShoppingCenter, since it may cover othe
 ###  http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial
 :LocalComercial rdf:type owl:Class ;
                 rdfs:subClassOf <http://schema.org/LocalBusiness> ,
-                                [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                         owl:onProperty :tipoAcceso ;
-                                                         owl:someValuesFrom <http://www.w3.org/2004/02/skos/core#Concept>
-                                                       ]
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                                         owl:hasValue <http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-acceso>
-                                                       ]
-                                                     ) ;
-                                  rdf:type owl:Class
-                                ] ,
-                                [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                         owl:onProperty :tipoSituacion ;
-                                                         owl:someValuesFrom <http://www.w3.org/2004/02/skos/core#Concept>
-                                                       ]
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                                         owl:hasValue <http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-situacion>
-                                                       ]
-                                                     ) ;
-                                  rdf:type owl:Class
-                                ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty :agrupacionComercial ;
                                   owl:allValuesFrom :AgrupacionComercial
@@ -531,6 +520,16 @@ This concept is more general than schema:ShoppingCenter, since it may cover othe
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty :tieneTerraza ;
                                   owl:allValuesFrom :Terraza
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :tipoAcceso ;
+                                  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass <http://www.w3.org/2004/02/skos/core#Concept>
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :tipoSituacion ;
+                                  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass <http://www.w3.org/2004/02/skos/core#Concept>
                                 ] ;
                 rdfs:comment "Local donde se puede realizar algún tipo de actividad comercial"@es ,
                              "Premises where an economic activity can take place. Also referred to as local business in vocabularies like schema.org"@en ;
@@ -542,20 +541,14 @@ This concept is more general than schema:ShoppingCenter, since it may cover othe
 ###  http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza
 :Terraza rdf:type owl:Class ;
          rdfs:subClassOf <http://schema.org/Place> ,
-                         [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                  owl:onProperty :periodoFuncionamiento ;
-                                                  owl:someValuesFrom <http://www.w3.org/2004/02/skos/core#Concept>
-                                                ]
-                                                [ rdf:type owl:Restriction ;
-                                                  owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                                  owl:hasValue <http://vocab.linkeddata.es/datosabiertos/kos/comercio/periodo-funcionamiento>
-                                                ]
-                                              ) ;
-                           rdf:type owl:Class
-                         ] ,
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :tieneLicenciaApertura ;
                            owl:someValuesFrom :LicenciaApertura
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :periodoFuncionamiento ;
+                           owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass <http://www.w3.org/2004/02/skos/core#Concept>
                          ] ,
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :perteneceALocal ;
@@ -580,6 +573,11 @@ This concept is more general than schema:ShoppingCenter, since it may cover othe
 #################################################################
 #    Individuals
 #################################################################
+
+###  http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> rdf:type owl:NamedIndividual ;
+                                                                 <http://purl.org/dc/elements/1.1/identifier> "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial" .
+
 
 ###  http://vocab.linkeddata.es/datosabiertos/kos/comercio/periodo-funcionamiento
 <http://vocab.linkeddata.es/datosabiertos/kos/comercio/periodo-funcionamiento> rdf:type owl:NamedIndividual ,
@@ -606,10 +604,10 @@ This concept is more general than schema:ShoppingCenter, since it may cover othe
                                                                                 <http://www.w3.org/2004/02/skos/core#Concept> .
 
 
-[ rdfs:label "RDF"
+[ rdfs:label "HTML"
 ] .
 
-[ rdfs:label "HTML"
+[ rdfs:label "RDF"
  ] .
 
-###  Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/
+###  Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
