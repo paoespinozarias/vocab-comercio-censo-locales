@@ -16,11 +16,15 @@
      xmlns:escom-skos="http://vocab.linkeddata.es/datosabiertos/kos/comercio/">
     <owl:Ontology rdf:about="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial">
         <owl:versionIRI rdf:resource="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial"/>
-        <dc:contributor xml:lang="es">Oficina Técnica de Participación, Transparencia y Gobierno Abierto - Ayuntamiento de Zaragoza</dc:contributor>
+        <dc:contributor xml:lang="es">Honorio Enrique Crespo Díaz-Alejo - Ayuntamiento de Madrid</dc:contributor>
+        <dc:contributor xml:lang="es">María Carmen Ruiz Moreno - Ayuntamiento de Madrid</dc:contributor>
+        <dc:contributor xml:lang="es">María Jesús Fernández Ruiz  - Ayuntamiento de Zaragoza</dc:contributor>
+        <dc:contributor xml:lang="es">María Jesús Gallego San Miguel - Ayuntamiento de Madrid</dc:contributor>
+        <dc:contributor xml:lang="es">María del Mar Arribas de Andrés - Ayuntamiento de Madrid</dc:contributor>
         <dc:contributor xml:lang="es">Red.es</dc:contributor>
-        <dc:contributor xml:lang="es">Servicio de Acceso a la Información - Ayuntamiento de Madrid</dc:contributor>
         <dc:contributor xml:lang="es">Servicio de Informática - Ayuntamiento de Santiago de Compostela</dc:contributor>
         <dc:contributor xml:lang="es">Servicio de Innovación y Desarrollo Tecnológico - Ayuntamiento de A Coruña</dc:contributor>
+        <dc:contributor xml:lang="es">Víctor Morlán Plo - Ayuntamiento de Zaragoza</dc:contributor>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, LocaliData)</dc:creator>
         <dc:creator xml:lang="es">Paola Espinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)</dc:creator>
         <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial</dc:identifier>
@@ -35,7 +39,7 @@
         <dct:title xml:lang="en">Vocabulary for the representation of the census of local business premises and terraces, as well as their associated economic activities and opening licenses.</dct:title>
         <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">escom</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#"/>
-        <rdfs:comment xml:lang="es">Esta versión ha sido generada dentro del contexto del proyecto &quot;Plataforma de gobierno abierto, colaborativa e interoperable&quot; en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.   
+        <rdfs:comment xml:lang="es">Esta versión ha sido generada dentro del contexto del proyecto &quot;Plataforma de gobierno abierto, colaborativa e interoperable&quot; en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.
 
 En esta versión se han agregado metadatos en inglés y se han eliminado los conceptos que fueron descartados en la versión previa:
 - ZonaComercial
@@ -49,10 +53,10 @@ En esta versión se han agregado metadatos en inglés y se han eliminado los con
         <owl:priorVersion xml:lang="es">0.2.0</owl:priorVersion>
         <owl:versionInfo xml:lang="es">1.0.0</owl:versionInfo>
     </owl:Ontology>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Annotation properties
@@ -60,100 +64,100 @@ En esta versión se han agregado metadatos en inglés y se han eliminado los con
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://purl.org/dc/elements/1.1/contributor -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
-    
+
 
 
     <!-- http://purl.org/dc/elements/1.1/creator -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
-    
+
 
 
     <!-- http://purl.org/dc/elements/1.1/rights -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/hasFormat -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/hasFormat"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/issued -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/modified -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
-    
+
 
 
     <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
-    
+
 
 
     <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
-    
+
 
 
     <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
-    
+
 
 
     <!-- http://www.w3.org/2000/01/rdf-schema#isDefinedBy -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
-    
+
 
 
     <!-- http://www.w3.org/2000/01/rdf-schema#label -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#historyNote -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#historyNote"/>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -161,7 +165,7 @@ En esta versión se han agregado metadatos en inglés y se han eliminado los con
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#agrupacionComercial -->
@@ -174,7 +178,7 @@ En esta versión se han agregado metadatos en inglés y se han eliminado los con
         <rdfs:label xml:lang="en">belongs to shopping area</rdfs:label>
         <rdfs:label xml:lang="es">pertenece a agrupación comercial</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#asociadaA -->
@@ -196,7 +200,7 @@ En esta versión se han agregado metadatos en inglés y se han eliminado los con
         <rdfs:label xml:lang="es">asociada a</rdfs:label>
         <rdfs:label xml:lang="en">associated to</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#autorizaActividadEconomica -->
@@ -214,7 +218,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</rdfs:comment>
         <rdfs:label xml:lang="en">authorizes economic activity</rdfs:label>
         <rdfs:label xml:lang="es">autoriza actividad económica</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#contieneLocalComercial -->
@@ -227,7 +231,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</rdfs:comment>
         <rdfs:label xml:lang="en">contains local business premise</rdfs:label>
         <rdfs:label xml:lang="es">contiene local comercial</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#estadoTramitacion -->
@@ -251,7 +255,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</rdfs:comment>
         <rdfs:label xml:lang="es">estado de tramitación</rdfs:label>
         <rdfs:label xml:lang="en">processing status</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#periodoFuncionamiento -->
@@ -275,7 +279,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</rdfs:comment>
         <rdfs:label xml:lang="en">operational time period</rdfs:label>
         <rdfs:label xml:lang="es">periodo de funcionamiento</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#perteneceALocal -->
@@ -290,7 +294,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</rdfs:comment>
         <rdfs:label xml:lang="en">belongs to local</rdfs:label>
         <rdfs:label xml:lang="es">pertenece a local</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#seOtorgaA -->
@@ -304,7 +308,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</rdfs:comment>
         <rdfs:label xml:lang="en">is granted to</rdfs:label>
         <rdfs:label xml:lang="es">se otorga a</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tieneLicenciaApertura -->
@@ -325,7 +329,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</rdfs:comment>
         <rdfs:label xml:lang="en">has opening license</rdfs:label>
         <rdfs:label xml:lang="es">tiene licencia de apertura</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tieneTerraza -->
@@ -339,7 +343,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</rdfs:comment>
         <rdfs:label xml:lang="en">has terrace</rdfs:label>
         <rdfs:label xml:lang="es">tiene terraza</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoAcceso -->
@@ -363,7 +367,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</rdfs:comment>
         <rdfs:label xml:lang="en">access type</rdfs:label>
         <rdfs:label xml:lang="es">tipo de acceso</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoActividadEconomica -->
@@ -377,7 +381,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</rdfs:comment>
         <rdfs:label xml:lang="en">economic activity type</rdfs:label>
         <rdfs:label xml:lang="es">tipo de actividad económica</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoAgrupacionComercial -->
@@ -401,7 +405,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</rdfs:comment>
         <rdfs:label xml:lang="es">tipo de agrupación comercial</rdfs:label>
         <rdfs:label xml:lang="en">type of shopping area</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoSituacion -->
@@ -425,16 +429,16 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</rdfs:comment>
         <rdfs:label xml:lang="en">situation type</rdfs:label>
         <rdfs:label xml:lang="es">tipo situación</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme"/>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Data properties
@@ -442,13 +446,13 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</rdfs:comment>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://purl.org/dc/elements/1.1/identifier -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/dc/elements/1.1/identifier"/>
-    
+
 
 
     <!-- http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#aforo -->
@@ -462,7 +466,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</rdfs:comment>
         <rdfs:label xml:lang="es">aforo</rdfs:label>
         <rdfs:label xml:lang="en">capacity</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#fechaAlta -->
@@ -476,7 +480,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</rdfs:comment>
         <rdfs:label xml:lang="es">fecha de alta</rdfs:label>
         <rdfs:label xml:lang="en">release date</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#fechaCese -->
@@ -490,7 +494,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</rdfs:comment>
         <rdfs:label xml:lang="en">closing date</rdfs:label>
         <rdfs:label xml:lang="es">fecha de cese</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#fechaSolicitud -->
@@ -504,7 +508,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</rdfs:comment>
         <rdfs:label xml:lang="es">fecha de solicitud</rdfs:label>
         <rdfs:label xml:lang="en">request date</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#nombreComercial -->
@@ -518,7 +522,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</rdfs:comment>
         <rdfs:label xml:lang="en">business name</rdfs:label>
         <rdfs:label xml:lang="es">nombre comercial</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#numeroMesasAutorizadas -->
@@ -532,7 +536,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</rdfs:comment>
         <rdfs:label xml:lang="es">número de mesas autorizadas</rdfs:label>
         <rdfs:label xml:lang="en">table number</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#numeroSillasAutorizadas -->
@@ -546,7 +550,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</rdfs:comment>
         <rdfs:label xml:lang="en">number of chairs authorised</rdfs:label>
         <rdfs:label xml:lang="es">número de sillas autorizadas</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#referenciaCatastral -->
@@ -560,7 +564,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</rdfs:comment>
         <rdfs:label xml:lang="en">cadastral reference</rdfs:label>
         <rdfs:label xml:lang="es">referencia catastral</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#rotulo -->
@@ -574,7 +578,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</rdfs:comment>
         <rdfs:label xml:lang="es">rótulo</rdfs:label>
         <rdfs:label xml:lang="en">sign</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#superficie -->
@@ -588,10 +592,10 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</rdfs:comment>
         <rdfs:label xml:lang="en">area</rdfs:label>
         <rdfs:label xml:lang="es">superficie</rdfs:label>
     </owl:DatatypeProperty>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -599,7 +603,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</rdfs:comment>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://schema.org/LocalBusiness -->
@@ -607,13 +611,13 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</rdfs:comment>
     <owl:Class rdf:about="http://schema.org/LocalBusiness">
         <rdfs:subClassOf rdf:resource="http://schema.org/Place"/>
     </owl:Class>
-    
+
 
 
     <!-- http://schema.org/Place -->
 
     <owl:Class rdf:about="http://schema.org/Place"/>
-    
+
 
 
     <!-- http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#AgrupacionComercial -->
@@ -642,7 +646,7 @@ This concept is more general than schema:ShoppingCenter, since it may cover othe
         <rdfs:label xml:lang="es">Agrupación Comercial</rdfs:label>
         <rdfs:label xml:lang="en">Shopping area</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LicenciaApertura -->
@@ -701,7 +705,7 @@ This concept is more general than schema:ShoppingCenter, since it may cover othe
         <rdfs:label xml:lang="es">Licencia de apertura</rdfs:label>
         <rdfs:label xml:lang="en">Opening License</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial -->
@@ -746,7 +750,7 @@ This concept is more general than schema:ShoppingCenter, since it may cover othe
         <rdfs:label xml:lang="en">Local Business</rdfs:label>
         <rdfs:label xml:lang="es">Local Comercial</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza -->
@@ -779,22 +783,22 @@ This concept is more general than schema:ShoppingCenter, since it may cover othe
         <rdfs:label xml:lang="en">Terrace</rdfs:label>
         <rdfs:label xml:lang="es">Terraza</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#Concept -->
 
     <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-    
+
 
 
     <!-- http://xmlns.com/foaf/0.1/Agent -->
 
     <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Individuals
@@ -802,7 +806,7 @@ This concept is more general than schema:ShoppingCenter, since it may cover othe
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://vocab.linkeddata.es/datosabiertos/kos/comercio/periodo-funcionamiento -->
@@ -810,7 +814,7 @@ This concept is more general than schema:ShoppingCenter, since it may cover othe
     <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/comercio/periodo-funcionamiento">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-acceso -->
@@ -818,7 +822,7 @@ This concept is more general than schema:ShoppingCenter, since it may cover othe
     <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-acceso">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-agrupacion -->
@@ -826,7 +830,7 @@ This concept is more general than schema:ShoppingCenter, since it may cover othe
     <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-agrupacion">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-estado-tramite-licencia -->
@@ -834,7 +838,7 @@ This concept is more general than schema:ShoppingCenter, since it may cover othe
     <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-estado-tramite-licencia">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-situacion -->
@@ -853,4 +857,3 @@ This concept is more general than schema:ShoppingCenter, since it may cover othe
 
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
-
