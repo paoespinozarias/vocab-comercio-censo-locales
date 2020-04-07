@@ -360,19 +360,31 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/elements/1.1/contributor" : [ {
     "@language" : "es",
-    "@value" : "Oficina Técnica de Participación, Transparencia y Gobierno Abierto - Ayuntamiento de Zaragoza"
+    "@value" : "Honorio Enrique Crespo Díaz-Alejo - Ayuntamiento de Madrid"
+  }, {
+    "@language" : "es",
+    "@value" : "María Carmen Ruiz Moreno - Ayuntamiento de Madrid"
+  }, {
+    "@language" : "es",
+    "@value" : "María Jesús Fernández Ruiz  - Ayuntamiento de Zaragoza"
+  }, {
+    "@language" : "es",
+    "@value" : "María Jesús Gallego San Miguel - Ayuntamiento de Madrid"
+  }, {
+    "@language" : "es",
+    "@value" : "María del Mar Arribas de Andrés - Ayuntamiento de Madrid"
   }, {
     "@language" : "es",
     "@value" : "Red.es"
-  }, {
-    "@language" : "es",
-    "@value" : "Servicio de Acceso a la Información - Ayuntamiento de Madrid"
   }, {
     "@language" : "es",
     "@value" : "Servicio de Informática - Ayuntamiento de Santiago de Compostela"
   }, {
     "@language" : "es",
     "@value" : "Servicio de Innovación y Desarrollo Tecnológico - Ayuntamiento de A Coruña"
+  }, {
+    "@language" : "es",
+    "@value" : "Víctor Morlán Plo - Ayuntamiento de Zaragoza"
   } ],
   "http://purl.org/dc/elements/1.1/creator" : [ {
     "@language" : "es",
@@ -420,7 +432,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
-    "@value" : "Esta versión ha sido generada dentro del contexto del proyecto \"Plataforma de gobierno abierto, colaborativa e interoperable\" en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.   \n\nEn esta versión se han agregado metadatos en inglés y se han eliminado los conceptos que fueron descartados en la versión previa:\n- ZonaComercial\n- areaInfluencia\n- medioTransporte\n- sfContains\n- tipoAccesibilidad\n- tipoComercio\n- accesible\n- afluenciaPublico"
+    "@value" : "Esta versión ha sido generada dentro del contexto del proyecto \"Plataforma de gobierno abierto, colaborativa e interoperable\" en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.\n\nEn esta versión se han agregado metadatos en inglés y se han eliminado los conceptos que fueron descartados en la versión previa:\n- ZonaComercial\n- areaInfluencia\n- medioTransporte\n- sfContains\n- tipoAccesibilidad\n- tipoComercio\n- accesible\n- afluenciaPublico"
   } ],
   "http://www.w3.org/2002/07/owl#priorVersion" : [ {
     "@language" : "es",

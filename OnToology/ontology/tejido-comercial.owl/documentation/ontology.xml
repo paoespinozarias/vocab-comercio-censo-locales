@@ -12,11 +12,15 @@
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial">
         <owl:versionIRI rdf:resource="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial"/>
-        <dc:contributor xml:lang="es">Oficina Técnica de Participación, Transparencia y Gobierno Abierto - Ayuntamiento de Zaragoza</dc:contributor>
+        <dc:contributor xml:lang="es">Honorio Enrique Crespo Díaz-Alejo - Ayuntamiento de Madrid</dc:contributor>
+        <dc:contributor xml:lang="es">María Carmen Ruiz Moreno - Ayuntamiento de Madrid</dc:contributor>
+        <dc:contributor xml:lang="es">María Jesús Fernández Ruiz  - Ayuntamiento de Zaragoza</dc:contributor>
+        <dc:contributor xml:lang="es">María Jesús Gallego San Miguel - Ayuntamiento de Madrid</dc:contributor>
+        <dc:contributor xml:lang="es">María del Mar Arribas de Andrés - Ayuntamiento de Madrid</dc:contributor>
         <dc:contributor xml:lang="es">Red.es</dc:contributor>
-        <dc:contributor xml:lang="es">Servicio de Acceso a la Información - Ayuntamiento de Madrid</dc:contributor>
         <dc:contributor xml:lang="es">Servicio de Informática - Ayuntamiento de Santiago de Compostela</dc:contributor>
         <dc:contributor xml:lang="es">Servicio de Innovación y Desarrollo Tecnológico - Ayuntamiento de A Coruña</dc:contributor>
+        <dc:contributor xml:lang="es">Víctor Morlán Plo - Ayuntamiento de Zaragoza</dc:contributor>
         <dc:creator xml:lang="es">Paola Espinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)</dc:creator>
         <dc:creator>Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, LocaliData)</dc:creator>
         <dc:rights>Creative Commons Attribution 4.0 International (CC BY 4.0)</dc:rights>
@@ -30,7 +34,7 @@
         <terms:title xml:lang="en">Vocabulary for the representation of the census of local business premises and terraces, as well as their associated economic activities and opening licenses.</terms:title>
         <vann:preferredNamespacePrefix>escom</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#"/>
-        <rdfs:comment xml:lang="es">Esta versión ha sido generada dentro del contexto del proyecto &quot;Plataforma de gobierno abierto, colaborativa e interoperable&quot; en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.   
+        <rdfs:comment xml:lang="es">Esta versión ha sido generada dentro del contexto del proyecto &quot;Plataforma de gobierno abierto, colaborativa e interoperable&quot; en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.
 
 En esta versión se han agregado metadatos en inglés y se han eliminado los conceptos que fueron descartados en la versión previa:
 - ZonaComercial
