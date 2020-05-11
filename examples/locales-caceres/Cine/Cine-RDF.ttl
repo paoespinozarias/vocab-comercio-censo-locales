@@ -1,0 +1,30 @@
+@prefix schema: <http://schema.org/> .
+@prefix cnae: <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae> .
+@prefix address: <http://www.w3.org/ns/locn> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+@prefix sf: <http://www.opengis.net/ont/sf> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix escom: <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#> .
+@prefix escom-skos: <http://vocab.linkeddata.es/datosabiertos/kos/comercio> .
+@prefix esadm: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#> .
+
+
+<http://opendata.caceres.es/recurso/cultura-ocio/cines/Cine/multicines-caceres> a
+    escom:localComercial;
+  schema:url "http://www.multicinescaceres.com/";
+  escom:nombreComercial "Multicines Caceres";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/6020>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/cultura-ocio/cines/Cine/multicines-caceres/geometry> .
+
+<http://opendata.caceres.es/recurso/cultura-ocio/cines/Cine/multicines-caceres/geometry>
+  a <http://www.opengis.net/ont/sfPoint>;
+  geo:lat "39.470386"@xsd:double;
+  geo:long "-6.374426"@xsd:double .
