@@ -1,0 +1,1687 @@
+@prefix schema: <http://schema.org/> .
+@prefix cnae: <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae> .
+@prefix address: <http://www.w3.org/ns/locn> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+@prefix sf: <http://www.opengis.net/ont/sf> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix escom: <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#> .
+@prefix escom-skos: <http://vocab.linkeddata.es/datosabiertos/kos/comercio> .
+@prefix esadm: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#> .
+
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/adarve> a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/adarve/address>;
+  schema:telephone "927244874";
+  escom:aforo "30"^^xsd:int;
+  escom:nombreComercial "Adarve";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/adarve/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/adarve/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.474155"@xsd:double;
+  geo:long "-6.372416"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/adarve/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10003";
+  schema:streetAddress "Calle Maestro Sánchez Garrido, 4 " .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/la-estancia>
+  a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/la-estancia/address>;
+  schema:telephone "927248064";
+  escom:aforo "50"^^xsd:int;
+  escom:nombreComercial "La Estancia";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/la-estancia/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/la-estancia/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.471489"@xsd:double;
+  geo:long "-6.376419"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/la-estancia/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10003";
+  schema:streetAddress "Plaza Mayor, 6 " .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/al-andalus> a
+    escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/al-andalus/address>;
+  escom:nombreComercial "Al-Andalus";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/al-andalus/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/al-andalus/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.46308"@xsd:double;
+  geo:long "-6.379171"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/al-andalus/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10005";
+  schema:streetAddress "Avenida Isabel de Moctezuma, 22" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/la-minerva> a
+    escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/la-minerva/address>;
+  schema:telephone "685118939-618378721";
+  escom:aforo "70"^^xsd:int;
+  escom:nombreComercial "La Minerva";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/la-minerva/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/la-minerva/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.475454"@xsd:double;
+  geo:long "-6.371343"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/la-minerva/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10003";
+  schema:streetAddress "Plaza Mayor, 24" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/la-matilda-taberna-cb>
+  a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/la-matilda-taberna-cb/address>;
+  schema:telephone "667470603";
+  escom:nombreComercial "La Matilda Taberna CB";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/la-matilda-taberna-cb/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/la-matilda-taberna-cb/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.475748"@xsd:double;
+  geo:long "-6.3691"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/la-matilda-taberna-cb/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10003";
+  schema:streetAddress "Plaza de Santiago, 9" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/la-terraza-del-principe>
+  a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/la-terraza-del-principe/address>;
+  schema:telephone "927288067";
+  escom:nombreComercial "La Terraza del Príncipe";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/la-terraza-del-principe/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/la-terraza-del-principe/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.474659"@xsd:double;
+  geo:long "-6.382489"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/la-terraza-del-principe/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10001";
+  schema:streetAddress "Calle José Luis Cotallo, (dentro del parque)" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/la-taperia> a
+    escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/la-taperia/address>;
+  schema:telephone "927225147-657905853";
+  escom:nombreComercial "La Tapería";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/la-taperia/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/la-taperia/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.474086"@xsd:double;
+  geo:long "-6.372593"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/la-taperia/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10003";
+  schema:streetAddress "Calle Sanchez Garrido, 1 bajo" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/leoncio> a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/leoncio/address>;
+  schema:telephone "927210904";
+  escom:nombreComercial "Leoncio";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/leoncio/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/leoncio/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.467604"@xsd:double;
+  geo:long "-6.37638"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/leoncio/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10002";
+  schema:streetAddress "Calle Antonio Reyes Huertas, 28" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/lizarran> a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/lizarran/address>;
+  schema:telephone "927042877";
+  escom:aforo "40"^^xsd:int;
+  escom:nombreComercial "Lizarrán";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/lizarran/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/lizarran/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.46797"@xsd:double, "39.474077"@xsd:double;
+  geo:long "-6.373535"@xsd:double, "-6.388819"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/lizarran/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10003", "10005";
+  schema:streetAddress "Calle Moret, 34 ", "Londres, 1 (Centro comercial Ruta de la Plata)" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/los-andares>
+  a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/los-andares/address>;
+  schema:telephone "927043627";
+  escom:aforo "40"^^xsd:int;
+  escom:nombreComercial "Los Andares";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/los-andares/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/los-andares/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.469885"@xsd:double;
+  geo:long "-6.380416"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/los-andares/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10001";
+  schema:streetAddress "Santa Joaquina de Vedruna, 17 bajo" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/lo-nuestro> a
+    escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/lo-nuestro/address>;
+  schema:telephone "651652997";
+  escom:nombreComercial "Lo Nuestro";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/lo-nuestro/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/lo-nuestro/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.475997"@xsd:double;
+  geo:long "-6.370667"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/lo-nuestro/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10003";
+  schema:streetAddress "Calle del Duque, 10" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/los-baldios>
+  a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/los-baldios/address>;
+  schema:telephone "927043338";
+  escom:nombreComercial "Los Baldíos";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/los-baldios/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/los-baldios/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.47307"@xsd:double;
+  geo:long "-6.380148"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/los-baldios/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10001";
+  schema:streetAddress "Doctor Fleming, 4" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/los-siete-jardines>
+  a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/los-siete-jardines/address>;
+  schema:telephone "927217336";
+  escom:nombreComercial "Los Siete Jardines";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/los-siete-jardines/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/los-siete-jardines/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.47347"@xsd:double;
+  geo:long "-6.369486"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/los-siete-jardines/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10003";
+  schema:streetAddress "Rincón de la Monja, 9" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/al-andalus> a
+    escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/al-andalus/address>;
+  escom:nombreComercial "Al-Andalus";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/al-andalus/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/al-andalus/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.472212"@xsd:double;
+  geo:long "-6.375656"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/al-andalus/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10002";
+  schema:streetAddress "Calle Santa Apolonia, 7" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/mario-&-marieta>
+  a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/mario-&-marieta/address>;
+  schema:telephone "927242151-610950022";
+  escom:aforo "43"^^xsd:int;
+  escom:nombreComercial "Mario & Marieta";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/mario-&-marieta/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/mario-&-marieta/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.46944"@xsd:double;
+  geo:long "-6.379294"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/mario-&-marieta/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10001";
+  schema:streetAddress "Avenida de España, 22" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/mandia> a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/mandia/address>;
+  schema:telephone "927292780";
+  escom:aforo "50"^^xsd:int;
+  escom:nombreComercial "Mandía";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/mandia/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/mandia/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.472919"@xsd:double;
+  geo:long "-6.390876"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/mandia/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10006";
+  schema:streetAddress "Calle Isla de Rodas, 2. Edificio Alcazaba" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/mastropiero>
+  a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/mastropiero/address>;
+  schema:telephone "927214837";
+  escom:nombreComercial "Mastropiero";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/mastropiero/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/mastropiero/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.471576"@xsd:double;
+  geo:long "-6.372386"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/mastropiero/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10003";
+  schema:streetAddress "Fuentenueva, 4" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/perhaps> a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/perhaps/address>;
+  schema:telephone "927289547";
+  escom:nombreComercial "Perhaps";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/perhaps/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/perhaps/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.472006"@xsd:double;
+  geo:long "-6.375211"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/perhaps/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10002";
+  schema:streetAddress "Plaza Marrón, 7" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/potosi-vinoteca>
+  a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/potosi-vinoteca/address>;
+  schema:telephone "927212141";
+  escom:nombreComercial "Potosí Vinoteca";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/potosi-vinoteca/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/potosi-vinoteca/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.462911"@xsd:double;
+  geo:long "-6.379318"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/potosi-vinoteca/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10005";
+  schema:streetAddress "Avenida Isabel de Moctezuma, 25" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/only-one> a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/only-one/address>;
+  escom:nombreComercial "Only One";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/only-one/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/only-one/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.471885"@xsd:double;
+  geo:long "-6.379798"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/only-one/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10001";
+  schema:streetAddress "Av. Virgen de Guadalupe, 5" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/puerta-de-merida>
+  a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/puerta-de-merida/address>;
+  schema:telephone "927261068";
+  escom:aforo "17"^^xsd:int;
+  escom:nombreComercial "Puerta de Mérida";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/puerta-de-merida/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/puerta-de-merida/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.472223"@xsd:double;
+  geo:long "-6.37175"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/puerta-de-merida/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10003";
+  schema:streetAddress "Calle Puerta de Mérida, 10" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/pro-va-lo> a
+    escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/pro-va-lo/address>;
+  schema:telephone "633949332";
+  escom:nombreComercial "Pro-va-lo";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/pro-va-lo/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/pro-va-lo/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.462741"@xsd:double;
+  geo:long "-6.378097"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/pro-va-lo/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10003";
+  schema:streetAddress "Plaza Mayor, 20 Izq. " .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/taperia-casa-don-fernando>
+  a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/taperia-casa-don-fernando/address>;
+  schema:telephone "927627176";
+  escom:aforo "40"^^xsd:int;
+  escom:nombreComercial "Tapería Casa Don Fernando";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/taperia-casa-don-fernando/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/taperia-casa-don-fernando/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.475231"@xsd:double;
+  geo:long "-6.371623"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/taperia-casa-don-fernando/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10003";
+  schema:streetAddress "Plaza Mayor, 30" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/taperia-hornos->
+  a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/taperia-hornos-/address>;
+  schema:telephone "927235906-646600752";
+  escom:aforo "45"^^xsd:int;
+  escom:nombreComercial "Tapería Hornos 25";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/taperia-hornos-/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/taperia-hornos-/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.471786"@xsd:double;
+  geo:long "-6.372046"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/taperia-hornos-/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10003";
+  schema:streetAddress "Calle Hornos, 25 " .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/alfonso-ix-hotel>
+  a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/alfonso-ix-hotel/address>;
+  schema:telephone "927246400";
+  escom:nombreComercial "Alfonso IX (Hotel)";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/alfonso-ix-hotel/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/alfonso-ix-hotel/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.474529"@xsd:double;
+  geo:long "-6.373581"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/alfonso-ix-hotel/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10004";
+  schema:streetAddress "Moret, 20-Parras, 9" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/taperia-yuste-hotel-nh-palacio-de-oquendo>
+  a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/taperia-yuste-hotel-nh-palacio-de-oquendo/address>;
+  schema:telephone "927215800";
+  escom:aforo "60"^^xsd:int;
+  escom:nombreComercial "Tapería Yuste (Hotel NH Palacio de Oquendo)";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/taperia-yuste-hotel-nh-palacio-de-oquendo/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/taperia-yuste-hotel-nh-palacio-de-oquendo/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.473573"@xsd:double;
+  geo:long "-6.372855"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/taperia-yuste-hotel-nh-palacio-de-oquendo/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10003";
+  schema:streetAddress "Plaza de San Juan, 11" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/taperia-los-ibericos>
+  a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/taperia-los-ibericos/address>;
+  schema:telephone "637443137";
+  escom:nombreComercial "Tapería los Ibéricos";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/taperia-los-ibericos/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/taperia-los-ibericos/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.475162"@xsd:double;
+  geo:long "-6.373009"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/taperia-los-ibericos/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10003";
+  schema:streetAddress "Paneras, 14" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/vina-grande>
+  a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/vina-grande/address>;
+  schema:telephone "927626903";
+  escom:nombreComercial "Viña Grande";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/vina-grande/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/vina-grande/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.471477"@xsd:double;
+  geo:long "-6.378814"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/vina-grande/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10001";
+  schema:streetAddress "Calle General YagÃ¼e, 7" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/centro-de-servicios-al-transporte-i-t-v->
+  a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/centro-de-servicios-al-transporte-i-t-v-/address>;
+  schema:telephone "927238077";
+  escom:aforo "48"^^xsd:int;
+  escom:nombreComercial "Centro de Servicios al Transporte (I.T.V.)";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/centro-de-servicios-al-transporte-i-t-v-/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/centro-de-servicios-al-transporte-i-t-v-/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.436276"@xsd:double;
+  geo:long "-6.373254"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/centro-de-servicios-al-transporte-i-t-v-/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10003";
+  schema:streetAddress "Carretera de Mérida, Km. 558" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/ciudad-deportiva->
+  a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/ciudad-deportiva-/address>;
+  schema:telephone "927244211";
+  escom:aforo "60"^^xsd:int;
+  escom:nombreComercial "Ciudad Deportiva ";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/ciudad-deportiva-/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/ciudad-deportiva-/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.464163"@xsd:double;
+  geo:long "-6.371134"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/ciudad-deportiva-/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10003";
+  schema:streetAddress "Avenida del Brocense, s/n. " .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/bar-poppy-> a
+    escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/bar-poppy-/address>;
+  schema:telephone "927215613";
+  escom:nombreComercial "Bar Poppy ";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/bar-poppy-/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/bar-poppy-/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.476032"@xsd:double;
+  geo:long "-6.372627"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/bar-poppy-/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10003";
+  schema:streetAddress "Plaza de la Concepción, 19" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/el-gran-cafe>
+  a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/el-gran-cafe/address>;
+  schema:telephone "927249997";
+  escom:aforo "48"^^xsd:int;
+  escom:nombreComercial "El Gran Café";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/el-gran-cafe/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/el-gran-cafe/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.470827"@xsd:double;
+  geo:long "-6.378998"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/el-gran-cafe/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10001";
+  schema:streetAddress "Avenida San Pedro de Alcántara, 6" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/asador-la-tahona>
+  a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/asador-la-tahona/address>;
+  schema:telephone "620389991";
+  escom:aforo "78"^^xsd:int;
+  escom:nombreComercial "Asador La Tahona";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/asador-la-tahona/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/asador-la-tahona/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.473653"@xsd:double;
+  geo:long "-6.37402"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/asador-la-tahona/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10004";
+  schema:streetAddress "Calle Felipe Uribarri, 4" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/el-pirata-bar>
+  a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/el-pirata-bar/address>;
+  schema:telephone "92724873";
+  escom:aforo "45-50"^^xsd:int;
+  escom:nombreComercial "El Pirata Bar";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/el-pirata-bar/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/el-pirata-bar/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.475365"@xsd:double;
+  geo:long "-6.371732"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/el-pirata-bar/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10003";
+  schema:streetAddress "Calle General Ezponda, 2" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/la-taberna-de-santi>
+  a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/la-taberna-de-santi/address>;
+  schema:telephone "927220032";
+  escom:aforo "16"^^xsd:int;
+  escom:nombreComercial "La Taberna de Santi";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/la-taberna-de-santi/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/la-taberna-de-santi/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.469926"@xsd:double;
+  geo:long "-6.380213"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/la-taberna-de-santi/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10001";
+  schema:streetAddress "Calle Santa Joaquina de Vedruna, 11" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/hospital-san-pedro-de-alcantara>
+  a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/hospital-san-pedro-de-alcantara/address>;
+  schema:telephone "927243312";
+  escom:aforo "80"^^xsd:int;
+  escom:nombreComercial "Hospital San Pedro de Alcántara";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/hospital-san-pedro-de-alcantara/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/hospital-san-pedro-de-alcantara/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.465401"@xsd:double;
+  geo:long "-6.36773"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/hospital-san-pedro-de-alcantara/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10002";
+  schema:streetAddress "Avenida de Pablo Naranjo, s/n" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/la-teteria-hotel-la-bohÃªme>
+  a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/la-teteria-hotel-la-bohÃªme/address>;
+  schema:telephone "927217351";
+  escom:nombreComercial "La Teteria (Hotel la BohÃªme)";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/la-teteria-hotel-la-bohÃªme/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/la-teteria-hotel-la-bohÃªme/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.475737"@xsd:double;
+  geo:long "-6.370977"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/la-teteria-hotel-la-bohÃªme/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10003";
+  schema:streetAddress "Plaza Mayor, 5" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/medas-la-estacion>
+  a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/medas-la-estacion/address>;
+  schema:telephone "927217134";
+  escom:aforo "28"^^xsd:int;
+  escom:nombreComercial "Medas La Estación";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/medas-la-estacion/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/medas-la-estacion/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.460977"@xsd:double;
+  geo:long "-6.385474"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/medas-la-estacion/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10005";
+  schema:streetAddress "Estación de Ferrocaril Avenida de Alemania, s/n" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/servicio-al-viajero>
+  a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/servicio-al-viajero/address>;
+  schema:telephone "927240162";
+  escom:aforo "40"^^xsd:int;
+  escom:nombreComercial "Servicio al Viajero";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/servicio-al-viajero/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/servicio-al-viajero/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.460001"@xsd:double;
+  geo:long "-6.382619"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/servicio-al-viajero/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10005";
+  schema:streetAddress "Calle TÃºnez, 1" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/psicopompo> a
+    escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/psicopompo/address>;
+  schema:telephone "666449314";
+  escom:nombreComercial "Psicopompo";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/psicopompo/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/psicopompo/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.472149"@xsd:double;
+  geo:long "-6.375262"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/psicopompo/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10003";
+  schema:streetAddress "Plaza Marrón, 12" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/burger-king>
+  a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/burger-king/address>;
+  schema:telephone "927245464";
+  escom:aforo "80"^^xsd:int;
+  escom:nombreComercial "Burger King";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/burger-king/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/burger-king/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.469851"@xsd:double;
+  geo:long "-6.379284"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/burger-king/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10001";
+  schema:streetAddress "Calle Gómez Becerra, 2 " .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/sal-y-pimienta>
+  a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/sal-y-pimienta/address>;
+  schema:telephone "927216997";
+  escom:aforo "80"^^xsd:int;
+  escom:nombreComercial "Sal y Pimienta";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/sal-y-pimienta/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/sal-y-pimienta/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.462741"@xsd:double;
+  geo:long "-6.378097"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/sal-y-pimienta/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10005";
+  schema:streetAddress "Calle de Caupolicán. 1" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/burger-king->
+  a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/burger-king-/address>;
+  schema:telephone "927231187";
+  escom:aforo "100"^^xsd:int;
+  escom:nombreComercial "Burger King ";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/burger-king-/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/burger-king-/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.468162"@xsd:double;
+  geo:long "-6.38871"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/burger-king-/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10005";
+  schema:streetAddress "Calle Londres,1" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/camelot-cafes-y-tapas>
+  a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/camelot-cafes-y-tapas/address>;
+  schema:telephone "617519391";
+  escom:nombreComercial "Camelot Cafés y Tapas";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/camelot-cafes-y-tapas/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/camelot-cafes-y-tapas/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.468686"@xsd:double;
+  geo:long "-6.389249"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/camelot-cafes-y-tapas/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10005";
+  schema:streetAddress "Londres, 26" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/foodie> a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/foodie/address>;
+  schema:telephone "686244000";
+  escom:nombreComercial "Foodie";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/foodie/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/foodie/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.472306"@xsd:double;
+  geo:long "-6.373502"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/foodie/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10003";
+  schema:streetAddress "Calle Donoso Cortés, 2" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/burger-king>
+  a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/burger-king/address>;
+  schema:telephone "92723646";
+  escom:aforo "50"^^xsd:int;
+  escom:nombreComercial "Burger King";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/burger-king/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/burger-king/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.490807"@xsd:double;
+  geo:long "-6.367992"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/burger-king/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10003";
+  schema:streetAddress "C/Emilio Cardenal Herrera-Esquina José de Espronceda" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/mcdonald's> a
+    escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/mcdonald's/address>;
+  schema:telephone "927629116";
+  escom:aforo "185"^^xsd:int;
+  escom:nombreComercial "McDonald's";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/mcdonald's/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/mcdonald's/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.468475"@xsd:double;
+  geo:long "-6.3952"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/mcdonald's/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10005";
+  schema:streetAddress "Ronda Norte-Montesol" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/new-golden> a
+    escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/new-golden/address>;
+  schema:telephone "927043273";
+  escom:nombreComercial "New Golden";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/new-golden/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/new-golden/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.467618"@xsd:double;
+  geo:long "-6.378558"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/new-golden/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10005";
+  schema:streetAddress "Avenida Antonio Hurtado, 6 " .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/meson-alcazaba>
+  a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/meson-alcazaba/address>;
+  schema:telephone "927223663";
+  escom:aforo "26"^^xsd:int;
+  escom:nombreComercial "Mesón Alcazaba";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/meson-alcazaba/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/meson-alcazaba/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.475501"@xsd:double;
+  geo:long "-6.372074"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/meson-alcazaba/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10003";
+  schema:streetAddress "Calle General Ezponda, 3" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/meson-del-jamon->
+  a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/meson-del-jamon-/address>;
+  schema:telephone "927221017";
+  escom:aforo "36"^^xsd:int;
+  escom:nombreComercial "Mesón del Jamón ";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/meson-del-jamon-/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/meson-del-jamon-/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.471887"@xsd:double;
+  geo:long "-6.379809"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/meson-del-jamon-/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10001";
+  schema:streetAddress "Avenida Virgen de Guadalupe, 5" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/meson-el-encinar>
+  a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/meson-el-encinar/address>;
+  schema:telephone "927248531";
+  escom:aforo "110"^^xsd:int;
+  escom:nombreComercial "Mesón El Encinar";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/meson-el-encinar/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/meson-el-encinar/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.47477"@xsd:double;
+  geo:long "-6.372225"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/meson-el-encinar/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10003";
+  schema:streetAddress "Plaza Mayor, 6 " .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/meson-la-dehesa>
+  a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/meson-la-dehesa/address>;
+  schema:telephone "927234269";
+  escom:aforo "40"^^xsd:int;
+  escom:nombreComercial "Mesón La Dehesa";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/meson-la-dehesa/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/meson-la-dehesa/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.455114"@xsd:double;
+  geo:long "-6.386109"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/meson-la-dehesa/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10002";
+  schema:streetAddress "Avenida de Badajoz, s/n" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/meson-los-arcos>
+  a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/meson-los-arcos/address>;
+  schema:telephone "927245145";
+  escom:aforo "28"^^xsd:int;
+  escom:nombreComercial "Mesón Los Arcos";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/meson-los-arcos/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/meson-los-arcos/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.475556"@xsd:double;
+  geo:long "-6.371178"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/meson-los-arcos/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10003";
+  schema:streetAddress "Plaza Mayor, 22" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/meson-lo-nuestro>
+  a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/meson-lo-nuestro/address>;
+  schema:telephone "927261187";
+  escom:nombreComercial "Mesón Lo Nuestro";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/meson-lo-nuestro/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/meson-lo-nuestro/geometry>
+  a <http://www.opengis.net/ont/sf#Point> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/meson-lo-nuestro/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10003";
+  schema:streetAddress "C/ Duque, 10" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/meson-mas-cachito>
+  a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/meson-mas-cachito/address>;
+  schema:telephone "927216743";
+  escom:aforo "16"^^xsd:int;
+  escom:nombreComercial "Mesón Más Cachito";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/meson-mas-cachito/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/meson-mas-cachito/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.471995"@xsd:double;
+  geo:long "-6.380384"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/meson-mas-cachito/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10001";
+  schema:streetAddress "Calle San Juan de Dios, 3" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/meson-orense>
+  a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/meson-orense/address>;
+  escom:aforo "48"^^xsd:int;
+  escom:nombreComercial "Mesón Orense";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/meson-orense/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/meson-orense/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.471502"@xsd:double;
+  geo:long "-6.378782"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/meson-orense/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10001";
+  schema:streetAddress "Calle General YagÃ¼e, 9" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/cerveceria-montaditos>
+  a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/cerveceria-montaditos/address>;
+  schema:telephone "927213691";
+  escom:nombreComercial "Cervecería 100 Montaditos";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/cerveceria-montaditos/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/cerveceria-montaditos/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.470811"@xsd:double;
+  geo:long "-6.3795"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/cerveceria-montaditos/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10001";
+  schema:streetAddress "San Pedro de Alcántara, 7" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/domino's-pizza>
+  a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/domino's-pizza/address>;
+  schema:telephone "927211333";
+  escom:aforo "28"^^xsd:int;
+  escom:nombreComercial "Domino's Pizza";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/domino's-pizza/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/domino's-pizza/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.467112"@xsd:double;
+  geo:long "-6.378019"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/domino's-pizza/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10002";
+  schema:streetAddress "Avenida de Antonio Hurtado, 10" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/piccola-italia-ristorante-pizzeria>
+  a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/piccola-italia-ristorante-pizzeria/address>;
+  schema:telephone "927201145";
+  escom:nombreComercial "Piccola Italia Ristorante Pizzeria";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/piccola-italia-ristorante-pizzeria/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/piccola-italia-ristorante-pizzeria/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.455142"@xsd:double;
+  geo:long "-6.379871"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/piccola-italia-ristorante-pizzeria/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality " Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10005";
+  schema:streetAddress "Calle Córdoba, 16, " .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/pizza-movil>
+  a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/pizza-movil/address>;
+  schema:telephone "927629474";
+  escom:nombreComercial "Pizza Móvil";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/pizza-movil/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/pizza-movil/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.463216"@xsd:double;
+  geo:long "-6.383217"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/pizza-movil/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10005";
+  schema:streetAddress "Avenida de Alemania, 46" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/telepizza> a
+    escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/telepizza/address>;
+  schema:telephone "927625625";
+  escom:aforo "60"^^xsd:int;
+  escom:nombreComercial "Telepizza";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/telepizza/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/telepizza/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.475044"@xsd:double;
+  geo:long "-6.371859"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/telepizza/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10003";
+  schema:streetAddress "Plaza Mayor, 12" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/pizzeria-teleremo>
+  a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/pizzeria-teleremo/address>;
+  schema:telephone "927220838";
+  escom:nombreComercial "Pizzería Teleremo";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/pizzeria-teleremo/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/pizzeria-teleremo/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.474611"@xsd:double;
+  geo:long "-6.372538"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/pizzeria-teleremo/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10003";
+  schema:streetAddress "Calle Pintores, 20" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/la-cacharreria>
+  a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/la-cacharreria/address>;
+  schema:telephone "927030723";
+  escom:aforo "70"^^xsd:int;
+  escom:nombreComercial "La Cacharrería";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/la-cacharreria/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/la-cacharreria/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.473529"@xsd:double;
+  geo:long "-6.371255"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/la-cacharreria/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10003";
+  schema:streetAddress "Calle Orellana, 1" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/la-andaluza>
+  a escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/la-andaluza/address>;
+  schema:telephone "654373734-927240478";
+  escom:aforo "30"^^xsd:int;
+  escom:nombreComercial "La Andaluza";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/la-andaluza/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/la-andaluza/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.469848"@xsd:double;
+  geo:long "-6.380779"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/la-andaluza/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10001";
+  schema:streetAddress "Calle Santa Joaquina de Vedruna, 6" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/el-requete> a
+    escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/el-requete/address>;
+  schema:telephone "927260383";
+  escom:nombreComercial "El Requeté";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/el-requete/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/el-requete/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.475348"@xsd:double;
+  geo:long "-6.371463"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/el-requete/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10003";
+  schema:streetAddress "Plaza Mayor, 27" .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/vadepizza> a
+    escom:LocalComercial;
+  schema:address <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/vadepizza/address>;
+  schema:telephone "927629955-927626410";
+  escom:nombreComercial "Vadepizza";
+  escom:tipoActividadEconomica <http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5630>;
+  esadm:autonomia <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Extremadura>;
+  esadm:municipio <https://datos.ign.es/recurso/btn100/municipio/10037>;
+  esadm:pais <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España>;
+  esadm:provincia <https://datos.gob.es/recurso/sector-publico/territorio/Provincia/Caceres>;
+  geosparql:hasGeometry <http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/vadepizza/geometry> .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/vadepizza/geometry>
+  a <http://www.opengis.net/ont/sf#Point>;
+  geo:lat "39.467502"@xsd:double;
+  geo:long "-6.385699"@xsd:double .
+
+<http://opendata.caceres.es/recurso/turismo/establecimientos/CafeBar/vadepizza/address>
+  a schema:postalAddress;
+  schema:addressCountry "España";
+  schema:addressLocality "Cáceres";
+  schema:addressRegion "Extremadura";
+  schema:postalCode "10001";
+  schema:streetAddress "Avda. Virgen de Guadalupe, 43" .
