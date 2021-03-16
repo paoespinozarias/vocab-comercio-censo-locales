@@ -1,0 +1,70 @@
+{
+  "@context" : {
+    "url" : {
+      "@id" : "http://schema.org/url"
+    },
+    "addressRegion" : {
+      "@id" : "http://schema.org/addressRegion"
+    },
+    "autonomia" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#autonomia"
+    },
+    "long" : {
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#long"
+    },
+    "pais" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#pais"
+    },
+    "email" : {
+      "@id" : "http://schema.org/email"
+    },
+    "provincia" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#provincia"
+    },
+    "postalCode" : {
+      "@id" : "http://schema.org/postalCode"
+    },
+    "aforo" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#aforo"
+    },
+    "address" : {
+      "@id" : "http://schema.org/address"
+    },
+    "nombreComercial" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#nombreComercial"
+    },
+    "PostalAddress" : {
+      "@id" : "http://schema.org/PostalAddress"
+    },
+    "telephone" : {
+      "@id" : "http://schema.org/telephone"
+    },
+    "Point" : {
+      "@id" : "http://www.opengis.net/ont/sf#Point"
+    },
+    "addessCountry" : {
+      "@id" : "http://schema.org/addessCountry"
+    },
+    "LocalComercial" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial"
+    },
+    "hasGeometry" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#hasGeometry"
+    },
+    "streetAddress" : {
+      "@id" : "http://schema.org/streetAddress"
+    },
+    "lat" : {
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#lat"
+    },
+    "tipoActividadEconomica" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoActividadEconomica"
+    },
+    "addressLocality" : {
+      "@id" : "http://schema.org/addressLocality"
+    },
+    "municipio" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio"
+    }
+  }
+}

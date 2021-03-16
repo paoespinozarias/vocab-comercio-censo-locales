@@ -284,12 +284,12 @@
 }, {
   "@id" : "_:genid48",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "HTML"
+    "@value" : "RDF"
   } ]
 }, {
   "@id" : "_:genid49",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "RDF"
+    "@value" : "HTML"
   } ]
 }, {
   "@id" : "_:genid6",
