@@ -1,5 +1,8 @@
 {
   "@context" : {
+    "Address" : {
+      "@id" : "http://www.w3.org/ns/locn#Address"
+    },
     "asociadaA" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#asociadaA",
       "@type" : "@id"
@@ -7,12 +10,34 @@
     "versionInfo" : {
       "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
     },
+    "validFrom" : {
+      "@id" : "http://schema.org/validFrom",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "DireccionPostal" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#DireccionPostal"
+    },
     "license" : {
       "@id" : "http://purl.org/dc/terms/license"
+    },
+    "url" : {
+      "@id" : "http://schema.org/url",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "validThrough" : {
+      "@id" : "http://schema.org/validThrough",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "dayOfWeek" : {
+      "@id" : "http://schema.org/dayOfWeek",
+      "@type" : "@id"
     },
     "tieneTerraza" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tieneTerraza",
       "@type" : "@id"
+    },
+    "DayOfWeek" : {
+      "@id" : "http://schema.org/DayOfWeek"
     },
     "perteneceALocal" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#perteneceALocal",
@@ -28,9 +53,19 @@
     "priorVersion" : {
       "@id" : "http://www.w3.org/2002/07/owl#priorVersion"
     },
+    "distrito" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito",
+      "@type" : "@id"
+    },
     "seOtorgaA" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#seOtorgaA",
       "@type" : "@id"
+    },
+    "Geometry" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#Geometry"
+    },
+    "SeccionCensal" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#SeccionCensal"
     },
     "fechaSolicitud" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#fechaSolicitud",
@@ -39,6 +74,9 @@
     "tieneLicenciaApertura" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tieneLicenciaApertura",
       "@type" : "@id"
+    },
+    "Feature" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#Feature"
     },
     "label" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
@@ -61,12 +99,28 @@
       "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#numeroSillasAutorizadas",
       "@type" : "http://www.w3.org/2001/XMLSchema#int"
     },
+    "seccionCensal" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#seccionCensal",
+      "@type" : "@id"
+    },
     "autorizaActividadEconomica" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#autorizaActividadEconomica",
       "@type" : "@id"
     },
+    "openingHours" : {
+      "@id" : "http://schema.org/openingHours",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
     "superficie" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#superficie",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "opens" : {
+      "@id" : "http://schema.org/opens",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "xETRS89" : {
+      "@id" : "https://datos.ign.es/def/geo_core#xETRS89",
       "@type" : "http://www.w3.org/2001/XMLSchema#float"
     },
     "LocalBusiness" : {
@@ -86,16 +140,30 @@
       "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#periodoFuncionamiento",
       "@type" : "@id"
     },
+    "barrio" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#barrio",
+      "@type" : "@id"
+    },
     "aforo" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#aforo",
       "@type" : "http://www.w3.org/2001/XMLSchema#int"
     },
+    "address" : {
+      "@id" : "http://schema.org/address",
+      "@type" : "@id"
+    },
     "rights" : {
       "@id" : "http://purl.org/dc/elements/1.1/rights"
+    },
+    "Distrito" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito"
     },
     "nombreComercial" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#nombreComercial",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "PostalAddress" : {
+      "@id" : "http://schema.org/PostalAddress"
     },
     "identifier" : {
       "@id" : "http://purl.org/dc/elements/1.1/identifier"
@@ -107,8 +175,19 @@
     "preferredNamespacePrefix" : {
       "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
     },
+    "domain" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#domain"
+    },
+    "telephone" : {
+      "@id" : "http://schema.org/telephone",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
     "Place" : {
       "@id" : "http://schema.org/Place"
+    },
+    "yETRS89" : {
+      "@id" : "https://datos.ign.es/def/geo_core#yETRS89",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
     },
     "isDefinedBy" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
@@ -117,6 +196,9 @@
       "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoAgrupacionComercial",
       "@type" : "@id"
     },
+    "definition" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#definition"
+    },
     "LocalComercial" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial"
     },
@@ -124,11 +206,24 @@
       "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#referenciaCatastral",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
+    "ConceptScheme" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+    },
     "Terraza" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza"
     },
+    "hasGeometry" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#hasGeometry",
+      "@type" : "@id"
+    },
     "title" : {
       "@id" : "http://purl.org/dc/terms/title"
+    },
+    "source" : {
+      "@id" : "http://purl.org/dc/elements/1.1/source"
+    },
+    "SpatialObject" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#SpatialObject"
     },
     "tipoActividadEconomica" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoActividadEconomica",
@@ -137,9 +232,22 @@
     "modified" : {
       "@id" : "http://purl.org/dc/terms/modified"
     },
+    "OpeningHoursSpecification" : {
+      "@id" : "http://schema.org/OpeningHoursSpecification"
+    },
+    "date" : {
+      "@id" : "http://purl.org/dc/elements/1.1/date"
+    },
     "estadoTramitacion" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#estadoTramitacion",
       "@type" : "@id"
+    },
+    "specialOpeningHoursSpecification" : {
+      "@id" : "http://schema.org/specialOpeningHoursSpecification",
+      "@type" : "@id"
+    },
+    "Barrio" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio"
     },
     "tipoAcceso" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoAcceso",
@@ -161,6 +269,13 @@
       "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#agrupacionComercial",
       "@type" : "@id"
     },
+    "defaultGeometry" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#defaultGeometry",
+      "@type" : "@id"
+    },
+    "prefLabel" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel"
+    },
     "inScheme" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
       "@type" : "@id"
@@ -177,6 +292,10 @@
     "contieneLocalComercial" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#contieneLocalComercial",
       "@type" : "@id"
+    },
+    "closes" : {
+      "@id" : "http://schema.org/closes",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
     }
   }
 }

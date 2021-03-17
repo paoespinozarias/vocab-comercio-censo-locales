@@ -7,7 +7,7 @@
 @base <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> .
 
 <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> rdf:type owl:Ontology ;
-                                                                  owl:versionIRI <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> ;
+                                                                  owl:versionIRI <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial/1.1.0> ;
                                                                   <http://purl.org/dc/elements/1.1/contributor> "Honorio Enrique Crespo Díaz-Alejo - Ayuntamiento de Madrid"@es ,
                                                                                                                 "María Carmen Ruiz Moreno - Ayuntamiento de Madrid"@es ,
                                                                                                                 "María Jesús Fernández Ruiz  - Ayuntamiento de Zaragoza"@es ,
@@ -42,7 +42,7 @@ En esta versión se han agregado metadatos en inglés y se han eliminado los con
 - accesible
 - afluenciaPublico"""@es ;
                                                                   owl:priorVersion "0.2.0"@es ;
-                                                                  owl:versionInfo "1.0.0"@es .
+                                                                  owl:versionInfo "1.1.0"@es .
 
 #################################################################
 #    Annotation properties
@@ -56,8 +56,20 @@ En esta versión se han agregado metadatos en inglés y se han eliminado los con
 <http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/elements/1.1/rights
 <http://purl.org/dc/elements/1.1/rights> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/source
+<http://purl.org/dc/elements/1.1/source> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/description
@@ -96,6 +108,10 @@ En esta versión se han agregado metadatos en inglés y se han eliminado los con
 rdfs:comment rdf:type owl:AnnotationProperty .
 
 
+###  http://www.w3.org/2000/01/rdf-schema#domain
+rdfs:domain rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/2000/01/rdf-schema#isDefinedBy
 rdfs:isDefinedBy rdf:type owl:AnnotationProperty .
 
@@ -104,13 +120,57 @@ rdfs:isDefinedBy rdf:type owl:AnnotationProperty .
 rdfs:label rdf:type owl:AnnotationProperty .
 
 
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/2004/02/skos/core#historyNote
 <http://www.w3.org/2004/02/skos/core#historyNote> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
 
 
 #################################################################
 #    Object Properties
 #################################################################
+
+###  http://schema.org/address
+<http://schema.org/address> rdf:type owl:ObjectProperty ;
+                            rdfs:range <http://schema.org/PostalAddress> ;
+                            rdfs:isDefinedBy <http://schema.org/> ;
+                            rdfs:label "address"@en ,
+                                       "dirección"@es .
+
+
+###  http://schema.org/dayOfWeek
+<http://schema.org/dayOfWeek> rdf:type owl:ObjectProperty ;
+                              rdfs:domain <http://schema.org/OpeningHoursSpecification> ;
+                              rdfs:range <http://schema.org/DayOfWeek> ;
+                              rdfs:comment "The day of the week for which these opening hours are valid."@en ;
+                              rdfs:isDefinedBy <http://schema.org> ;
+                              rdfs:label "dayOfWeek"@en .
+
+
+###  http://schema.org/specialOpeningHoursSpecification
+<http://schema.org/specialOpeningHoursSpecification> rdf:type owl:ObjectProperty ;
+                                                     rdfs:domain <http://schema.org/Place> ;
+                                                     rdfs:range <http://schema.org/OpeningHoursSpecification> ;
+                                                     rdfs:comment """The special opening hours of a certain place.<br/><br/>
+
+Use this to explicitly override general opening hours brought in scope by <a class=\"localLink\" href=\"http://schema.org/OpeningHoursSpecification\">openingHoursSpecification</a> or <a class=\"localLink\" href=\"http://schema.org/openingHours\">openingHours</a>."""@en ;
+                                                     rdfs:isDefinedBy <http://schema.org> ;
+                                                     rdfs:label "specialOpeningHoursSpecification"@en .
+
 
 ###  http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#agrupacionComercial
 :agrupacionComercial rdf:type owl:ObjectProperty ;
@@ -313,6 +373,50 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae"""@es ;
                           "tipo situación"@es .
 
 
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#barrio
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#barrio> rdf:type owl:ObjectProperty ;
+                                                                                rdfs:range <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio> ;
+                                                                                <http://purl.org/dc/terms/issued> "2014-03-28" ;
+                                                                                rdfs:comment """
+      Barrio al que pertenece un fenómeno geográfico o una entidad administrativa
+      """@es ;
+                                                                                rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
+                                                                                rdfs:label "pertenece al barrio"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito> rdf:type owl:ObjectProperty ;
+                                                                                  rdfs:range <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> ;
+                                                                                  <http://purl.org/dc/terms/issued> "2014-03-28" ;
+                                                                                  rdfs:comment """
+Distrito al que pertenece un fenómeno geográfico o una entidad administrativa
+"""@es ;
+                                                                                  rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
+                                                                                  rdfs:label "pertenece al distrito"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#seccionCensal
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#seccionCensal> rdf:type owl:ObjectProperty ;
+                                                                                       rdfs:range <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#SeccionCensal> ;
+                                                                                       <http://purl.org/dc/terms/issued> "2014-03-28" ;
+                                                                                       rdfs:comment <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ,
+                                                                                                    """
+      Sección censal a la que pertenece un fenómeno geográfico o una entidad administrativa
+      """@es ;
+                                                                                       rdfs:label "pertenece a la sección censal"@es .
+
+
+###  http://www.opengis.net/ont/geosparql#defaultGeometry
+<http://www.opengis.net/ont/geosparql#defaultGeometry> rdf:type owl:ObjectProperty ;
+                                                       rdfs:domain <http://www.opengis.net/ont/geosparql#Feature> .
+
+
+###  http://www.opengis.net/ont/geosparql#hasGeometry
+<http://www.opengis.net/ont/geosparql#hasGeometry> rdf:type owl:ObjectProperty ;
+                                                   rdfs:domain <http://www.opengis.net/ont/geosparql#Feature> ;
+                                                   rdfs:range <http://www.opengis.net/ont/geosparql#Geometry> .
+
+
 ###  http://www.w3.org/2004/02/skos/core#inScheme
 <http://www.w3.org/2004/02/skos/core#inScheme> rdf:type owl:ObjectProperty .
 
@@ -323,6 +427,76 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae"""@es ;
 
 ###  http://purl.org/dc/elements/1.1/identifier
 <http://purl.org/dc/elements/1.1/identifier> rdf:type owl:DatatypeProperty .
+
+
+###  http://schema.org/closes
+<http://schema.org/closes> rdf:type owl:DatatypeProperty ;
+                           rdfs:domain <http://schema.org/OpeningHoursSpecification> ;
+                           rdfs:range xsd:dateTime ;
+                           rdfs:comment "The closing hour of the place or service on the given day(s) of the week."@en ;
+                           rdfs:isDefinedBy <http://schema.org> ;
+                           rdfs:label "closes"@en .
+
+
+###  http://schema.org/openingHours
+<http://schema.org/openingHours> rdf:type owl:DatatypeProperty ;
+                                 rdfs:domain <http://schema.org/LocalBusiness> ;
+                                 rdfs:range xsd:string ;
+                                 rdfs:comment """The general opening hours for a business. Opening hours can be specified as a weekly time range, starting with days, then times per day. Multiple days can be listed with commas ',' separating each day. Day or time ranges are specified using a hyphen '-'.<br/><br/>
+
+<ul>
+<li>Days are specified using the following two-letter combinations: <code>Mo</code>, <code>Tu</code>, <code>We</code>, <code>Th</code>, <code>Fr</code>, <code>Sa</code>, <code>Su</code>.</li>
+<li>Times are specified using 24:00 format. For example, 3pm is specified as <code>15:00</code>, 10am as <code>10:00</code>. </li>
+<li>Here is an example: <code>&lt;time itemprop=\"openingHours\" datetime=&quot;Tu,Th 16:00-20:00&quot;&gt;Tuesdays and Thursdays 4-8pm&lt;/time&gt;</code>.</li>
+<li>If a business is open 7 days a week, then it can be specified as <code>&lt;time itemprop=&quot;openingHours&quot; datetime=&quot;Mo-Su&quot;&gt;Monday through Sunday, all day&lt;/time&gt;</code>.</li>
+</ul>
+"""@en ;
+                                 rdfs:isDefinedBy <http://schema.org> ;
+                                 rdfs:label "openingHours"@en .
+
+
+###  http://schema.org/opens
+<http://schema.org/opens> rdf:type owl:DatatypeProperty ;
+                          rdfs:domain <http://schema.org/OpeningHoursSpecification> ;
+                          rdfs:range xsd:dateTime ;
+                          rdfs:comment "The opening hour of the place or service on the given day(s) of the week."@en ;
+                          rdfs:isDefinedBy <http://schema.org> ;
+                          rdfs:label "opens"@en .
+
+
+###  http://schema.org/telephone
+<http://schema.org/telephone> rdf:type owl:DatatypeProperty ;
+                              rdfs:domain <http://schema.org/Place> ;
+                              rdfs:range xsd:string ;
+                              rdfs:comment "The telephone number."@en ;
+                              rdfs:isDefinedBy <http://schema.org> ;
+                              rdfs:label "telephone"@en .
+
+
+###  http://schema.org/url
+<http://schema.org/url> rdf:type owl:DatatypeProperty ;
+                        rdfs:range xsd:anyURI ;
+                        rdfs:comment "URL of the item."@en ;
+                        rdfs:isDefinedBy <http://schema.org> ;
+                        rdfs:label "url"@en .
+
+
+###  http://schema.org/validFrom
+<http://schema.org/validFrom> rdf:type owl:DatatypeProperty ;
+                              rdfs:domain <http://schema.org/OpeningHoursSpecification> ;
+                              rdfs:range xsd:dateTime ;
+                              rdfs:comment "The date when the item becomes valid."@en ;
+                              rdfs:isDefinedBy <http://schema.org> ;
+                              rdfs:label "validFrom"@en .
+
+
+###  http://schema.org/validThrough
+<http://schema.org/validThrough> rdf:type owl:DatatypeProperty ;
+                                 rdfs:domain <http://schema.org/OpeningHoursSpecification> ;
+                                 rdfs:range xsd:dateTime ;
+                                 rdfs:comment "The date after when the item is not valid. For example the end of an offer, salary period, or a period of opening hours."@en ;
+                                 rdfs:isDefinedBy <http://schema.org> ;
+                                 rdfs:label "validThrough"@en .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#aforo
@@ -435,17 +609,61 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae"""@es ;
                        "superficie"@es .
 
 
+###  https://datos.ign.es/def/geo_core#xETRS89
+<https://datos.ign.es/def/geo_core#xETRS89> rdf:type owl:DatatypeProperty ;
+                                            rdfs:range xsd:float ;
+                                            <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                            rdfs:comment "Coordenada X en metros (ETRS89)"@es ;
+                                            rdfs:label "xETRS89"@es .
+
+
+###  https://datos.ign.es/def/geo_core#yETRS89
+<https://datos.ign.es/def/geo_core#yETRS89> rdf:type owl:DatatypeProperty ;
+                                            rdfs:range xsd:float ;
+                                            <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es ;
+                                            rdfs:comment "Coordenada Y en metros (ETRS89)"@es ;
+                                            rdfs:label "yETRS89"@es .
+
+
 #################################################################
 #    Classes
 #################################################################
 
+###  http://schema.org/DayOfWeek
+<http://schema.org/DayOfWeek> rdf:type owl:Class .
+
+
 ###  http://schema.org/LocalBusiness
 <http://schema.org/LocalBusiness> rdf:type owl:Class ;
-                                  rdfs:subClassOf <http://schema.org/Place> .
+                                  rdfs:subClassOf <http://schema.org/Place> ;
+                                  rdfs:comment "A particular physical business or branch of an organization. Examples of LocalBusiness include a restaurant, a particular branch of a restaurant chain, a branch of a bank, a medical practice, a club, a bowling alley, etc."@en ;
+                                  rdfs:isDefinedBy <http://schema.org/> ;
+                                  rdfs:label "LocalBusiness"@en .
+
+
+###  http://schema.org/OpeningHoursSpecification
+<http://schema.org/OpeningHoursSpecification> rdf:type owl:Class ;
+                                              rdfs:comment """A structured value providing information about the opening hours of a place or a certain service inside a place.<br/><br/>
+
+The place is <strong>open</strong> if the <a class=\"localLink\" href=\"http://schema.org/opens\">opens</a> property is specified, and <strong>closed</strong> otherwise.<br/><br/>
+
+If the value for the <a class=\"localLink\" href=\"http://schema.org/closes\">closes</a> property is less than the value for the <a class=\"localLink\" href=\"http://schema.org/opens\">opens</a> property then the hour range is assumed to span over the next day."""@en ;
+                                              rdfs:isDefinedBy <http://schema.org/OpeningHoursSpecification> ;
+                                              rdfs:label "OpeningHoursSpecification"@en .
 
 
 ###  http://schema.org/Place
-<http://schema.org/Place> rdf:type owl:Class .
+<http://schema.org/Place> rdf:type owl:Class ;
+                          rdfs:comment "Entities that have a somewhat fixed, physical extension."@en ;
+                          rdfs:isDefinedBy <http://schema.org> ;
+                          rdfs:label "Place"@en .
+
+
+###  http://schema.org/PostalAddress
+<http://schema.org/PostalAddress> rdf:type owl:Class ;
+                                  rdfs:comment "The mailing address."@en ;
+                                  rdfs:isDefinedBy <http://schema.org> ;
+                                  rdfs:label "PostalAddress"@en .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#AgrupacionComercial
@@ -513,6 +731,7 @@ This concept is more general than schema:ShoppingCenter, since it may cover othe
 ###  http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial
 :LocalComercial rdf:type owl:Class ;
                 rdfs:subClassOf <http://schema.org/LocalBusiness> ,
+                                <http://www.opengis.net/ont/geosparql#Feature> ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty :agrupacionComercial ;
                                   owl:allValuesFrom :AgrupacionComercial
@@ -566,8 +785,93 @@ This concept is more general than schema:ShoppingCenter, since it may cover othe
                     "Terraza"@es .
 
 
+###  http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#DireccionPostal
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#DireccionPostal> rdf:type owl:Class ;
+                                                                                        rdfs:subClassOf <http://schema.org/PostalAddress> ,
+                                                                                                        <http://www.w3.org/ns/locn#Address> ;
+                                                                                        <http://purl.org/dc/terms/issued> "2014-03-28" ;
+                                                                                        rdfs:comment """Una dirección postal en España. Se define como una especialización de las clases vcard:Address, schema:PostalAddress y locn:Address
+Además de las propiedades asociadas a estas clases, y definidas en su correspondiente vocabulario, también se pueden utilizar las definidas en los vocabularios de división administrativa española (por ejemplo, barrio, distrito y municipio) y en el callejero (por ejemplo, via, tramo y portal), para lo cual se han añadido restricciones universales a esta clase, con el objetivo de dejar esta relación más explícita."""@es ;
+                                                                                        rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal> ;
+                                                                                        rdfs:label "Dirección postal"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio> rdf:type owl:Class ;
+                                                                                <http://purl.org/dc/terms/issued> "2014-03-28" ;
+                                                                                rdfs:comment """
+Un barrio es cada una de las partes en que se dividen los pueblos grandes o sus distritos [fuente: Diccionario de la Real Academia (DRAE) 2011]
+"""@es ;
+                                                                                rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
+                                                                                rdfs:label "Barrio"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> rdf:type owl:Class ;
+                                                                                  rdfs:comment """
+Un distrito es cada una de las demarcaciones en que se subdivide un territorio o una población para distribuir y ordenar el ejercicio de los derechos civiles y políticos, o de las funciones públicas, o de los servicios administrativos [fuente: Diccionario de la Real Academia (DRAE) 2011]
+"""@es ;
+                                                                                  rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
+                                                                                  rdfs:label "Distrito"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#SeccionCensal
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#SeccionCensal> rdf:type owl:Class ;
+                                                                                       <http://purl.org/dc/terms/issued> "2014-03-28" ;
+                                                                                       rdfs:comment """
+Una sección censal es un referente geográfico de carácter estadístico, cuya actualización se asocia a los trabajos preliminares de todo Padrón Municipal de Habitantes o Censo de Población, siendo un instrumento eficaz tanto en trabajos censales o padronales, así como para investigaciones por muestreo y en el Censo Electoral. [fuente: http://www.madrid.org/iestadis/fijas/clasificaciones/seccioncensal.htm]
+"""@es ;
+                                                                                       rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
+                                                                                       rdfs:label "Sección censal"@es .
+
+
+###  http://www.opengis.net/ont/geosparql#Feature
+<http://www.opengis.net/ont/geosparql#Feature> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                               owl:disjointWith <http://www.opengis.net/ont/geosparql#Geometry> ;
+                                               <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry" ;
+                                               <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group" ;
+                                               <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                               <http://purl.org/dc/elements/1.1/description> """
+      This class represents the top-level feature type. This class is
+      equivalent to GFI_Feature defined in ISO 19156:2011, and it is
+      superclass of all feature types.
+    """@en ;
+                                               rdfs:comment """
+      This class represents the top-level feature type. This class is
+      equivalent to GFI_Feature defined in ISO 19156:2011, and it is
+      superclass of all feature types.
+    """@en ;
+                                               rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                                <http://www.opengis.net/ont/gml> ,
+                                                                <http://www.opengis.net/spec/geosparql/1.0> ;
+                                               rdfs:label "Feature"@en ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> """
+      This class represents the top-level feature type. This class is
+      equivalent to GFI_Feature defined in ISO 19156:2011, and it is
+      superclass of all feature types.
+    """@en ;
+                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "Feature"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#Geometry
+<http://www.opengis.net/ont/geosparql#Geometry> rdf:type owl:Class .
+
+
+###  http://www.opengis.net/ont/geosparql#SpatialObject
+<http://www.opengis.net/ont/geosparql#SpatialObject> rdf:type owl:Class .
+
+
 ###  http://www.w3.org/2004/02/skos/core#Concept
 <http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/locn#Address
+<http://www.w3.org/ns/locn#Address> rdf:type owl:Class .
 
 
 ###  http://xmlns.com/foaf/0.1/Agent
@@ -578,34 +882,29 @@ This concept is more general than schema:ShoppingCenter, since it may cover othe
 #    Individuals
 #################################################################
 
-###  http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial
-<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> rdf:type owl:NamedIndividual ;
-                                                                 <http://purl.org/dc/elements/1.1/identifier> "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial" .
-
-
 ###  http://vocab.linkeddata.es/datosabiertos/kos/comercio/periodo-funcionamiento
 <http://vocab.linkeddata.es/datosabiertos/kos/comercio/periodo-funcionamiento> rdf:type owl:NamedIndividual ,
-                                                                                        <http://www.w3.org/2004/02/skos/core#Concept> .
+                                                                                        <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 
 
 ###  http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-acceso
 <http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-acceso> rdf:type owl:NamedIndividual ,
-                                                                             <http://www.w3.org/2004/02/skos/core#Concept> .
+                                                                             <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 
 
 ###  http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-agrupacion
 <http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-agrupacion> rdf:type owl:NamedIndividual ,
-                                                                                 <http://www.w3.org/2004/02/skos/core#Concept> .
+                                                                                 <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 
 
 ###  http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-estado-tramite-licencia
 <http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-estado-tramite-licencia> rdf:type owl:NamedIndividual ,
-                                                                                              <http://www.w3.org/2004/02/skos/core#Concept> .
+                                                                                              <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 
 
 ###  http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-situacion
 <http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-situacion> rdf:type owl:NamedIndividual ,
-                                                                                <http://www.w3.org/2004/02/skos/core#Concept> .
+                                                                                <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 
 
 [ rdfs:label "HTML"
@@ -614,4 +913,4 @@ This concept is more general than schema:ShoppingCenter, since it may cover othe
 [ rdfs:label "RDF"
  ] .
 
-###  Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
