@@ -1,5 +1,5 @@
 <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> <http://www.w3.org/2002/07/owl#versionIRI> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> <http://www.w3.org/2002/07/owl#versionIRI> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial/1.1.0> .
 <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> <http://purl.org/dc/elements/1.1/contributor> "Honorio Enrique Crespo Díaz-Alejo - Ayuntamiento de Madrid"@es .
 <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> <http://purl.org/dc/elements/1.1/contributor> "María Carmen Ruiz Moreno - Ayuntamiento de Madrid"@es .
 <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> <http://purl.org/dc/elements/1.1/contributor> "María Jesús Fernández Ruiz  - Ayuntamiento de Zaragoza"@es .
@@ -24,7 +24,7 @@
 <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> <http://purl.org/vocab/vann/preferredNamespaceUri> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#> .
 <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> <http://www.w3.org/2000/01/rdf-schema#comment> "Esta versión ha sido generada dentro del contexto del proyecto \"Plataforma de gobierno abierto, colaborativa e interoperable\" en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.\n\nEn esta versión se han agregado metadatos en inglés y se han eliminado los conceptos que fueron descartados en la versión previa:\n- ZonaComercial\n- areaInfluencia\n- medioTransporte\n- sfContains\n- tipoAccesibilidad\n- tipoComercio\n- accesible\n- afluenciaPublico"@es .
 <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> <http://www.w3.org/2002/07/owl#priorVersion> "0.2.0"@es .
-<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0"@es .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> <http://www.w3.org/2002/07/owl#versionInfo> "1.1.0"@es .
 # 
 # 
 # #################################################################
@@ -40,8 +40,17 @@
 # http://purl.org/dc/elements/1.1/creator
 <http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://purl.org/dc/elements/1.1/rights
 <http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/source
+<http://purl.org/dc/elements/1.1/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/description
 <http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -70,14 +79,35 @@
 # http://www.w3.org/2000/01/rdf-schema#comment
 <http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://www.w3.org/2000/01/rdf-schema#domain
+<http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://www.w3.org/2000/01/rdf-schema#isDefinedBy
 <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://www.w3.org/2000/01/rdf-schema#label
 <http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://www.w3.org/2004/02/skos/core#historyNote
 <http://www.w3.org/2004/02/skos/core#historyNote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 # 
 # 
 # 
@@ -87,6 +117,29 @@
 # #
 # #################################################################
 # 
+# 
+# http://schema.org/address
+<http://schema.org/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://schema.org/address> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/PostalAddress> .
+<http://schema.org/address> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/address> <http://www.w3.org/2000/01/rdf-schema#label> "address"@en .
+<http://schema.org/address> <http://www.w3.org/2000/01/rdf-schema#label> "dirección"@es .
+# 
+# http://schema.org/dayOfWeek
+<http://schema.org/dayOfWeek> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://schema.org/dayOfWeek> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/OpeningHoursSpecification> .
+<http://schema.org/dayOfWeek> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/DayOfWeek> .
+<http://schema.org/dayOfWeek> <http://www.w3.org/2000/01/rdf-schema#comment> "The day of the week for which these opening hours are valid."@en .
+<http://schema.org/dayOfWeek> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org> .
+<http://schema.org/dayOfWeek> <http://www.w3.org/2000/01/rdf-schema#label> "dayOfWeek"@en .
+# 
+# http://schema.org/specialOpeningHoursSpecification
+<http://schema.org/specialOpeningHoursSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://schema.org/specialOpeningHoursSpecification> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Place> .
+<http://schema.org/specialOpeningHoursSpecification> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/OpeningHoursSpecification> .
+<http://schema.org/specialOpeningHoursSpecification> <http://www.w3.org/2000/01/rdf-schema#comment> "The special opening hours of a certain place.<br/><br/>\n\nUse this to explicitly override general opening hours brought in scope by <a class=\"localLink\" href=\"http://schema.org/OpeningHoursSpecification\">openingHoursSpecification</a> or <a class=\"localLink\" href=\"http://schema.org/openingHours\">openingHours</a>."@en .
+<http://schema.org/specialOpeningHoursSpecification> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org> .
+<http://schema.org/specialOpeningHoursSpecification> <http://www.w3.org/2000/01/rdf-schema#label> "specialOpeningHoursSpecification"@en .
 # 
 # http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#agrupacionComercial
 <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#agrupacionComercial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -299,6 +352,39 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoSituacion> <http://www.w3.org/2000/01/rdf-schema#label> "situation type"@en .
 <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoSituacion> <http://www.w3.org/2000/01/rdf-schema#label> "tipo situación"@es .
 # 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#barrio
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#barrio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#barrio> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#barrio> <http://purl.org/dc/terms/issued> "2014-03-28" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#barrio> <http://www.w3.org/2000/01/rdf-schema#comment> "\n      Barrio al que pertenece un fenómeno geográfico o una entidad administrativa\n      "@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#barrio> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#barrio> <http://www.w3.org/2000/01/rdf-schema#label> "pertenece al barrio"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito> <http://purl.org/dc/terms/issued> "2014-03-28" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito> <http://www.w3.org/2000/01/rdf-schema#comment> "\nDistrito al que pertenece un fenómeno geográfico o una entidad administrativa\n"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito> <http://www.w3.org/2000/01/rdf-schema#label> "pertenece al distrito"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#seccionCensal
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#seccionCensal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#seccionCensal> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#SeccionCensal> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#seccionCensal> <http://purl.org/dc/terms/issued> "2014-03-28" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#seccionCensal> <http://www.w3.org/2000/01/rdf-schema#comment> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#seccionCensal> <http://www.w3.org/2000/01/rdf-schema#comment> "\n      Sección censal a la que pertenece un fenómeno geográfico o una entidad administrativa\n      "@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#seccionCensal> <http://www.w3.org/2000/01/rdf-schema#label> "pertenece a la sección censal"@es .
+# 
+# http://www.opengis.net/ont/geosparql#defaultGeometry
+<http://www.opengis.net/ont/geosparql#defaultGeometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opengis.net/ont/geosparql#defaultGeometry> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opengis.net/ont/geosparql#Feature> .
+# 
+# http://www.opengis.net/ont/geosparql#hasGeometry
+<http://www.opengis.net/ont/geosparql#hasGeometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opengis.net/ont/geosparql#hasGeometry> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opengis.net/ont/geosparql#Feature> .
+<http://www.opengis.net/ont/geosparql#hasGeometry> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opengis.net/ont/geosparql#Geometry> .
+# 
 # http://www.w3.org/2004/02/skos/core#inScheme
 <http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
@@ -313,6 +399,61 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # http://purl.org/dc/elements/1.1/identifier
 <http://purl.org/dc/elements/1.1/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://schema.org/closes
+<http://schema.org/closes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/closes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/OpeningHoursSpecification> .
+<http://schema.org/closes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://schema.org/closes> <http://www.w3.org/2000/01/rdf-schema#comment> "The closing hour of the place or service on the given day(s) of the week."@en .
+<http://schema.org/closes> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org> .
+<http://schema.org/closes> <http://www.w3.org/2000/01/rdf-schema#label> "closes"@en .
+# 
+# http://schema.org/openingHours
+<http://schema.org/openingHours> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/openingHours> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/LocalBusiness> .
+<http://schema.org/openingHours> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://schema.org/openingHours> <http://www.w3.org/2000/01/rdf-schema#comment> "The general opening hours for a business. Opening hours can be specified as a weekly time range, starting with days, then times per day. Multiple days can be listed with commas ',' separating each day. Day or time ranges are specified using a hyphen '-'.<br/><br/>\n\n<ul>\n<li>Days are specified using the following two-letter combinations: <code>Mo</code>, <code>Tu</code>, <code>We</code>, <code>Th</code>, <code>Fr</code>, <code>Sa</code>, <code>Su</code>.</li>\n<li>Times are specified using 24:00 format. For example, 3pm is specified as <code>15:00</code>, 10am as <code>10:00</code>. </li>\n<li>Here is an example: <code>&lt;time itemprop=\"openingHours\" datetime=&quot;Tu,Th 16:00-20:00&quot;&gt;Tuesdays and Thursdays 4-8pm&lt;/time&gt;</code>.</li>\n<li>If a business is open 7 days a week, then it can be specified as <code>&lt;time itemprop=&quot;openingHours&quot; datetime=&quot;Mo-Su&quot;&gt;Monday through Sunday, all day&lt;/time&gt;</code>.</li>\n</ul>\n"@en .
+<http://schema.org/openingHours> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org> .
+<http://schema.org/openingHours> <http://www.w3.org/2000/01/rdf-schema#label> "openingHours"@en .
+# 
+# http://schema.org/opens
+<http://schema.org/opens> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/opens> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/OpeningHoursSpecification> .
+<http://schema.org/opens> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://schema.org/opens> <http://www.w3.org/2000/01/rdf-schema#comment> "The opening hour of the place or service on the given day(s) of the week."@en .
+<http://schema.org/opens> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org> .
+<http://schema.org/opens> <http://www.w3.org/2000/01/rdf-schema#label> "opens"@en .
+# 
+# http://schema.org/telephone
+<http://schema.org/telephone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/telephone> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Place> .
+<http://schema.org/telephone> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://schema.org/telephone> <http://www.w3.org/2000/01/rdf-schema#comment> "The telephone number."@en .
+<http://schema.org/telephone> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org> .
+<http://schema.org/telephone> <http://www.w3.org/2000/01/rdf-schema#label> "telephone"@en .
+# 
+# http://schema.org/url
+<http://schema.org/url> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/url> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://schema.org/url> <http://www.w3.org/2000/01/rdf-schema#comment> "URL of the item."@en .
+<http://schema.org/url> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org> .
+<http://schema.org/url> <http://www.w3.org/2000/01/rdf-schema#label> "url"@en .
+# 
+# http://schema.org/validFrom
+<http://schema.org/validFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/validFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/OpeningHoursSpecification> .
+<http://schema.org/validFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://schema.org/validFrom> <http://www.w3.org/2000/01/rdf-schema#comment> "The date when the item becomes valid."@en .
+<http://schema.org/validFrom> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org> .
+<http://schema.org/validFrom> <http://www.w3.org/2000/01/rdf-schema#label> "validFrom"@en .
+# 
+# http://schema.org/validThrough
+<http://schema.org/validThrough> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/validThrough> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/OpeningHoursSpecification> .
+<http://schema.org/validThrough> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://schema.org/validThrough> <http://www.w3.org/2000/01/rdf-schema#comment> "The date after when the item is not valid. For example the end of an offer, salary period, or a period of opening hours."@en .
+<http://schema.org/validThrough> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org> .
+<http://schema.org/validThrough> <http://www.w3.org/2000/01/rdf-schema#label> "validThrough"@en .
 # 
 # http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#aforo
 <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#aforo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -414,6 +555,20 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#superficie> <http://www.w3.org/2000/01/rdf-schema#label> "area"@en .
 <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#superficie> <http://www.w3.org/2000/01/rdf-schema#label> "superficie"@es .
 # 
+# https://datos.ign.es/def/geo_core#xETRS89
+<https://datos.ign.es/def/geo_core#xETRS89> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://datos.ign.es/def/geo_core#xETRS89> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<https://datos.ign.es/def/geo_core#xETRS89> <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es .
+<https://datos.ign.es/def/geo_core#xETRS89> <http://www.w3.org/2000/01/rdf-schema#comment> "Coordenada X en metros (ETRS89)"@es .
+<https://datos.ign.es/def/geo_core#xETRS89> <http://www.w3.org/2000/01/rdf-schema#label> "xETRS89"@es .
+# 
+# https://datos.ign.es/def/geo_core#yETRS89
+<https://datos.ign.es/def/geo_core#yETRS89> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://datos.ign.es/def/geo_core#yETRS89> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<https://datos.ign.es/def/geo_core#yETRS89> <http://purl.org/dc/elements/1.1/source> "Catálogo de Objetos Geográficos BTN100."@es .
+<https://datos.ign.es/def/geo_core#yETRS89> <http://www.w3.org/2000/01/rdf-schema#comment> "Coordenada Y en metros (ETRS89)"@es .
+<https://datos.ign.es/def/geo_core#yETRS89> <http://www.w3.org/2000/01/rdf-schema#label> "yETRS89"@es .
+# 
 # 
 # 
 # #################################################################
@@ -423,12 +578,33 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # #################################################################
 # 
 # 
+# http://schema.org/DayOfWeek
+<http://schema.org/DayOfWeek> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
 # http://schema.org/LocalBusiness
 <http://schema.org/LocalBusiness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://schema.org/LocalBusiness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Place> .
+<http://schema.org/LocalBusiness> <http://www.w3.org/2000/01/rdf-schema#comment> "A particular physical business or branch of an organization. Examples of LocalBusiness include a restaurant, a particular branch of a restaurant chain, a branch of a bank, a medical practice, a club, a bowling alley, etc."@en .
+<http://schema.org/LocalBusiness> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/LocalBusiness> <http://www.w3.org/2000/01/rdf-schema#label> "LocalBusiness"@en .
+# 
+# http://schema.org/OpeningHoursSpecification
+<http://schema.org/OpeningHoursSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/OpeningHoursSpecification> <http://www.w3.org/2000/01/rdf-schema#comment> "A structured value providing information about the opening hours of a place or a certain service inside a place.<br/><br/>\n\nThe place is <strong>open</strong> if the <a class=\"localLink\" href=\"http://schema.org/opens\">opens</a> property is specified, and <strong>closed</strong> otherwise.<br/><br/>\n\nIf the value for the <a class=\"localLink\" href=\"http://schema.org/closes\">closes</a> property is less than the value for the <a class=\"localLink\" href=\"http://schema.org/opens\">opens</a> property then the hour range is assumed to span over the next day."@en .
+<http://schema.org/OpeningHoursSpecification> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/OpeningHoursSpecification> .
+<http://schema.org/OpeningHoursSpecification> <http://www.w3.org/2000/01/rdf-schema#label> "OpeningHoursSpecification"@en .
 # 
 # http://schema.org/Place
 <http://schema.org/Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/Place> <http://www.w3.org/2000/01/rdf-schema#comment> "Entities that have a somewhat fixed, physical extension."@en .
+<http://schema.org/Place> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org> .
+<http://schema.org/Place> <http://www.w3.org/2000/01/rdf-schema#label> "Place"@en .
+# 
+# http://schema.org/PostalAddress
+<http://schema.org/PostalAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/PostalAddress> <http://www.w3.org/2000/01/rdf-schema#comment> "The mailing address."@en .
+<http://schema.org/PostalAddress> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org> .
+<http://schema.org/PostalAddress> <http://www.w3.org/2000/01/rdf-schema#label> "PostalAddress"@en .
 # 
 # http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#AgrupacionComercial
 <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#AgrupacionComercial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -499,6 +675,7 @@ _:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial
 <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/LocalBusiness> .
+<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/ont/geosparql#Feature> .
 <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid40 .
 _:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid40 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#agrupacionComercial> .
@@ -550,8 +727,65 @@ _:genid47 <http://www.w3.org/2002/07/owl#onClass> <http://vocab.ciudadesabiertas
 <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza> <http://www.w3.org/2000/01/rdf-schema#label> "Terrace"@en .
 <http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza> <http://www.w3.org/2000/01/rdf-schema#label> "Terraza"@es .
 # 
+# http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#DireccionPostal
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#DireccionPostal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#DireccionPostal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/PostalAddress> .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#DireccionPostal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/locn#Address> .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#DireccionPostal> <http://purl.org/dc/terms/issued> "2014-03-28" .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#DireccionPostal> <http://www.w3.org/2000/01/rdf-schema#comment> "Una dirección postal en España. Se define como una especialización de las clases vcard:Address, schema:PostalAddress y locn:Address\nAdemás de las propiedades asociadas a estas clases, y definidas en su correspondiente vocabulario, también se pueden utilizar las definidas en los vocabularios de división administrativa española (por ejemplo, barrio, distrito y municipio) y en el callejero (por ejemplo, via, tramo y portal), para lo cual se han añadido restricciones universales a esta clase, con el objetivo de dejar esta relación más explícita."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#DireccionPostal> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal> .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#DireccionPostal> <http://www.w3.org/2000/01/rdf-schema#label> "Dirección postal"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio> <http://purl.org/dc/terms/issued> "2014-03-28" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio> <http://www.w3.org/2000/01/rdf-schema#comment> "\nUn barrio es cada una de las partes en que se dividen los pueblos grandes o sus distritos [fuente: Diccionario de la Real Academia (DRAE) 2011]\n"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio> <http://www.w3.org/2000/01/rdf-schema#label> "Barrio"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> <http://www.w3.org/2000/01/rdf-schema#comment> "\nUn distrito es cada una de las demarcaciones en que se subdivide un territorio o una población para distribuir y ordenar el ejercicio de los derechos civiles y políticos, o de las funciones públicas, o de los servicios administrativos [fuente: Diccionario de la Real Academia (DRAE) 2011]\n"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> <http://www.w3.org/2000/01/rdf-schema#label> "Distrito"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#SeccionCensal
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#SeccionCensal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#SeccionCensal> <http://purl.org/dc/terms/issued> "2014-03-28" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#SeccionCensal> <http://www.w3.org/2000/01/rdf-schema#comment> "\nUna sección censal es un referente geográfico de carácter estadístico, cuya actualización se asocia a los trabajos preliminares de todo Padrón Municipal de Habitantes o Censo de Población, siendo un instrumento eficaz tanto en trabajos censales o padronales, así como para investigaciones por muestreo y en el Censo Electoral. [fuente: http://www.madrid.org/iestadis/fijas/clasificaciones/seccioncensal.htm]\n"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#SeccionCensal> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#SeccionCensal> <http://www.w3.org/2000/01/rdf-schema#label> "Sección censal"@es .
+# 
+# http://www.opengis.net/ont/geosparql#Feature
+<http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/ont/geosparql#SpatialObject> .
+<http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.opengis.net/ont/geosparql#Geometry> .
+<http://www.opengis.net/ont/geosparql#Feature> <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry" .
+<http://www.opengis.net/ont/geosparql#Feature> <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group" .
+<http://www.opengis.net/ont/geosparql#Feature> <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://www.opengis.net/ont/geosparql#Feature> <http://purl.org/dc/elements/1.1/description> "\n      This class represents the top-level feature type. This class is\n      equivalent to GFI_Feature defined in ISO 19156:2011, and it is\n      superclass of all feature types.\n    "@en .
+<http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/2000/01/rdf-schema#comment> "\n      This class represents the top-level feature type. This class is\n      equivalent to GFI_Feature defined in ISO 19156:2011, and it is\n      superclass of all feature types.\n    "@en .
+<http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.opengis.net/ont/geosparql> .
+<http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.opengis.net/ont/gml> .
+<http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.opengis.net/spec/geosparql/1.0> .
+<http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/2000/01/rdf-schema#label> "Feature"@en .
+<http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/2004/02/skos/core#definition> "\n      This class represents the top-level feature type. This class is\n      equivalent to GFI_Feature defined in ISO 19156:2011, and it is\n      superclass of all feature types.\n    "@en .
+<http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/2004/02/skos/core#prefLabel> "Feature"@en .
+# 
+# http://www.opengis.net/ont/geosparql#Geometry
+<http://www.opengis.net/ont/geosparql#Geometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.opengis.net/ont/geosparql#SpatialObject
+<http://www.opengis.net/ont/geosparql#SpatialObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
 # http://www.w3.org/2004/02/skos/core#Concept
 <http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/locn#Address
+<http://www.w3.org/ns/locn#Address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://xmlns.com/foaf/0.1/Agent
 <http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -565,30 +799,26 @@ _:genid47 <http://www.w3.org/2002/07/owl#onClass> <http://vocab.ciudadesabiertas
 # #################################################################
 # 
 # 
-# http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial
-<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial> <http://purl.org/dc/elements/1.1/identifier> "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial" .
-# 
 # http://vocab.linkeddata.es/datosabiertos/kos/comercio/periodo-funcionamiento
 <http://vocab.linkeddata.es/datosabiertos/kos/comercio/periodo-funcionamiento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://vocab.linkeddata.es/datosabiertos/kos/comercio/periodo-funcionamiento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://vocab.linkeddata.es/datosabiertos/kos/comercio/periodo-funcionamiento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 # 
 # http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-acceso
 <http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-acceso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-acceso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-acceso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 # 
 # http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-agrupacion
 <http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-agrupacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-agrupacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-agrupacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 # 
 # http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-estado-tramite-licencia
 <http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-estado-tramite-licencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-estado-tramite-licencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-estado-tramite-licencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 # 
 # http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-situacion
 <http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-situacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-situacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-situacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 # 
 _:genid48 <http://www.w3.org/2000/01/rdf-schema#label> "HTML" .
 _:genid49 <http://www.w3.org/2000/01/rdf-schema#label> "RDF" .
-# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

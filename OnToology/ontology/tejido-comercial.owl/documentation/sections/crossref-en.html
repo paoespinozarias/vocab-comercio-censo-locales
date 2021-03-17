@@ -1,20 +1,46 @@
-<html><h2 id="crossreference" class="list">Cross reference for Vocabulary for the representation of the census of local business premises and terraces, as well as their associated economic activities and opening licenses. classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<h2 id="crossreference" class="list">Cross reference for Vocabulary for the representation of the census of local business premises and terraces, as well as their associated economic activities and opening licenses. classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 This section provides details for each class and property defined by Vocabulary for the representation of the census of local business premises and terraces, as well as their associated economic activities and opening licenses..
-<div id="classes">
+<div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
       <li>
-         <a href="#http://schema.org/LocalBusiness" title="http://schema.org/LocalBusiness">
-            <span>local business</span>
-         </a>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio"
+            title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio">Barrio</a>
+      </li>
+      <li>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#DireccionPostal"
+            title="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#DireccionPostal">Dirección postal</a>
+      </li>
+      <li>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito"
+            title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito">Distrito</a>
+      </li>
+      <li>
+         <a href="#http://www.opengis.net/ont/geosparql#Feature" title="http://www.opengis.net/ont/geosparql#Feature">Feature Feature</a>
       </li>
       <li>
          <a href="#LocalComercial"
             title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial">Local Business</a>
       </li>
       <li>
+         <a href="#http://schema.org/LocalBusiness" title="http://schema.org/LocalBusiness">LocalBusiness</a>
+      </li>
+      <li>
          <a href="#LicenciaApertura"
             title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LicenciaApertura">Opening License</a>
+      </li>
+      <li>
+         <a href="#http://schema.org/OpeningHoursSpecification" title="http://schema.org/OpeningHoursSpecification">OpeningHoursSpecification</a>
+      </li>
+      <li>
+         <a href="#http://schema.org/Place" title="http://schema.org/Place">Place</a>
+      </li>
+      <li>
+         <a href="#http://schema.org/PostalAddress" title="http://schema.org/PostalAddress">PostalAddress</a>
+      </li>
+      <li>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#SeccionCensal"
+            title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#SeccionCensal">Sección censal</a>
       </li>
       <li>
          <a href="#AgrupacionComercial"
@@ -25,23 +51,171 @@ This section provides details for each class and property defined by Vocabulary 
             title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza">Terrace</a>
       </li>
    </ul>
-   <div class="entity" id="http://schema.org/LocalBusiness">
-      <h3>local business<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio">
+      <h3>Barrio<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://schema.org/LocalBusiness</p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio</p>
+      <div class="comment">
+         <span class="markdown">
+Un barrio es cada una de las partes en que se dividen los pueblos grandes o sus distritos [fuente: Diccionario de la Real Academia (DRAE) 2011]
+</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio">http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#barrio"
+               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#barrio">pertenece al barrio</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#DireccionPostal">
+      <h3>Dirección postal<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#DireccionPostal</p>
+      <div class="comment">
+         <span class="markdown">Una dirección postal en España. Se define como una especialización de las clases vcard:Address, schema:PostalAddress y locn:Address
+Además de las propiedades asociadas a estas clases, y definidas en su correspondiente vocabulario, también se pueden utilizar las definidas en los vocabularios de división administrativa española (por ejemplo, barrio, distrito y municipio) y en el callejero (por ejemplo, via, tramo y portal), para lo cual se han añadido restricciones universales a esta clase, con el objetivo de dejar esta relación más explícita.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal">http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal</a>
+         </dd>
+      </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted" title="http://schema.org/Place">place</span>
+            <a href="#http://schema.org/PostalAddress" title="http://schema.org/PostalAddress">PostalAddress</a>
+            <sup class="type-c" title="class">c</sup>, <a href="http://www.w3.org/ns/locn#Address"
+               target="_blank"
+               title="http://www.w3.org/ns/locn#Address">address</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito">
+      <h3>Distrito<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito</p>
+      <div class="comment">
+         <span class="markdown">
+Un distrito es cada una de las demarcaciones en que se subdivide un territorio o una población para distribuir y ordenar el ejercicio de los derechos civiles y políticos, o de las funciones públicas, o de los servicios administrativos [fuente: Diccionario de la Real Academia (DRAE) 2011]
+</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio">http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito"
+               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito">pertenece al distrito</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.opengis.net/ont/geosparql#Feature">
+      <h3>Feature<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <h3>Feature<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.opengis.net/ont/geosparql#Feature</p>
+      <div class="comment">
+         <span class="markdown">
+      This class represents the top-level feature type. This class is
+      equivalent to GFI_Feature defined in ISO 19156:2011, and it is
+      superclass of all feature types.
+    </span>
+      </div>
+      <div class="comment">
+         <span class="markdown">
+      This class represents the top-level feature type. This class is
+      equivalent to GFI_Feature defined in ISO 19156:2011, and it is
+      superclass of all feature types.
+    </span>
+      </div>
+      <div class="info">
+         <span class="markdown">
+      This class represents the top-level feature type. This class is
+      equivalent to GFI_Feature defined in ISO 19156:2011, and it is
+      superclass of all feature types.
+    </span>
+      </div>
+      <dl>
+         <dt>Date:
+        </dt>
+         <dd>16/06/2011</dd>
+      </dl>
+      <dl>
+         <dt>Authors:
+                    </dt>
+         <dd>OGC GeoSPARQL 1.0 Standard Working Group</dd>
+         <dt>Contributors:
+                    </dt>
+         <dd>Matthew Perry</dd>
+      </dl>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.opengis.net/ont/geosparql">http://www.opengis.net/ont/geosparql</a>
+         </dd>
+         <dd>
+            <a href="http://www.opengis.net/ont/gml">http://www.opengis.net/ont/gml</a>
+         </dd>
+         <dd>
+            <a href="http://www.opengis.net/spec/geosparql/1.0">http://www.opengis.net/spec/geosparql/1.0</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://www.opengis.net/ont/geosparql#SpatialObject"
+               target="_blank"
+               title="http://www.opengis.net/ont/geosparql#SpatialObject">spatial object</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has sub-classes</dt>
          <dd>
             <a href="#LocalComercial"
                title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial">Local Business</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#http://www.opengis.net/ont/geosparql#defaultGeometry"
+               title="http://www.opengis.net/ont/geosparql#defaultGeometry">default geometry</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://www.opengis.net/ont/geosparql#hasGeometry" title="http://www.opengis.net/ont/geosparql#hasGeometry">has geometry</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="http://www.opengis.net/ont/geosparql#Geometry"
+               target="_blank"
+               title="http://www.opengis.net/ont/geosparql#Geometry">geometry</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -65,7 +239,8 @@ This section provides details for each class and property defined by Vocabulary 
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#http://schema.org/LocalBusiness" title="http://schema.org/LocalBusiness">local business</a>
+            <a href="#http://www.opengis.net/ont/geosparql#Feature" title="http://www.opengis.net/ont/geosparql#Feature">Feature Feature</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#http://schema.org/LocalBusiness" title="http://schema.org/LocalBusiness">LocalBusiness</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -95,6 +270,41 @@ This section provides details for each class and property defined by Vocabulary 
             <sup class="type-op" title="object property">op</sup>, <a href="#contieneLocalComercial"
                title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#contieneLocalComercial">contains local business premise</a>
             <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://schema.org/LocalBusiness">
+      <h3>LocalBusiness<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.org/LocalBusiness</p>
+      <div class="comment">
+         <span class="markdown">A particular physical business or branch of an organization. Examples of LocalBusiness include a restaurant, a particular branch of a restaurant chain, a branch of a bank, a medical practice, a club, a bowling alley, etc.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://schema.org/">http://schema.org/</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://schema.org/Place" title="http://schema.org/Place">Place</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#LocalComercial"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#LocalComercial">Local Business</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#http://schema.org/openingHours" title="http://schema.org/openingHours">openingHours</a>
+            <sup class="type-dp" title="data property">dp</sup>
          </dd>
       </dl>
    </div>
@@ -143,6 +353,136 @@ This section provides details for each class and property defined by Vocabulary 
          </dd>
       </dl>
    </div>
+   <div class="entity" id="http://schema.org/OpeningHoursSpecification">
+      <h3>OpeningHoursSpecification<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.org/OpeningHoursSpecification</p>
+      <div class="comment">
+         <span class="markdown">A structured value providing information about the opening hours of a place or a certain service inside a place.&lt;br/&gt;&lt;br/&gt;
+
+The place is &lt;strong&gt;open&lt;/strong&gt; if the &lt;a class="localLink" href="http://schema.org/opens"&gt;opens&lt;/a&gt; property is specified, and &lt;strong&gt;closed&lt;/strong&gt; otherwise.&lt;br/&gt;&lt;br/&gt;
+
+If the value for the &lt;a class="localLink" href="http://schema.org/closes"&gt;closes&lt;/a&gt; property is less than the value for the &lt;a class="localLink" href="http://schema.org/opens"&gt;opens&lt;/a&gt; property then the hour range is assumed to span over the next day.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://schema.org/OpeningHoursSpecification">http://schema.org/OpeningHoursSpecification</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#http://schema.org/closes" title="http://schema.org/closes">closes</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://schema.org/dayOfWeek" title="http://schema.org/dayOfWeek">dayOfWeek</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://schema.org/opens" title="http://schema.org/opens">opens</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://schema.org/validFrom" title="http://schema.org/validFrom">validFrom</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://schema.org/validThrough" title="http://schema.org/validThrough">validThrough</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#http://schema.org/specialOpeningHoursSpecification"
+               title="http://schema.org/specialOpeningHoursSpecification">specialOpeningHoursSpecification</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://schema.org/Place">
+      <h3>Place<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.org/Place</p>
+      <div class="comment">
+         <span class="markdown">Entities that have a somewhat fixed, physical extension.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://schema.org">http://schema.org</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#http://schema.org/LocalBusiness" title="http://schema.org/LocalBusiness">LocalBusiness</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#AgrupacionComercial"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#AgrupacionComercial">Shopping area</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Terraza"
+               title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#Terraza">Terrace</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#http://schema.org/specialOpeningHoursSpecification"
+               title="http://schema.org/specialOpeningHoursSpecification">specialOpeningHoursSpecification</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://schema.org/telephone" title="http://schema.org/telephone">telephone</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://schema.org/PostalAddress">
+      <h3>PostalAddress<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.org/PostalAddress</p>
+      <div class="comment">
+         <span class="markdown">The mailing address.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://schema.org">http://schema.org</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#DireccionPostal"
+               title="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#DireccionPostal">Dirección postal</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#http://schema.org/address" title="http://schema.org/address">address</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#SeccionCensal">
+      <h3>Sección censal<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#SeccionCensal</p>
+      <div class="comment">
+         <span class="markdown">
+Una sección censal es un referente geográfico de carácter estadístico, cuya actualización se asocia a los trabajos preliminares de todo Padrón Municipal de Habitantes o Censo de Población, siendo un instrumento eficaz tanto en trabajos censales o padronales, así como para investigaciones por muestreo y en el Censo Electoral. [fuente: http://www.madrid.org/iestadis/fijas/clasificaciones/seccioncensal.htm]
+</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio">http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#seccionCensal"
+               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#seccionCensal">pertenece a la sección censal</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="AgrupacionComercial">
       <h3>Shopping area<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -163,7 +503,7 @@ This concept is more general than schema:ShoppingCenter, since it may cover othe
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted" title="http://schema.org/Place">place</span>
+            <a href="#http://schema.org/Place" title="http://schema.org/Place">Place</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -205,7 +545,7 @@ This concept is more general than schema:ShoppingCenter, since it may cover othe
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted" title="http://schema.org/Place">place</span>
+            <a href="#http://schema.org/Place" title="http://schema.org/Place">Place</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -236,12 +576,15 @@ This concept is more general than schema:ShoppingCenter, since it may cover othe
          </dd>
       </dl>
    </div>
-</div><div id="objectproperties">
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
       <li>
          <a href="#tipoAcceso"
             title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoAcceso">access type</a>
+      </li>
+      <li>
+         <a href="#http://schema.org/address" title="http://schema.org/address">address</a>
       </li>
       <li>
          <a href="#asociadaA"
@@ -264,8 +607,22 @@ This concept is more general than schema:ShoppingCenter, since it may cover othe
             title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#contieneLocalComercial">contains local business premise</a>
       </li>
       <li>
+         <a href="#http://schema.org/dayOfWeek" title="http://schema.org/dayOfWeek">dayOfWeek</a>
+      </li>
+      <li>
+         <a href="#http://www.opengis.net/ont/geosparql#defaultGeometry"
+            title="http://www.opengis.net/ont/geosparql#defaultGeometry">
+            <span>default geometry</span>
+         </a>
+      </li>
+      <li>
          <a href="#tipoActividadEconomica"
             title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoActividadEconomica">economic activity type</a>
+      </li>
+      <li>
+         <a href="#http://www.opengis.net/ont/geosparql#hasGeometry" title="http://www.opengis.net/ont/geosparql#hasGeometry">
+            <span>has geometry</span>
+         </a>
       </li>
       <li>
          <a href="#tieneLicenciaApertura"
@@ -284,12 +641,28 @@ This concept is more general than schema:ShoppingCenter, since it may cover othe
             title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#periodoFuncionamiento">operational time period</a>
       </li>
       <li>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#seccionCensal"
+            title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#seccionCensal">pertenece a la sección censal</a>
+      </li>
+      <li>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#barrio"
+            title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#barrio">pertenece al barrio</a>
+      </li>
+      <li>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito"
+            title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito">pertenece al distrito</a>
+      </li>
+      <li>
          <a href="#estadoTramitacion"
             title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#estadoTramitacion">processing status</a>
       </li>
       <li>
          <a href="#tipoSituacion"
             title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#tipoSituacion">situation type</a>
+      </li>
+      <li>
+         <a href="#http://schema.org/specialOpeningHoursSpecification"
+            title="http://schema.org/specialOpeningHoursSpecification">specialOpeningHoursSpecification</a>
       </li>
       <li>
          <a href="#tipoAgrupacionComercial"
@@ -322,13 +695,40 @@ This concept is more general than schema:ShoppingCenter, since it may cover othe
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
+               <a href="http://www.w3.org/2004/02/skos/core#Concept"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
                <sup class="type-c" title="class">c</sup> 
-               <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</span>
+               <span class="logic">and</span> (<a href="http://www.w3.org/2004/02/skos/core#inScheme"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</a>
                <sup class="type-op" title="object property">op</sup> 
                <span class="logic">value</span> 
                <a href="#http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-acceso"
                   title="http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-acceso">tipo acceso</a>)</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://schema.org/address">
+      <h3>address<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.org/address</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://schema.org/">http://schema.org/</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://schema.org/PostalAddress" title="http://schema.org/PostalAddress">PostalAddress</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
          </dl>
       </div>
    </div>
@@ -403,7 +803,9 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</span>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
+               <a href="http://www.w3.org/2004/02/skos/core#Concept"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -502,6 +904,56 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</span>
          </dl>
       </div>
    </div>
+   <div class="entity" id="http://schema.org/dayOfWeek">
+      <h3>dayOfWeek<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.org/dayOfWeek</p>
+      <div class="comment">
+         <span class="markdown">The day of the week for which these opening hours are valid.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://schema.org">http://schema.org</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://schema.org/OpeningHoursSpecification" title="http://schema.org/OpeningHoursSpecification">OpeningHoursSpecification</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://schema.org/DayOfWeek"
+                  target="_blank"
+                  title="http://schema.org/DayOfWeek">day of week</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://www.opengis.net/ont/geosparql#defaultGeometry">
+      <h3>default geometry<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.opengis.net/ont/geosparql#defaultGeometry</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://www.opengis.net/ont/geosparql#Feature" title="http://www.opengis.net/ont/geosparql#Feature">Feature Feature</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="tipoActividadEconomica">
       <h3>economic activity type<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -528,7 +980,33 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</span>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
+               <a href="http://www.w3.org/2004/02/skos/core#Concept"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://www.opengis.net/ont/geosparql#hasGeometry">
+      <h3>has geometry<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.opengis.net/ont/geosparql#hasGeometry</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://www.opengis.net/ont/geosparql#Feature" title="http://www.opengis.net/ont/geosparql#Feature">Feature Feature</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.opengis.net/ont/geosparql#Geometry"
+                  target="_blank"
+                  title="http://www.opengis.net/ont/geosparql#Geometry">geometry</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -642,7 +1120,9 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</span>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://xmlns.com/foaf/0.1/Agent">agent</span>
+               <a href="http://xmlns.com/foaf/0.1/Agent"
+                  target="_blank"
+                  title="http://xmlns.com/foaf/0.1/Agent">agent</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -674,13 +1154,96 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</span>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
+               <a href="http://www.w3.org/2004/02/skos/core#Concept"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
                <sup class="type-c" title="class">c</sup> 
-               <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</span>
+               <span class="logic">and</span> (<a href="http://www.w3.org/2004/02/skos/core#inScheme"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</a>
                <sup class="type-op" title="object property">op</sup> 
                <span class="logic">value</span> 
                <a href="#http://vocab.linkeddata.es/datosabiertos/kos/comercio/periodo-funcionamiento"
                   title="http://vocab.linkeddata.es/datosabiertos/kos/comercio/periodo-funcionamiento">periodo funcionamiento</a>)</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#seccionCensal">
+      <h3>pertenece a la sección censal<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#seccionCensal</p>
+      <div class="comment">
+         <span class="markdown"/>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#SeccionCensal"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#SeccionCensal">Sección censal</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#barrio">
+      <h3>pertenece al barrio<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#barrio</p>
+      <div class="comment">
+         <span class="markdown">
+      Barrio al que pertenece un fenómeno geográfico o una entidad administrativa
+      </span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio">http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio">Barrio</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito">
+      <h3>pertenece al distrito<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito</p>
+      <div class="comment">
+         <span class="markdown">
+Distrito al que pertenece un fenómeno geográfico o una entidad administrativa
+</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio">http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito">Distrito</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
          </dl>
       </div>
    </div>
@@ -710,9 +1273,13 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</span>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
+               <a href="http://www.w3.org/2004/02/skos/core#Concept"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
                <sup class="type-c" title="class">c</sup> 
-               <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</span>
+               <span class="logic">and</span> (<a href="http://www.w3.org/2004/02/skos/core#inScheme"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</a>
                <sup class="type-op" title="object property">op</sup> 
                <span class="logic">value</span> 
                <a href="#http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-estado-tramite-licencia"
@@ -746,13 +1313,50 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</span>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
+               <a href="http://www.w3.org/2004/02/skos/core#Concept"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
                <sup class="type-c" title="class">c</sup> 
-               <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</span>
+               <span class="logic">and</span> (<a href="http://www.w3.org/2004/02/skos/core#inScheme"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</a>
                <sup class="type-op" title="object property">op</sup> 
                <span class="logic">value</span> 
                <a href="#http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-situacion"
                   title="http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-situacion">tipo situacion</a>)</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://schema.org/specialOpeningHoursSpecification">
+      <h3>specialOpeningHoursSpecification<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.org/specialOpeningHoursSpecification</p>
+      <div class="comment">
+         <span class="markdown">The special opening hours of a certain place.&lt;br/&gt;&lt;br/&gt;
+
+Use this to explicitly override general opening hours brought in scope by &lt;a class="localLink" href="http://schema.org/OpeningHoursSpecification"&gt;openingHoursSpecification&lt;/a&gt; or &lt;a class="localLink" href="http://schema.org/openingHours"&gt;openingHours&lt;/a&gt;.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://schema.org">http://schema.org</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://schema.org/Place" title="http://schema.org/Place">Place</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://schema.org/OpeningHoursSpecification" title="http://schema.org/OpeningHoursSpecification">OpeningHoursSpecification</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
          </dl>
       </div>
    </div>
@@ -782,9 +1386,13 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</span>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
+               <a href="http://www.w3.org/2004/02/skos/core#Concept"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
                <sup class="type-c" title="class">c</sup> 
-               <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</span>
+               <span class="logic">and</span> (<a href="http://www.w3.org/2004/02/skos/core#inScheme"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</a>
                <sup class="type-op" title="object property">op</sup> 
                <span class="logic">value</span> 
                <a href="#http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-agrupacion"
@@ -792,7 +1400,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</span>
          </dl>
       </div>
    </div>
-</div><div id="dataproperties">
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
    <h3 id="dataproperties-headline" class="list">Data Properties</h3>
    <ul class="hlist">
       <li>
@@ -812,12 +1420,21 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</span>
             title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#aforo">capacity</a>
       </li>
       <li>
+         <a href="#http://schema.org/closes" title="http://schema.org/closes">closes</a>
+      </li>
+      <li>
          <a href="#fechaCese"
             title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#fechaCese">closing date</a>
       </li>
       <li>
          <a href="#numeroSillasAutorizadas"
             title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#numeroSillasAutorizadas">number of chairs authorised</a>
+      </li>
+      <li>
+         <a href="#http://schema.org/openingHours" title="http://schema.org/openingHours">openingHours</a>
+      </li>
+      <li>
+         <a href="#http://schema.org/opens" title="http://schema.org/opens">opens</a>
       </li>
       <li>
          <a href="#fechaAlta"
@@ -834,6 +1451,24 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</span>
       <li>
          <a href="#numeroMesasAutorizadas"
             title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#numeroMesasAutorizadas">table number</a>
+      </li>
+      <li>
+         <a href="#http://schema.org/telephone" title="http://schema.org/telephone">telephone</a>
+      </li>
+      <li>
+         <a href="#http://schema.org/url" title="http://schema.org/url">url</a>
+      </li>
+      <li>
+         <a href="#http://schema.org/validFrom" title="http://schema.org/validFrom">validFrom</a>
+      </li>
+      <li>
+         <a href="#http://schema.org/validThrough" title="http://schema.org/validThrough">validThrough</a>
+      </li>
+      <li>
+         <a href="#https://datos.ign.es/def/geo_core#xETRS89" title="https://datos.ign.es/def/geo_core#xETRS89">xETRS89</a>
+      </li>
+      <li>
+         <a href="#https://datos.ign.es/def/geo_core#yETRS89" title="https://datos.ign.es/def/geo_core#yETRS89">yETRS89</a>
       </li>
    </ul>
    <div class="entity" id="superficie">
@@ -862,7 +1497,9 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</span>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#float">float</span>
+               <a href="http://www.w3.org/2001/XMLSchema#float"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#float">float</a>
             </dd>
          </dl>
       </div>
@@ -893,7 +1530,9 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</span>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -924,7 +1563,9 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</span>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -955,7 +1596,41 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</span>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#int">int</span>
+               <a href="http://www.w3.org/2001/XMLSchema#int"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#int">int</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://schema.org/closes">
+      <h3>closes<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.org/closes</p>
+      <div class="comment">
+         <span class="markdown">The closing hour of the place or service on the given day(s) of the week.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://schema.org">http://schema.org</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://schema.org/OpeningHoursSpecification" title="http://schema.org/OpeningHoursSpecification">OpeningHoursSpecification</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#dateTime"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#dateTime">date time</a>
             </dd>
          </dl>
       </div>
@@ -986,7 +1661,9 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</span>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">date time</span>
+               <a href="http://www.w3.org/2001/XMLSchema#dateTime"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#dateTime">date time</a>
             </dd>
          </dl>
       </div>
@@ -1017,7 +1694,81 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</span>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#int">int</span>
+               <a href="http://www.w3.org/2001/XMLSchema#int"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#int">int</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://schema.org/openingHours">
+      <h3>openingHours<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.org/openingHours</p>
+      <div class="comment">
+         <span class="markdown">The general opening hours for a business. Opening hours can be specified as a weekly time range, starting with days, then times per day. Multiple days can be listed with commas ',' separating each day. Day or time ranges are specified using a hyphen '-'.&lt;br/&gt;&lt;br/&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Days are specified using the following two-letter combinations: &lt;code&gt;Mo&lt;/code&gt;, &lt;code&gt;Tu&lt;/code&gt;, &lt;code&gt;We&lt;/code&gt;, &lt;code&gt;Th&lt;/code&gt;, &lt;code&gt;Fr&lt;/code&gt;, &lt;code&gt;Sa&lt;/code&gt;, &lt;code&gt;Su&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Times are specified using 24:00 format. For example, 3pm is specified as &lt;code&gt;15:00&lt;/code&gt;, 10am as &lt;code&gt;10:00&lt;/code&gt;. &lt;/li&gt;
+&lt;li&gt;Here is an example: &lt;code&gt;&amp;lt;time itemprop="openingHours" datetime=&amp;quot;Tu,Th 16:00-20:00&amp;quot;&amp;gt;Tuesdays and Thursdays 4-8pm&amp;lt;/time&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;If a business is open 7 days a week, then it can be specified as &lt;code&gt;&amp;lt;time itemprop=&amp;quot;openingHours&amp;quot; datetime=&amp;quot;Mo-Su&amp;quot;&amp;gt;Monday through Sunday, all day&amp;lt;/time&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://schema.org">http://schema.org</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://schema.org/LocalBusiness" title="http://schema.org/LocalBusiness">LocalBusiness</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://schema.org/opens">
+      <h3>opens<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.org/opens</p>
+      <div class="comment">
+         <span class="markdown">The opening hour of the place or service on the given day(s) of the week.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://schema.org">http://schema.org</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://schema.org/OpeningHoursSpecification" title="http://schema.org/OpeningHoursSpecification">OpeningHoursSpecification</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#dateTime"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#dateTime">date time</a>
             </dd>
          </dl>
       </div>
@@ -1048,7 +1799,9 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</span>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">date time</span>
+               <a href="http://www.w3.org/2001/XMLSchema#dateTime"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#dateTime">date time</a>
             </dd>
          </dl>
       </div>
@@ -1079,7 +1832,9 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</span>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">date time</span>
+               <a href="http://www.w3.org/2001/XMLSchema#dateTime"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#dateTime">date time</a>
             </dd>
          </dl>
       </div>
@@ -1110,7 +1865,9 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</span>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -1141,24 +1898,185 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</span>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#int">int</span>
+               <a href="http://www.w3.org/2001/XMLSchema#int"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#int">int</a>
             </dd>
          </dl>
       </div>
    </div>
-</div><div id="namedindividuals">
+   <div class="entity" id="http://schema.org/telephone">
+      <h3>telephone<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.org/telephone</p>
+      <div class="comment">
+         <span class="markdown">The telephone number.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://schema.org">http://schema.org</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://schema.org/Place" title="http://schema.org/Place">Place</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://schema.org/url">
+      <h3>url<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.org/url</p>
+      <div class="comment">
+         <span class="markdown">URL of the item.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://schema.org">http://schema.org</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#anyURI"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#anyURI">any u r i</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://schema.org/validFrom">
+      <h3>validFrom<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.org/validFrom</p>
+      <div class="comment">
+         <span class="markdown">The date when the item becomes valid.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://schema.org">http://schema.org</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://schema.org/OpeningHoursSpecification" title="http://schema.org/OpeningHoursSpecification">OpeningHoursSpecification</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#dateTime"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#dateTime">date time</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://schema.org/validThrough">
+      <h3>validThrough<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.org/validThrough</p>
+      <div class="comment">
+         <span class="markdown">The date after when the item is not valid. For example the end of an offer, salary period, or a period of opening hours.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://schema.org">http://schema.org</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://schema.org/OpeningHoursSpecification" title="http://schema.org/OpeningHoursSpecification">OpeningHoursSpecification</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#dateTime"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#dateTime">date time</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://datos.ign.es/def/geo_core#xETRS89">
+      <h3>xETRS89<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://datos.ign.es/def/geo_core#xETRS89</p>
+      <div class="comment">
+         <span class="markdown">Coordenada X en metros (ETRS89)</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#float"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#float">float</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://datos.ign.es/def/geo_core#yETRS89">
+      <h3>yETRS89<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://datos.ign.es/def/geo_core#yETRS89</p>
+      <div class="comment">
+         <span class="markdown">Coordenada Y en metros (ETRS89)</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#float"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#float">float</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
    <h3 id="namedindividuals" class="list">Named Individuals</h3>
    <ul class="hlist">
       <li>
          <a href="#http://vocab.linkeddata.es/datosabiertos/kos/comercio/periodo-funcionamiento"
             title="http://vocab.linkeddata.es/datosabiertos/kos/comercio/periodo-funcionamiento">
             <span>periodo funcionamiento</span>
-         </a>
-      </li>
-      <li>
-         <a href="#"
-            title="http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial">
-            <span>tejido comercial</span>
          </a>
       </li>
       <li>
@@ -1196,24 +2114,10 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</span>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
+            <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme"
+               target="_blank"
+               title="http://www.w3.org/2004/02/skos/core#ConceptScheme">concept scheme</a>
             <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="">
-      <h3>tejido comercial<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial</p>
-      <dl class="description">
-         <dt>has facts</dt>
-         <dd>
-            <span class="dotted" title="http://purl.org/dc/elements/1.1/identifier">identifier</span>
-            <sup class="type-dp" title="data property">dp</sup> 
-            <span class="literal">"http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial"</span>
          </dd>
       </dl>
    </div>
@@ -1227,7 +2131,9 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</span>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
+            <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme"
+               target="_blank"
+               title="http://www.w3.org/2004/02/skos/core#ConceptScheme">concept scheme</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -1242,7 +2148,9 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</span>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
+            <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme"
+               target="_blank"
+               title="http://www.w3.org/2004/02/skos/core#ConceptScheme">concept scheme</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -1257,7 +2165,9 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</span>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
+            <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme"
+               target="_blank"
+               title="http://www.w3.org/2004/02/skos/core#ConceptScheme">concept scheme</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -1272,7 +2182,9 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</span>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
+            <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme"
+               target="_blank"
+               title="http://www.w3.org/2004/02/skos/core#ConceptScheme">concept scheme</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -1286,4 +2198,3 @@ http://vocab.linkeddata.es/datosabiertos/kos/comercio/iae</span>
 <sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
 </div>
 </div>
-</html>

@@ -317,10 +317,19 @@
   "@id" : "http://purl.org/dc/elements/1.1/creator",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/elements/1.1/date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/elements/1.1/identifier",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
 }, {
   "@id" : "http://purl.org/dc/elements/1.1/rights",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/source",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/description",
@@ -347,17 +356,263 @@
   "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://schema.org/DayOfWeek",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
   "@id" : "http://schema.org/LocalBusiness",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A particular physical business or branch of an organization. Examples of LocalBusiness include a restaurant, a particular branch of a restaurant chain, a branch of a bank, a medical practice, a club, a bowling alley, etc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://schema.org/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "LocalBusiness"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://schema.org/Place"
   } ]
 }, {
+  "@id" : "http://schema.org/OpeningHoursSpecification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A structured value providing information about the opening hours of a place or a certain service inside a place.<br/><br/>\n\nThe place is <strong>open</strong> if the <a class=\"localLink\" href=\"http://schema.org/opens\">opens</a> property is specified, and <strong>closed</strong> otherwise.<br/><br/>\n\nIf the value for the <a class=\"localLink\" href=\"http://schema.org/closes\">closes</a> property is less than the value for the <a class=\"localLink\" href=\"http://schema.org/opens\">opens</a> property then the hour range is assumed to span over the next day."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://schema.org/OpeningHoursSpecification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "OpeningHoursSpecification"
+  } ]
+}, {
   "@id" : "http://schema.org/Place",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Entities that have a somewhat fixed, physical extension."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://schema.org"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Place"
+  } ]
+}, {
+  "@id" : "http://schema.org/PostalAddress",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The mailing address."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://schema.org"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "PostalAddress"
+  } ]
+}, {
+  "@id" : "http://schema.org/address",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://schema.org/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "address"
+  }, {
+    "@language" : "es",
+    "@value" : "dirección"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://schema.org/PostalAddress"
+  } ]
+}, {
+  "@id" : "http://schema.org/closes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The closing hour of the place or service on the given day(s) of the week."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/OpeningHoursSpecification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://schema.org"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "closes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://schema.org/dayOfWeek",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The day of the week for which these opening hours are valid."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/OpeningHoursSpecification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://schema.org"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "dayOfWeek"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://schema.org/DayOfWeek"
+  } ]
+}, {
+  "@id" : "http://schema.org/openingHours",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The general opening hours for a business. Opening hours can be specified as a weekly time range, starting with days, then times per day. Multiple days can be listed with commas ',' separating each day. Day or time ranges are specified using a hyphen '-'.<br/><br/>\n\n<ul>\n<li>Days are specified using the following two-letter combinations: <code>Mo</code>, <code>Tu</code>, <code>We</code>, <code>Th</code>, <code>Fr</code>, <code>Sa</code>, <code>Su</code>.</li>\n<li>Times are specified using 24:00 format. For example, 3pm is specified as <code>15:00</code>, 10am as <code>10:00</code>. </li>\n<li>Here is an example: <code>&lt;time itemprop=\"openingHours\" datetime=&quot;Tu,Th 16:00-20:00&quot;&gt;Tuesdays and Thursdays 4-8pm&lt;/time&gt;</code>.</li>\n<li>If a business is open 7 days a week, then it can be specified as <code>&lt;time itemprop=&quot;openingHours&quot; datetime=&quot;Mo-Su&quot;&gt;Monday through Sunday, all day&lt;/time&gt;</code>.</li>\n</ul>\n"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/LocalBusiness"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://schema.org"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "openingHours"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://schema.org/opens",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The opening hour of the place or service on the given day(s) of the week."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/OpeningHoursSpecification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://schema.org"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "opens"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://schema.org/specialOpeningHoursSpecification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The special opening hours of a certain place.<br/><br/>\n\nUse this to explicitly override general opening hours brought in scope by <a class=\"localLink\" href=\"http://schema.org/OpeningHoursSpecification\">openingHoursSpecification</a> or <a class=\"localLink\" href=\"http://schema.org/openingHours\">openingHours</a>."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/Place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://schema.org"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "specialOpeningHoursSpecification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://schema.org/OpeningHoursSpecification"
+  } ]
+}, {
+  "@id" : "http://schema.org/telephone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The telephone number."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/Place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://schema.org"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "telephone"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://schema.org/url",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "URL of the item."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://schema.org"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "url"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ]
+}, {
+  "@id" : "http://schema.org/validFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The date when the item becomes valid."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/OpeningHoursSpecification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://schema.org"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "validFrom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://schema.org/validThrough",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The date after when the item is not valid. For example the end of an offer, salary period, or a period of opening hours."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/OpeningHoursSpecification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://schema.org"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "validThrough"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/contributor" : [ {
     "@language" : "es",
     "@value" : "Honorio Enrique Crespo Díaz-Alejo - Ayuntamiento de Madrid"
@@ -391,9 +646,6 @@
     "@value" : "Paola Espinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)"
   }, {
     "@value" : "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, LocaliData)"
-  } ],
-  "http://purl.org/dc/elements/1.1/identifier" : [ {
-    "@value" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial"
   } ],
   "http://purl.org/dc/elements/1.1/rights" : [ {
     "@value" : "Creative Commons Attribution 4.0 International (CC BY 4.0)"
@@ -439,11 +691,11 @@
     "@value" : "0.2.0"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial/1.1.0"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "es",
-    "@value" : "1.0.0"
+    "@value" : "1.1.0"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial#AgrupacionComercial",
@@ -528,6 +780,8 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://schema.org/LocalBusiness"
+  }, {
+    "@id" : "http://www.opengis.net/ont/geosparql#Feature"
   }, {
     "@id" : "_:genid40"
   }, {
@@ -1192,22 +1446,221 @@
     "@id" : "_:genid23"
   } ]
 }, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#DireccionPostal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2014-03-28"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Una dirección postal en España. Se define como una especialización de las clases vcard:Address, schema:PostalAddress y locn:Address\nAdemás de las propiedades asociadas a estas clases, y definidas en su correspondiente vocabulario, también se pueden utilizar las definidas en los vocabularios de división administrativa española (por ejemplo, barrio, distrito y municipio) y en el callejero (por ejemplo, via, tramo y portal), para lo cual se han añadido restricciones universales a esta clase, con el objetivo de dejar esta relación más explícita."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Dirección postal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://schema.org/PostalAddress"
+  }, {
+    "@id" : "http://www.w3.org/ns/locn#Address"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2014-03-28"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "\nUn barrio es cada una de las partes en que se dividen los pueblos grandes o sus distritos [fuente: Diccionario de la Real Academia (DRAE) 2011]\n"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Barrio"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "\nUn distrito es cada una de las demarcaciones en que se subdivide un territorio o una población para distribuir y ordenar el ejercicio de los derechos civiles y políticos, o de las funciones públicas, o de los servicios administrativos [fuente: Diccionario de la Real Academia (DRAE) 2011]\n"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Distrito"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#SeccionCensal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2014-03-28"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "\nUna sección censal es un referente geográfico de carácter estadístico, cuya actualización se asocia a los trabajos preliminares de todo Padrón Municipal de Habitantes o Censo de Población, siendo un instrumento eficaz tanto en trabajos censales o padronales, así como para investigaciones por muestreo y en el Censo Electoral. [fuente: http://www.madrid.org/iestadis/fijas/clasificaciones/seccioncensal.htm]\n"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Sección censal"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#barrio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2014-03-28"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "\n      Barrio al que pertenece un fenómeno geográfico o una entidad administrativa\n      "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "pertenece al barrio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2014-03-28"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "\nDistrito al que pertenece un fenómeno geográfico o una entidad administrativa\n"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "pertenece al distrito"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#seccionCensal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2014-03-28"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio"
+  }, {
+    "@language" : "es",
+    "@value" : "\n      Sección censal a la que pertenece un fenómeno geográfico o una entidad administrativa\n      "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "pertenece a la sección censal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#SeccionCensal"
+  } ]
+}, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/comercio/periodo-funcionamiento",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ]
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-acceso",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ]
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-agrupacion",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ]
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-estado-tramite-licencia",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ]
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-situacion",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ]
+}, {
+  "@id" : "http://www.opengis.net/ont/geosparql#Feature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/contributor" : [ {
+    "@value" : "Matthew Perry"
+  } ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "OGC GeoSPARQL 1.0 Standard Working Group"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2011-06-16"
+  } ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@language" : "en",
+    "@value" : "\n      This class represents the top-level feature type. This class is\n      equivalent to GFI_Feature defined in ISO 19156:2011, and it is\n      superclass of all feature types.\n    "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "\n      This class represents the top-level feature type. This class is\n      equivalent to GFI_Feature defined in ISO 19156:2011, and it is\n      superclass of all feature types.\n    "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql"
+  }, {
+    "@id" : "http://www.opengis.net/ont/gml"
+  }, {
+    "@id" : "http://www.opengis.net/spec/geosparql/1.0"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Feature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql#SpatialObject"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql#Geometry"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "\n      This class represents the top-level feature type. This class is\n      equivalent to GFI_Feature defined in ISO 19156:2011, and it is\n      superclass of all feature types.\n    "
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Feature"
+  } ]
+}, {
+  "@id" : "http://www.opengis.net/ont/geosparql#Geometry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.opengis.net/ont/geosparql#SpatialObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.opengis.net/ont/geosparql#defaultGeometry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql#Feature"
+  } ]
+}, {
+  "@id" : "http://www.opengis.net/ont/geosparql#hasGeometry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql#Feature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql#Geometry"
+  } ]
 }, {
   "@id" : "http://www.w3.org/2000/01/rdf-schema#comment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#domain",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
@@ -1216,8 +1669,17 @@
   "@id" : "http://www.w3.org/2000/01/rdf-schema#label",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
   "@id" : "http://www.w3.org/2004/02/skos/core#Concept",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#definition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/2004/02/skos/core#historyNote",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -1225,6 +1687,48 @@
   "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/locn#Address",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
   "@id" : "http://xmlns.com/foaf/0.1/Agent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://datos.ign.es/def/geo_core#xETRS89",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/dc/elements/1.1/source" : [ {
+    "@language" : "es",
+    "@value" : "Catálogo de Objetos Geográficos BTN100."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Coordenada X en metros (ETRS89)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "xETRS89"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "https://datos.ign.es/def/geo_core#yETRS89",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/dc/elements/1.1/source" : [ {
+    "@language" : "es",
+    "@value" : "Catálogo de Objetos Geográficos BTN100."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Coordenada Y en metros (ETRS89)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "yETRS89"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
 } ]
