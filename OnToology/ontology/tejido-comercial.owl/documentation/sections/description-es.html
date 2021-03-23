@@ -19,7 +19,7 @@ La Figura 1 muestra las clases y propiedades del Vocabulario de censo de locales
 <pre>
   &lt;http://vocab.ciudadesabiertas.es/recurso/licencia-apertura/500-2017-11358&gt; a escom:LicenciaApertura ;
   escom:asociadaA &lt;http://vocab.ciudadesabiertas.es/recurso/local-comercial/10003602&gt; ;
-  escom:fechaSolicitud "2017/09/18"^^xsd:dateTime ;
+  escom:fechaSolicitud "2017-09-18"^^xsd:dateTime ;
   escom:estadoTramitacion &lt;http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-estado-tramite-licencia/en-tramite&gt; ;
   escom:seOtorgaA &lt;http://vocab.ciudadesabiertas.es/recurso/persona/Y4214587&gt; ;
   escom:autorizaActividadEconomica &lt;http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5610&gt; .
@@ -30,11 +30,11 @@ La Figura 1 muestra las clases y propiedades del Vocabulario de censo de locales
 <pre>
   &lt;http://vocab.ciudadesabiertas.es/recurso/local-comercial/10003602&gt; a escom:LocalComercial ;
   escom:tieneLicenciaApertura &lt;http://vocab.ciudadesabiertas.es/recurso/licencia-apertura/500-2017-11358&gt; ;
-  dc:identifier "10003602" ;
-  escom:rotulo  "Restaurante Cocina del Norte" ;
+  dc:identifier "10003602"^^xsd:string ;
+  escom:rotulo  "Restaurante Cocina del Norte"^^xsd:string ;
   escom:aforo	"30"^^xsd:int ;
   escom:referenciaCatastral "9951803" ;
-  schema:telephone "640439521" ;
+  schema:telephone "640439521"^^xsd:string ;
   escom:tipoSituacion &lt;http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-situacion/activo&gt; ;
   escom:tipoActividadEconomica &lt;http://vocab.linkeddata.es/datosabiertos/kos/comercio/cnae/Cod4/5610&gt; ;
   escom:tieneTerraza &lt;http://vocab.ciudadesabiertas.es/recurso/terraza/10003602&gt; ;
@@ -50,10 +50,10 @@ El código la representación del ejemplo de la Figura 2 sería:
 <pre class="example highlight preprint">
   &lt;http://vocab.ciudadesabiertas.es/recurso/local-comercial/10003602/geometry&gt; a sf:Point ;
   geosparql:asWKT  "POINT (-3.699489 40.419751)"^^geosparql:wktLiteral ;
-  geo:long "-3.699489" ;
-  geo:lat "40.419751" ;
-  geo_core:xETRS89 "440661,59" ;
-  geo_core:yETRS89 "4474610,53" .
+  geo:long "-3.699489"^^xsd:float ;
+  geo:lat "40.419751"^^xsd:float ;
+  geo_core:xETRS89 "440661,59"^^xsd:float ;
+  geo_core:yETRS89 "4474610,53"^^xsd:float .
 </pre>
 </p>
 <span class="markdown">
@@ -66,9 +66,9 @@ El código la representación del ejemplo de la Figura 2 sería:
   La representación de la instancia del distrito que se ha mostrado en este ejemplo se podría representar de forma abreviada así:
 <pre>
   &lt;http://vocab.ciudadesabiertas.es/recurso/distrito/20&gt; a esadm:Distrito ;
-  dcterms:identifier     "20" ;
-  geonames:officialName  "San Blas - Canillejas" ;
-  rdfs:label             "San Blas - Canillejas" .
+  dcterms:identifier     "20"^^xsd:string ;
+  geonames:officialName  "San Blas - Canillejas"^^xsd:string ;
+  rdfs:label             "San Blas - Canillejas"^^xsd:string .
 </pre>
 <span class="markdown">
   Posteriormente, para el caso de la representación de la terraza, que se mencionó previamente en el código de ejemplo del local, se crea una instancia de la clase [Terraza](#Terraza). Para representar que su periodo de funcionamiento es estacional se emplea la propiedad [escom:periodoFuncionamiento](#periodoFuncionamiento), que enlaza la terraza con el correspondiente concepto SKOS del esquema de tipos de períodos de funcionamiento.	Su horario de funcionamiento se representa con la propiedad [schema:openingHours](http://schema.org/openingHours) de acuerdo con la especificación definida en el vocabulario schema.org. Adicionalmente, la superficie, y el número de sillas y mesas se describen con las propiedades [escom:superficie](#superficie), [escom:numeroSillasAutorizadas](#numeroSillasAutorizadas), y [escom:numeroMesasAutorizadas](#numeroMesasAutorizadas) respectivamente. Finalmente, se especifica el local al que pertenece mediante la propiedad [escom:perteneceALocal](#perteneceALocal).
@@ -76,7 +76,7 @@ El código la representación del ejemplo de la Figura 2 sería:
 <pre>
   &lt;http://vocab.ciudadesabiertas.es/recurso/terraza/10003602&gt; a escom:Terraza ;
   escom:periodoFuncionamiento &lt;http://vocab.linkeddata.es/datosabiertos/kos/comercio/periodo-funcionamiento/estacional&gt; ;
-  schema:openingHours "Lun-Vie 08:00-13:30" ;
+  schema:openingHours "Lun-Vie 08:00-13:30"^^xsd:string ;
   escom:superficie "10"^^xsd:float ;
   escom:numeroMesasAutorizadas "5"^^xsd:int ;
   escom:numeroSillasAutorizadas "10"^^xsd:int ;
@@ -87,7 +87,7 @@ El código la representación del ejemplo de la Figura 2 sería:
 </span>
 <pre>
   &lt;http://vocab.ciudadesabiertas.es/recurso/agrupacion-comercial/99000004&gt; a escom:AgrupacionComercial ;
-  schema:name "GALERIA DE ALIMENTACION JUAN DUQUE 37" ;
+  schema:name "GALERIA DE ALIMENTACION JUAN DUQUE 37"^^xsd:string ;
   escom:tipoAgrupacionComercial &lt;http://vocab.linkeddata.es/datosabiertos/kos/comercio/tipo-agrupacion/galeria-alimentacion&gt; ;
   escom:contieneLocalComercial &lt;http://vocab.ciudadesabiertas.es/recurso/local-comercial/10003602&gt; .
   </pre>
@@ -103,8 +103,8 @@ El código la representación del ejemplo de la Figura 2 sería:
 </span>
 <pre>
   &lt;http://vocab.ciudadesabiertas.es/recurso/local-comercial/10003602/horario-especial-2018-12-24&gt a schema:OpeningHoursSpecification ;
-  schema:validFrom: "2018-12-24" ;
-  schema:validThrough: "2018-12-25" ;
-  schema:opens: "09:00" ;
-  schema:closes: "11:00" .
+  schema:validFrom: "2018-12-24"^^xsd:dateTime ;
+  schema:validThrough: "2018-12-25"^^xsd:dateTime ;
+  schema:opens: "09:00:00"^^xsd:dateTime ;
+  schema:closes: "11:00:00"^^xsd:dateTime .
 </pre>
